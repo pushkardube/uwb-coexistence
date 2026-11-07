@@ -1,0 +1,165 @@
+FCC ID ZHK-M033 - Wireless MouseSkip to main content
+
+FCC ID News StatisticsFCC IDSearch
+FCC ID1
+ZHK2
+ZHK-M0333
+
+FCC ID ZHK-M033
+
+Wireless Mouse
+
+by GN Audio USA Inc. Grantee Code: ZHK   Product Code: M033
+ Latest application date: 2026-05-05
+
+FCC ID Device Details
+
+FCC IDZHK-M033
+Mirrorsfcc.id | gov | fccid.ai
+Grantee CodeZHK
+Product CodeM033
+Applicant BusinessGN Audio USA Inc. 🇺🇸
+Related Domains steelseries.com jabra.com
+Equipment ClassWireless Mouse
+Test FirmBureau Veritas CPS(H.K.) Ltd., Taoyuan Branch
+
+Operating Frequencies
+
+Frequency RangeApplication PurposeFinal Action Date
+7290.88 MHzOriginal Equipment2026-05-05
+
+Exhibits
+
+DocumentTypeAvailableFile
+Users Manual rev Metadata onlyUsers Manual2026-06-15PDF 4.7 MB
+Users Manual rev 2Users Manual2026-06-15PDF 4.6 MB
+Internal PhotosInternal Photos2026-06-15PDF 2 MB
+External PhotosExternal Photos2026-06-15PDF 1.6 MB
+Label Sample & Label Location revID Label/Location Info2026-05-05PDF 68.3 KB
+Test Set Up PhotosTest Setup Photos2026-06-15PDF 232.6 KB
+Antenna Datasheet revTest Report2026-05-05PDF 1.2 MB
+Test Report rev 5Test Report2026-05-05PDF 732.4 KB
+Attestation (Designated itself as U.S. local Agent Letter) revAttestation Statements2026-05-05PDF 191.1 KB
+Attestation (Statements of part 2.911(d)(5))Attestation Statements2026-05-05PDF 21.1 KB
+Confidentiality Request (Long term)Cover Letter(s)2026-05-05PDF 21.3 KB
+Confidentiality Request (Short term)Cover Letter(s)2026-05-05PDF 22.9 KB
+Confidentiality Request (Short term)_revCover Letter(s)2026-05-05PDF 37.9 KB
+Cover Letter (Agent Authorization)Cover Letter(s)2026-05-05PDF 23.3 KB
+RF Exposure Info (MPE)RF Exposure Info2026-05-05PDF 275.8 KB
+Block Diagram rev 2 Metadata onlyBlock DiagramPDF 88.9 KB
+Schematics rev Metadata onlySchematicsPDF 307 KB
+Operational Description Metadata onlyOperational DescriptionPDF 111.7 KB
+
+Application Information
+
+Application IDnAIN3dkyn+nKnNPiEKIgNQ==
+Final Action Date2026-05-05
+Application PurposeOriginal Equipment
+Applicant FRN0033478405
+ModelM033
+Frequency Range7290.88 MHz
+Equipment ClassUWB - Ultra Wideband Transmitter
+Device DescriptionWireless Mouse
+Responsible PartyChirky Lin, Chirky.lin@steelseries.com , +886-2-8226-3858
+Non-Technical ContactSteen Kaiser, GN Audio USA Inc., skaiser@jabra.com , (800) 826-4656
+Test FirmLiu Ken, Bureau Veritas CPS(H.K.) Ltd., Taoyuan Branch, ken.liu@bureauveritas.com , +886-3-2600609
+TCB Emailcertification@nacsemc.com 
+TCB ScopeA2: Low Power Transmitters (except Spread Spectrum) and radar detectors operating above 1 GHz
+Short-Term ConfidentialityYes
+Long-Term ConfidentialityYes
+Modular EquipmentDoes not apply
+Composite DeviceNo
+Cognitive RadioNo
+Authorization WaiverNo
+Authorization Waiver ApprovedNo
+Section 5301 CertificationYes
+Related OET Knowledge DataBase InquiryYes
+
+Applications
+
+Application IDDatePurpose
+nAIN3dkyn+nKnNPiEKIgNQ==2026-05-05Original Equipment
+
+Equipment Authorization
+
+FrequencyRules
+7290.88 MHz15F
+
+Grants
+
+TCB Grant - Application nAIN3dkyn+nKnNPiEKIgNQ==
+
+ TCB
+ GRANT OF EQUIPMENT
+ AUTHORIZATION
+ TCB
+
+ Certification
+
+ Issued Under the Authority of the
+
+ Federal Communications Commission
+
+ By:
+
+ North American EMC Certification Services Inc
+
+ 24889 Ferguson Ave 
+
+ Maple Ridge, BC, 
+
+ Canada
+
+ Date of Grant: 05/05/2026
+
+ Application Dated: 04/27/2026
+
+ GN Audio USA Inc.
+
+ 900 Chelmsford Street, Tower II, 8th Floor,
+
+ Lowell, MA 01851 
+
+ Attention: Chirky Lin , Senior Regulatory Manager
+
+ NOT TRANSFERABLE
+
+ EQUIPMENT AUTHORIZATION is hereby issued to the named GRANTEE, and is VALID ONLY for
+ the equipment identified hereon for use under the Commission's Rules and Regulations listed below.
+
+ FCC IDENTIFIER: 
+ ZHK-M033
+
+ Name of Grantee: 
+ GN Audio USA Inc.
+
+ Equipment Class:
+ Ultra Wideband Transmitter
+
+ Notes:
+ Wireless Mouse
+
+ Grant Notes 
+ FCC Rule Parts
+ Frequency
+Range (MHZ)
+ Output
+Watts
+ Frequency
+Tolerance
+ Emission
+Designator
+
+ 15F
+
+ 7290.88 
+  - 
+ 7290.88 
+
+ UWB devices may not be employed for the operation of toys. Operation onboard an aircraft, a ship or a satellite is prohibited per §15.521(a). Antennas mounted on outdoor structures, such as antennas mounted on the outside of a building or on a telephone pole, or any fixed outdoors infrastructure are prohibited for use with this device per §15.519(a). 
+ 10 dB Bandwidth (GHz): 1.6678 
+
+Do Not Sell or Share My Personal Information
+
+FCC ID — wireless certification records, FCC applications, exhibits, and device documents.
+Search | News | Statistics | Grantees | FRNs | Filings by country | Frequency search | MAC lookup | IMEI / TAC lookup | Japan Giteki | News RSS | FRN RSS | Documents RSS | Applications RSS | Contact | Privacy

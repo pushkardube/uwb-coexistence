@@ -1,0 +1,4122 @@
+SR1120 Datasheet
+
+Overview
+
+Features
+
+The SPARK SR1120 is a digitally programmable UWB (Ultra-Wideband) wireless transceiver RFIC implementing SPARK LE-UWBTM technology. With an operating frequency range of 6.2 GHz to 9.5 GHz, the SR1120 provides ultra-low-power, deterministic wireless communications with short, predictable latency at symbol rates up to 40.96 Msymbol/s. The SR1120 is optimized for energy-efficient operation across a wide range of data rates while maintaining a robust wireless link, including in RF-congested environments.
+Figure 1: SR1120
+The SR1120 integrates an RF transmitter and receiver, antenna-diversity support, digital baseband hardware, a power-management unit, a low-power clock input, and a sleep counter. A host MCU configures and controls the device through a standard SPI or QSPI interface, simplifying integration into compact, ultra-low power wireless systems.
+The impulse-radio architecture combines short-duration transmissions with aggressive duty cycling for minimal energy consumption across a wide range of operating conditions. Digitally programmable output-spectrum shaping enables operation within multiple spectral masks and supports compliance with worldwide UWB regulatory emission requirements. The SR1120 supports both energy-efficient data communications and ranging applications, making it ideal for a wide range of consumer, industrial, medical, always-on IoT, and nextgeneration advanced datacom applications.
+
+· UWB Radio Transceiver ­ 6.2 ­ 9.5 GHz operating frequency range ­ Configurable symbol rate: 20.48, 27.3067 and 40.96 MHz PHY rates ­ Tunable TX symbol energy of up to 0 dBm / 20.48 MHz ­ RX sensitivity (symbol energy) of -81 dBm / 20.48 MHz ­ Antenna diversity support
+· Integrated clock management ­ Only one 32.768 KHz external XTAL required ­ Timer always available except in shutdown mode. ­ Synthesized 40.96 MHz system clock.
+· Versatile digital core ­ Up to 40 MHz SPI and Quad-SPI interfaces ­ Independent 256 Bytes transmit and receive buffers ­ Modem supports OOK modulation, differential encoding, 32-bit sync word, punctured FEC, 16-bit CRC ­ 1 Kbit NVM
+· Ultra-low power consumption ­ 1.8 to 3.3 V supply ­ Internal DC-DC converter ­ Energy efficiency of 0.3 nJ/bit for TX and 0.7 nJ/bit for RX
+· Ultra-low latency ­ 25 us airtime for 1 Kbit at a PHY rate of 40.96 MHz ­ Ideal for real-time data streams such as Headset and HID applications
+· Coexistence and reduced interference with BLE, WIFI (2.4, 5 & 6 GHz) and cellular
+· Meets JEDEC JESD471, JESD22 industry standards
+· Industrial operating range: -40 to +85 °C · Package
+­ 4 mm x 4 mm 32 pin QFN ­ WLCSP ready · Low-cost BOM · Support for Carrier-Sense (CSMA) stack · SDK support · Evaluation kits available
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+1
+
+Contents
+
+SR1120 Datasheet
+
+1 System Overview
+
+4
+
+1.1 Block diagram . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+1.2 Radio transceiver description . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 4
+
+1.3 Clocks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+1.4 Power modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+1.5 Reset . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+
+1.6 Sleep Timing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+1.7 SPI QSPI interface . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+
+1.8 Interrupt controller and Timer . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+1.9 NVM . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+
+2 PHY Layer Overview
+
+9
+
+2.1 General . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+2.2 Symbol Structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+2.3 Encoding . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 9
+
+2.4 Packet Structure . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 10
+
+3 Pinout
+
+11
+
+3.1 Package . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+
+3.2 Pinouts . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 12
+
+4 Application Overview
+
+13
+
+4.1 Application Circuit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+4.2 Application Guidelines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+
+4.2.1 Recommended Part Values . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+
+5 Electrical Characteristics
+
+15
+
+5.1 Maximum Ratings . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+5.2 Recommended Operating Conditions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+
+5.3 DC characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+
+5.4 Timing characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+5.5 Internal XTAL Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+5.6 External XTAL Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+
+5.7 Internal PLL Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+5.8 External PLL Requirements . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+5.9 DC-DC Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 18
+
+5.10 Radio Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+5.10.1 Transmitter . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+
+5.10.2 Receiver . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+
+5.11 IO Characteristics . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+
+6 Register Description
+
+24
+
+6.1 Register 0x01 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+
+6.2 Register 0x02 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+
+6.3 Registers 0x04-0x05 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+6.4 Register 0x07 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+2
+
+SR1120 Datasheet
+
+6.5 Registers 0x08-0x09 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 27 6.6 Registers 0x0A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 6.7 Registers 0x0B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28 6.8 Registers 0x0C-0xD . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 6.9 Register 0x0E . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29 6.10 Register 0x0F . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30 6.11 Register 0x10 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31 6.12 Register 0x11 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32 6.13 Register 0x12 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 6.14 Register 0x13-0x14-0x15 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33 6.15 Register 0x18 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34 6.16 Register 0x2F . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 6.17 Registers 0x30-0x31 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 35 6.18 Registers 0x32-0x33 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 36 6.19 Register 0x34 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37 6.20 Registers 0x35-0x36 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 6.21 Registers 0x37 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 38 6.22 Registers 0x38 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 6.23 Registers 0x39-0x3A . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39 6.24 Registers 0x3B . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 40 6.25 Registers 0x3C . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 6.26 Registers 0x3E . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41 6.27 Registers 0x3F . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 42
+
+7 Package Outline and Tape/Reel Information
+
+43
+
+8 Recommended Footprint
+
+45
+
+9 Part Order Information
+
+45
+
+10 Revision
+
+46
+
+11 Notice
+
+46
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+3
+
+1 System Overview
+1.1 Block diagram
+
+SR1120 Datasheet
+
+Antennas
+
+Radio Transceiver
+
+Modem
+
+FIFO
+
+NVM
+
+RTC
+
+Registers
+
+SPI/ QSPI
+
+MCU
+
+DC-DC Converter
+
+Power Management
+
+XTAL OSC
+
+PLL 20.48 MHz
+
+Supply
+
+32.768 kHz Crystal
+Figure 1.1: Block diagram of the SR1120.
+
+1.2 Radio transceiver description
+The radio transceiver supports a proprietary impulse radio and a standard IEEE-802.15.4ab draft compliant radio. The transceiver operates in the license-free UWB spectrum. The transmitter is highly flexible and can be adapted to efficiently fill the available RF spectrum, taking into account the realized antenna gains in a specific implementation. The receiver operates in non-coherent mode and is robust to in-band and out-of-band interferers. The transceiver supports multiple PHY rates to enhance application requirements. On-Off Keying (OOK) is supported by the modem, as well as differential encoding (2 bit-PPM) , configurable punctured FEC , variable preamble length, variable sync word and programmable CRC polynomial. A 2kbit receive and transmit buffer are available to buffer the packets. The data rate and available RF spectrum constrains the allowable transmitter parameters. As a result, the link budget is higher for low data rate links and lower for high data rate links. Additionally, the transceiver operates with only a 32.768 kHz quartz, enabling very low power timing. The transmitter can be programmed to have a variable pulse width via radio control settings. The transmitter can also be controlled to vary the number of pulses used within each symbol. A variable output power setting can be fine-tuned during each transmission.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+4
+
+1.3 Clocks
+
+SR1120 Datasheet
+
+A 32.768 kHz clock is generated by the XTAL oscillator using an external crystal. This clock powers the Timer implementation. A 40.96 MHz clock is synthesized on-chip from the XTAL clock using a PLL. This PLL requires an off-chip loop filter and is power cycled according to the usage profile.
+
+1.4 Power modes
+The SR1120 supports several power modes. Accurate power cycling is key to reaching high energy efficiencies. The sleep controller contains automatic sleep and wake-up conditions.
+
+Function
+
+Shutdown Deep Sleep Shallow Sleep Idle Active
+
+Register retention
+
+No
+
+Yes
+
+Yes
+
+Yes
+
+Yes
+
+SPI communication
+
+Off
+
+On
+
+On
+
+On
+
+On
+
+PLL clock
+
+Off
+
+Off
+
+On
+
+On
+
+On
+
+DC-DC output
+
+Off
+
+Off
+
+Off
+
+On
+
+On
+
+Radio
+
+Off
+
+Off
+
+Off
+
+Off
+
+On
+
+Next State
+
+Deep Sleep Shallow Sleep
+
+Idle
+
+Active Any
+
+Table 1.2: Power States
+
+1.5 Reset
+
+At system startup, the RSTN pin should be held low until the supply voltage is stable. Normal operation starts after pulling RSTN high.
+
+The Shutdown mode allows minimum current consumption, and can be entered by pulling SHUTDOWN high. Wake-up from Shutdown mode is accomplished by pulling SHUTDOWN low, while keeping RSTN low to reset the SR1120. Normal operation starts after pulling RSTN high.
+
+VDD_CORE_ANA VDD_CORE_DIG
+
+10 ms
+
+VDD_CORE_ANA VDD_CORE_DIG
+
+20 ms
+
+RSTN
+
+RSTN
+
+SHUTDOWN
+
+SHUTDOWN
+
+STATE
+
+OFF RST DEEP SLEEP
+
+STATE SHUTDOWN RST DEEP SLEEP
+
+Figure 1.3: Timing sequence during power on (left) and shutdown (right).
+Figure 1.3 illustrates the power-on sequence and wake-up out of shutdown. Note that in both sequences the digital core is initialized to the default register state.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+5
+
+VDD_CORE_ANA VDD_CORE_DIG
+XTAL_C1
+
+2 s (max)
+
+VDD_CORE_ANA VDD_CORE_DIG
+XTAL_CLK
+
+SR1120 Datasheet
+10 ms
+
+STATE OFF DEEP SLEEP SHALLOW SLEEP
+
+STATE OFF DEEP SLEEP SHALLOW SLEEP
+
+Figure 1.4: XTAL sequence with crystal on XTAL pins (left) or an external digital clock on XTAL_CLK (right).
+After power-on or leaving shutdown mode, the XTAL clock source has to provide a stable 32.768 kHz clock before deep sleep can be exited into shallow sleep. An external 32.768 kHz clock source can be used as an input to the XTAL_CLK pin, as shown in Figure 1.4.
+
+1.6 Sleep Timing
+
+Depending on the packet rate, the radio can transition in either the deep sleep, shallow sleep or idle state in between packets. The figure below illustrates the state transitions in these three modes.
+
+PLL
+
+DC/DC
+
+STARTUP STARTUP
+
+RX/TX
+
+DEEP SLEEP
+
+PLL
+
+DC/DC
+
+STARTUP STARTUP
+
+RX/TX
+
+DEEP SLEEP
+
+Variable
+
+3 ms
+
+32 us
+
+5 - 100 us
+
+DC/DC STARTUP
+
+RX/TX
+
+SHALLOW SLEEP Variable
+
+DC/DC STARTUP
+
+RX/TX
+
+32 us
+
+5 - 100 us
+
+SHALLOW SLEEP
+
+IDLE
+
+RX/TX
+
+IDLE
+
+RX/TX
+
+IDLE
+
+Variable
+
+5 - 100 us
+
+Figure 1.5: State timing profiles (at 3.3 V) for deep sleep (top), shallow sleep (middle) and idle (bottom).
+
+1.7 SPI QSPI interface
+The SR1120 can be controlled via a SPI/QSPI interface which can operate up to a frequency of 40 MHz. After reset the interface is set to be in SPI mode (SPI mode 0). The following transaction examples are supported in SPI and QSPI mode. A transaction is determined by the CSN signaling. A transaction starts with CSN going low and finishes when it goes up. The bit transfer level on SPI is MSB first, see Figure 1.6.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+6
+
+SR1120 Datasheet
+CSN SCK
+
+MOSI
+
+MSB
+
+LSB
+
+MISO
+
+MSB
+
+LSB
+
+Figure 1.6: Timing of a single byte on the SPI protocol.
+The non-burst (normal) read and write register protocol is illustrated in Figure 1.8. Every read and write transaction starts with a command byte, where the bit 7 indicates if a normal (0) or a burst (1) transfer is coming and the bit 6 indicates if the transaction will be a reading (0) or writing (1) operation. The 6 remaining bits constitute the register address to access for that transaction. During the data transfer of a read transaction, the contents at the designated register address are returned on MISO while the MOSI signal values is ignored.
+
+CSN
+
+Command bit Description
+
+Value
+
+7
+
+Mode
+
+1 burst, 0 normal (non-burst)
+
+6
+
+Operation (Read or Write) 1 write, 0 read
+
+5:0
+
+Address
+
+Value
+
+Table 1.7: Command bit mapping
+
+SCK
+
+MOSI
+
+0 0 ADDR
+
+0 1 ADDR
+
+DATA
+
+MISO
+
+0x0
+
+VALUE @ADDR
+
+0x0
+
+0x0
+
+Figure 1.8: SPI read and write register transaction.
+During the data transfer of a write transaction, the new value to write at the designated register address is received through the MOSI signal while the MISO signal remains low.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+7
+
+SR1120 Datasheet
+
+CSN
+
+SCK
+
+MOSI
+
+1 0 ADDR
+
+MISO
+
+0x00
+
+REG ADDR 7:0
+
+REG ADDR 15:8
+
+REG ADDR+1 7:0
+
+1 1 ADDR 0x00
+
+DATA ADDR 7:0
+0x00
+
+DATA ADDR 15:8
+0x00
+
+DATA ADDR+1 7:0
+0x00
+
+Figure 1.9: SPI burst read and write transaction.
+The SPI burst transfers are illustrated in Figure 1.9. SPI burst transfers continuously transfer data bits every SPI clock cycle indefinitely until CSN is raised. The address will be incremented while the transaction is active for every two (2) bytes.
+QSPI uses the same mechanism that is offered by SPI, however instead of using MISO / MOSI the QSPI uses all four (4) bits for data transmission (IO3,IO2,IO1,IO0), see Figure 1.10. The device changes IO direction, on the data bytes, depending if a read operation transaction is issued.
+
+SCK
+
+CSN
+
+IO3
+
+CMD(7)
+
+CMD(3)
+
+D0(7)
+
+Dn(3)
+
+IO2
+
+CMD(6)
+
+CMD(2)
+
+D0(6)
+
+Dn(2)
+
+IO1
+
+CMD(5)
+
+CMD(1)
+
+D0(5)
+
+Dn(1)
+
+IO0
+
+CMD(4)
+
+CMD(0)
+
+D0(4)
+
+Dn(0)
+
+Figure 1.10: QSPI transaction.
+
+1.8 Interrupt controller and Timer
+The interrupt controller can be programmed to launch an asynchronous interrupt A on IRQ on certain events. This allows the MCU to sleep. Common interrupt events include packet reception, frame transmit completed, wakeup from sleep, and more. A low-power Timer is available in every mode except shutdown, which can wake up into higher sleep modes.
+
+1.9 NVM
+A 1 kbit Non-Volatile Memory (NVM) is available for storing calibration data.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+8
+
+2 PHY Layer Overview
+
+SR1120 Datasheet
+
+2.1 General
+The PHY layer is based on impulse radio signaling in the 6.7 - 9.2 GHz frequency band. Each radio is free to fill this spectrum, as long as local UWB spectral regulations are met. The aim is to transmit at a fast rate, then release the channel as soon as possible to enhance multi-user co-existence. This type of bursty transmission also greatly reduces power consumption as compared to time-spread UWB standards.
+The instantaneous bandwidth of the channel is 500 MHz to facilitate sufficient sensitivity at the receiver. The radio can transmit multiple packets at different RF frequencies in a 1 ms time frame, in order to fill more spectrum and increase the energy in a symbol. Information is encoded in the existence or nonexistence of a pulse train.
+On-Off Keying (OOK) is supported. The payload and CRC are optionally encoded with a 1/1.25, 1/1.375, 1/1.5, 1/1.625, 1/1.75, 1/1.875 or 1/2.0 Viterbi rate, punctured convolutional Forward Error Correction (FEC) code.
+
+2.2 Symbol Structure
+
+core_rate/ symbol_rate (20.48 MHz) core_rate/ symbol_rate (27.3067 MHz) core_rate/ symbol_rate (40.96 MHz)
+
+0
+
+1
+
+2
+
+3
+
+4
+
+5
+
+6
+
+7
+
+8
+
+9
+
+pos1 pos2 pos3 pos4 pos5 pos6 pos7
+
+pos9
+
+10 11
+
+Figure 2.1: Symbol Structure
+Figure 2.1 outlines the structure of a symbol. Each symbol has a length of PHY period, and is subdivided in pulse positions of 4.069 ns. Positions 1 to 6 and 7,9 can be controlled for pulse patterning.
+
+2.3 Encoding
+
+Base 1-bit Differential 2-bit Differential
+
+Data
+
+0
+
+1
+
+Symbol
+
+0
+
+1
+
+Data
+
+0
+
+1
+
+Symbols 10
+
+01
+
+Data Symbols
+
+00
+
+01
+
+11
+
+10
+
+1000 0100 0010 0001
+
+Figure 2.2: Encoding Formats
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+9
+
+SR1120 Datasheet
+Figure 2.2 outlines the available encoding formats. In the base modulation, the total absence of pulses encodes a 0 bit, and the existence of pulses encodes a 1 bit. Both preamble and sync word are encoded by the base modulation only.
+In addition, the payload and CRC can be optionally encoded in a half rate 1-bit or 2-bit differential encoding. 1-bit differential encoding represents bits in two OOK modulated symbols, with a zero bit encoded as a 1 followed by a 0, and a one bit encoded as a 0 followed by a 1. 2-bit differential encoding represents two bits in four OOK modulated symbols, one of which carries a 1 symbol and the other 3 carry a 0 symbol.
+
+2.4 Packet Structure
+
+ook /
+
+mod
+
+ook
+
+1b-ppm
+
+Preset-0
+
+mod selected preset (1 to 7 per pcfg) FEC
+
+PREAMBLE SFD
+16b/32b/64b
+
+CRC
+
+PCFG IOOK Address Retry Packet Size
+
+Header
+
+Count
+
+Payload
+
+RX RX Time Phase
+
+CRC
+
+off/4b
+Parity Preset# (1b) (3b)
+
+off/4b
+
+Parity off/8b/16b off/4b/8b off
+5b/8b
+
+Size off/8b
+
+off/(8b up to 2040b) off/(1-255 Bytes)
+
+off/16b
+
+off/8b
+
+off 13b/19b/25/31b
+
+Packet Size (#Bytes)
+
+FEC TAIL
+4b
+
+Figure 2.3: Packet Structure
+Figure 2.3 outlines the structure of a packet. Each packet consists of a preamble and sync word (SFD). The optional fields are inserted into the packet structure and do not consume any bits of the Payload.
+
+Field
+
+Availability
+
+Description
+
+Preamble SFD (Sync. word) PCFG IOOK Header Address Retry Count Packet Size Payload RX Time RX Phase CRC FEC Tail
+
+Always Always If PCFG enabled If modulation = IOOK If field enabled If field enabled If field enabled Always unless null If field enabled; auto-reply frame only If field enabled; auto-reply frame only If CRC enabled If FEC enabled
+
+Predefined alternating sequence of 0 and 1 symbols Start of frame delimiter Preset PHY configuration Indicates the polarity used for IOOK Addressing for packet filtering Number of times the transmission of the current frame was delayed due to CCA fail Variable size of payload in bytes Data bytes Timer value when the previous standalone frame was received by TX Phase tracking value when the previous standalone frame was received by TX CRC remainder to validate transfer integrity Necessary to complete the FEC code
+
+Table 2.4: Field Availability and Description
+
+If the address field is enabled, packet filtering is performed in the PHY layer based on the received address. If the packet size field is enabled, the receiver will put that exact amount of bytes into the FIFO. In default broadcast, these fields are disabled and the default packet size is 16 bytes.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+10
+
+3 Pinout
+3.1 Package
+
+SR1120 Datasheet
+
+Figure 3.1: QFN32 Package (top view)
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+11
+
+3.2 Pinouts
+
+SR1120 Datasheet
+
+Name
+
+Pin
+
+Type
+
+Description
+
+RFP RFN CSN SCK SPI_IO0/MOSI SPI_IO1/MISO SPI_IO2 SPI_IO3 XTAL_C1 XTAL_C2 NC SYNC_TXEN
+ANT SHUTDOWN
+RSTN IRQ PLL_CLK XTAL_CLK VDD_ANA VDD_BAT VDD_IO VDD_CORE_ANA VDD_CORE_DIG VDD_REG VDD_PA
+REG_OUT GND
+
+30 29 10 11 12 13 14 15 2 3 1 5
+6 7
+16 9 19 18 4 21 20 27 24 8 23
+22 17,25,26,28,31,32,33
+
+Analog Input/Output Analog Input/Output Digital Input Digital Input Digital Input/Output Digital Input/Output Digital Input/Output Digital Input/Output Analog Input Analog Output No connect Digital Output
+Digital Output Digital Input
+Digital Input Digital Output Digital Input/Output Digital Input/Output Power Power Power Power Power Power Power
+Analog Output Power
+
+Positive RF input/output. Negative RF input/output. SPI Chip Select. SPI clock. SPI data 0 or MOSI. SPI data 1 or MISO. SPI data 2. SPI data 3. 32.768 kHz crystal oscillator pin 1. 32.768 kHz crystal oscillator pin 2.
+Multipurpose IO, Recommended test point connection. Antenna switch driver. Normal operation when pin is low, chip is off when pin is high. Connect to GND if not used. Main reset pin; driving it low resets the SR1120. Generates user-configurable external interrupt. PLL external clock input/output. XTAL external clock input/output. Supply for analog circuits, connect to VDD_BAT. Supply for switching/digital circuits. Supply for IO cells. Regulated 1V supply to analog radio PHY. Regulated 1V supply to digital radio PHY. Connect to decoupling capacitor. Supply for PA, connect to either VDD_BAT or VDD_CORE. Output of DC-DC regulator. All GND pins must be connected together in the lowest impedance possible. Return currents are directed through the QFN thermal pad.
+
+Table 3.2: Pin Descriptions.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+12
+
+4 Application Overview
+4.1 Application Circuit
+
+SR1120 Datasheet
+
+Figure 4.1: Application reference circuit The schematic of a typical application is given in figure above.
+
+4.2 Application Guidelines
+Please observe the following guidelines:
+· Connect RFP and RFN to the balun/antenna with a 100 Ohm differential transmission line. · Connect VDD, VDD_HOST to the supply voltage with a low impedance trace. · Place CVDD_BAT_1 and CVDD_BAT_2 as close as possible to VDD_BAT (CVDD_BAT_1 and CVDD_BAT_2 can be
+increased for better supply noise rejection). · Place CVDD_ANA_1 and CVDD_ANA_2 as close as possible to VDD_ANA (CVDD_ANA_1 and CVDD_ANA_2 can be
+increased for better supply noise rejection). · Connect supply to VDD_PA and place CPA as close as possible to VDD_PA pin. · Place CCORE_ANA and CCORE_DIG as close as possible to VDD_CORE_ANA and VDD_CORE_DIG pins. · Place CLDO as close as possible to VDD_REG pin. · When using SPI interface, connect CS, SCK, SPI_IO0/MOSI, SPI_IO1/MISO, RSTN and IRQ to your MCU.
+When using QSPI interface, connect all the QSPI_IO0-3 to your MCU. · Use of SHUTDOWN is optional. If not used, connect SHUTDOWN to GND. · Connect all GND pins to GND. Connect all GND pads together with low impedance.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+13
+
+SR1120 Datasheet
+· When using XTAL_CLK and/or PLL_CLK as clock inputs, connect to your clock source. Leave unconnected otherwise.
+· Minimize the capacitance on the REG_OUT node, including the parallel capacitance of the inductor. · Adjust Cx1 and Cx2 to the specifications of your crystal. · Inductor LDCDC shall be < 0.75  DCR, > 200 mA saturation current, and > 200 MHz self-resonance frequency.
+4.2.1 Recommended Part Values
+For recommended component values, please refer to the SR1120 Hardware Design Guide, which is included in the EVK Brief available for download at: https://www.sparkmicro.com/evks/sr1120-evaluation-kit/
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+14
+
+5 Electrical Characteristics
+5.1 Maximum Ratings
+
+SR1120 Datasheet
+
+PARAMETER
+
+TEST CONDITIONS MIN MAX UNIT
+
+Storage Temperature Pin Voltage (VDD_BAT) Pin Voltage (VDD_ANA)1 Pin Voltage (Analog I/O)1 Pin Voltage (VDD_IO)2 Pin Voltage (Digital I/O)2 Pin Voltage (VDD_PA) Pin Voltage (VDD_CORE_ANA) Pin Voltage (VDD_CORE_DIG) Pin Voltage, VDD_ANA - VDD_BAT Pin Voltage(Analog I/O) - VDD_BAT Pin Voltage, VDD_IO - VDD_BAT Pin Voltage(Digital I/O) - VDD_BAT Pin Voltage, VDD_PA - VDD_BAT ESD (Human Body Model) ESD (Charged Device Model)
+
+-50 150 °C -0.3 3.6 V -0.3 3.6 V -0.3 3.6 V -0.3 3.6 V -0.3 3.6 V -0.3 3.6 V -0.3 1.1 V -0.3 1.1 V
+0.3 V 0.3 V 0.3 V 0.3 V 0.3 V 2500 V 750 V
+
+Table 5.1: Absolute Maximum Ratings.
+
+(1)VDD_ANA supplies all analog input and output pins, as specified in Table 3.2. (2)VDD_IO supplies all digital input and output pins, as specified in Table 3.2.
+
+5.2 Recommended Operating Conditions
+
+PARAMETER
+
+TEST CONDITIONS
+
+MIN TYP MAX UNIT
+
+Operating Temperature
+
+-40
+
+Supply Voltage
+
+Voltage on VDD_ANA, VDD/IO, VDD_BAT 1.8
+
+Supply Voltage
+
+Voltage on VDD_PA
+
+1.0
+
+85 °C 3.3 V 3.3 V
+
+Table 5.2: Recommended Operating Conditions.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+15
+
+5.3 DC characteristics
+
+SR1120 Datasheet
+
+Parameter
+
+Test Conditions MIN TYP MAX UNIT
+
+Shutdown Current, VDD_BAT
+
+VDD_BAT=3.3V
+
+157
+
+nA
+
+VDD_BAT=2.5V
+
+20
+
+nA
+
+VDD_BAT=1.8V
+
+6
+
+nA
+
+Deep Sleep Current, VDD_BAT
+
+VDD_BAT=3.3V
+
+1.1
+
+uA
+
+VDD_BAT=2.5V
+
+0.77
+
+uA
+
+VDD_BAT=1.8V
+
+0.57
+
+uA
+
+Shallow Sleep Current, VDD_BAT VDD_BAT=3.3V
+
+58
+
+uA
+
+VDD_BAT=2.5V
+
+57
+
+uA
+
+VDD_BAT=1.8V
+
+57
+
+uA
+
+Idle Current, VDD_BAT
+
+VDD_BAT=3.3V
+
+390
+
+uA
+
+VDD_BAT=2.5V
+
+450
+
+uA
+
+VDD_BAT=1.8V
+
+565
+
+uA
+
+DLL On Current, VDD_BAT
+
+VDD_BAT=3.3V
+
+500
+
+uA
+
+VDD_BAT=2.5V
+
+580
+
+uA
+
+VDD_BAT=1.8V
+
+740
+
+uA
+
+TX Current1,2 , VDD_BAT
+
+VDD_BAT=3.3V
+
+3.3
+
+mA
+
+VDD_BAT=2.5V
+
+4.2
+
+mA
+
+VDD_BAT=1.8V
+
+5.7
+
+mA
+
+RX Current, VDD_BAT
+
+VDD_BAT=3.3V
+
+9.7
+
+mA
+
+VDD_BAT=2.5V
+
+12.1
+
+mA
+
+VDD_BAT=1.8V
+
+16
+
+mA
+
+Shutdown Current, VDD_PA
+
+VDD_PA=1.8V
+
+125
+
+nA
+
+Deep Sleep Current, VDD_PA
+
+VDD_PA=1.8V
+
+0.27
+
+uA
+
+Shallow Sleep Current, VDD_PA VDD_PA=1.8V
+
+0.30
+
+uA
+
+Idle Current, VDD_PA
+
+VDD_PA=1.8V
+
+1.2
+
+uA
+
+DLL On Current, VDD_PA TX Current1,2 , VDD_PA
+
+VDD_PA=1.8V VDD_PA=1.8V
+
+1.2
+
+uA
+
+6
+
+mA
+
+RX Current, VDD_PA
+
+VDD_PA=1.8V
+
+11
+
+uA
+
+Table 5.3: DC characteristics.
+
+(1)TX current given for phy_rate = 20.48 MHz, number of pulses per symbol = 2, continuous pulse transmission (OOK all ones). Note that this is equivalent to the TX current for phy_rate = 40.96 MHz, number of pulses per symbol = 1, continuous pulse transmission (OOK all ones)
+(2)TX current scales with phy_rate, number of pulses per symbol, and the density of OOK ones in the transmission.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+16
+
+5.4 Timing characteristics
+
+SR1120 Datasheet
+
+PARAMETER
+
+TEST CONDITIONS
+
+MIN TYP MAX UNIT
+
+Reset hold time
+
+RSTN low
+
+10
+
+ms
+
+NVM startup time
+
+After entering Idle mode from Shallow Sleep 25
+
+us
+
+Transition time-Shutdown to Deep sleep
+
+20
+
+ms
+
+Transition time-Deep sleep to Shallow sleep
+
+1.5
+
+ms
+
+Transition time-Shallow sleep to Idle
+
+32
+
+us
+
+Transition time-Idle to Active
+
+500
+
+ns
+
+Table 5.4: Timing characteristics.
+
+5.5 Internal XTAL Characteristics
+
+PARAMETER
+
+TEST CONDITIONS MIN TYP MAX UNIT
+
+Crystal oscillator frequency Crystal frequency tolerance Startup time
+
+32.768
+
+kHz
+
+-30
+
++30 ppm
+
+1.5 1.75
+
+2s
+
+Table 5.5: Internal XTAL characteristics.
+
+5.6 External XTAL Requirements
+
+PARAMETER
+
+TEST CONDITIONS1 MIN TYP MAX UNIT
+
+Clock frequency Frequency tolerance Duty cycle Jitter2
+
+32.768
+
+KHz
+
+-30
+
++30 ppm
+
+50
+
+%
+
+2 ns (rms)
+
+Table 5.6: External XTAL characteristics.
+
+(1)General test conditions: VDD_BAT = 1.8 V to 3.3 V (2)Time interval error (TIE) measurement, 106 clock cycles minimum. Jitter is expressed as RMS of TIE distribution.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+17
+
+5.7 Internal PLL Characteristics
+
+SR1120 Datasheet
+
+PARAMETER
+
+TEST CONDITIONS1 MIN TYP MAX UNIT
+
+PLL Output frequency PLL Output frequency PLL Output frequency PLL Startup time
+
+20.48 27.3067
+40.96 1.5
+
+MHz MHz MHz ms
+
+Table 5.7: Internal PLL characteristics.
+
+(1)General test conditions: VDD_BAT = 1.8 V to 3.3 V
+
+5.8 External PLL Requirements
+
+PARAMETER
+
+TEST CONDITIONS1 MIN TYP MAX UNIT
+
+Clock frequency Clock frequency Clock frequency Frequency tolerance Duty cycle Jitter2
+
+20.48
+
+MHz
+
+27.3067
+
+MHz
+
+40.96
+
+MHz
+
+-30
+
++30 ppm
+
+50
+
+%
+
+2 ns (rms)
+
+Table 5.8: External PLL characteristics.
+
+(1)General test conditions: VDD_BAT = 1.8 V to 3.3 V (2)Time interval error (TIE) measurement, 106 clock cycles minimum. Jitter is expressed as RMS of TIE distribution.
+
+5.9 DC-DC Characteristics
+
+PARAMETER TEST CONDITIONS
+
+MIN TYP MAX UNIT
+
+Output voltage
+
+1.0
+
+V
+
+Efficiency
+
+20 mW load
+
+75
+
+%
+
+Ripple voltage C_DCDC = 1.0 uF L_DCDC = 180 nH
+
+10
+
+mV
+
+Table 5.9: DC-DC characteristics.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+18
+
+5.10 Radio Characteristics
+5.10.1 Transmitter
+
+SR1120 Datasheet
+
+Parameter
+
+Test Conditions1
+
+MIN TYP MAX UNIT
+
+TX Average Power, Symbol Energy2,3
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+-3.0
+
+dBm / 20.48 MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+-7.7
+
+dBm / 20.48 MHz
+
+num_pulse = 2, pulse_width = med, tx_power = max
+
+0.1
+
+dBm / 20.48 MHz
+
+num_pulse = 2, pulse_width = med, tx_power = min
+
+-4.6
+
+dBm / 20.48 MHz
+
+num_pulse = 3, pulse_width = med, tx_power = max
+
+2.0
+
+dBm / 20.48 MHz
+
+num_pulse = 3, pulse_width = med, tx_power = min
+
+-2.7
+
+dBm / 20.48 MHz
+
+TX Average Power Step Size
+
+num_pulse = 1,2 or 3, pulse_width = med, tx_power =
+
+0.7
+
+dB
+
+min to max
+
+TX Bandwidth4
+
+num_pulse = 2, pulse_width = max, tx_power = max
+
+380
+
+MHz
+
+num_pulse = 2, pulse_width = med, tx_power = max
+
+565
+
+MHz
+
+num_pulse = 2, pulse_width = min, tx_power = max
+
+770
+
+MHz
+
+TX Lower Sidelobe Power
+
+num_pulse = 2, pulse_width = max, tx_power = max
+
+-24
+
+dBc
+
+num_pulse = 2, pulse_width = min, tx_power = max
+
+-28
+
+dBc
+
+TX Upper Sidelobe Power
+
+num_pulse = 2, pulse_width = max, tx_power = max
+
+-21
+
+dBc
+
+num_pulse = 2, pulse_width = min, tx_power = max
+
+-22
+
+dBc
+
+Peak Power Spectral Density3,5 num_pulse = 1, pulse_width = med, tx_power = max
+
+-5.9
+
+dBm / MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+-11.2
+
+dBm / MHz
+
+num_pulse = 2, pulse_width = med, tx_power = max
+
+-1.2
+
+dBm / MHz
+
+num_pulse = 2, pulse_width = med, tx_power = min
+
+-6.5
+
+dBm / MHz
+
+num_pulse = 3, pulse_width = med, tx_power = max
+
+0.4
+
+dBm / MHz
+
+num_pulse = 3, pulse_width = med, tx_power = min
+
+-4.9
+
+dBm / MHz
+
+Instantaneous Peak Power3
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+2.9
+
+Vpp
+
+10.7
+
+dBm
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+1.9
+
+Vpp
+
+6.6
+
+dBm
+
+TX Center Frequency
+
+6.7
+
+9.2 GHz
+
+Table 5.10: Radio TX characteristics PHY_Rate = 20.48 MHz, VDD_PA = 1.8 V
+
+(1)General test conditions: VDD_BAT = 3.3 V, VDD_PA = 1.8 V, phy rate = 20.48 MHz, frequency = 7.5 GHz, symbol pattern = OOK all ones. (2)Symbol energy expressed as dBm / 20.48 MHz, equal to the average power integrated over an entire symbol duration (Tsymbol = 1/phy rate). (3)Measured as differential output at chip edge (RFP pin - RFN pin) into 100 ohm balanced load. (4)Equivalent bandwidth containing 90% of spectral energy. (5)Peak power, resolution bandwidth = 50 MHz.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+19
+
+SR1120 Datasheet
+
+Parameter TX Average Power, Symbol Energy2,3
+TX Average Power Step Size TX Bandwidth4 TX Lower Sidelobe Power TX Upper Sidelobe Power Peak Power Spectral Density3,5
+Instantaneous Peak Power3
+TX Center Frequency
+
+Test Conditions1
+num_pulse = 1, pulse_width = med, tx_power = max
+num_pulse = 1, pulse_width = med, tx_power = min num_pulse = 2, pulse_width = med, tx_power = max num_pulse = 2, pulse_width = med, tx_power = min num_pulse = 3, pulse_width = med, tx_power = max num_pulse = 3, pulse_width = med, tx_power = min num_pulse = 1,2 or 3, pulse_width = med, tx_power = min to max num_pulse = 2, pulse_width = max, tx_power = max num_pulse = 2, pulse_width = med, tx_power = max num_pulse = 2, pulse_width = min, tx_power = max num_pulse = 2, pulse_width = max, tx_power = max num_pulse = 2, pulse_width = min, tx_power = max num_pulse = 2, pulse_width = max, tx_power = max num_pulse = 2, pulse_width = min, tx_power = max num_pulse = 1, pulse_width = med, tx_power = max num_pulse = 1, pulse_width = med, tx_power = min num_pulse = 2, pulse_width = med, tx_power = max num_pulse = 2, pulse_width = med, tx_power = min num_pulse = 3, pulse_width = med, tx_power = max num_pulse = 3, pulse_width = med, tx_power = min num_pulse = 1, pulse_width = med, tx_power = max
+num_pulse = 1, pulse_width = med, tx_power = min
+
+MIN TYP MAX UNIT
+
+-6.5
+
+dBm / 20.48 MHz
+
+-9.8
+
+dBm / 20.48 MHz
+
+-3.4
+
+dBm / 20.48 MHz
+
+-6.7
+
+dBm / 20.48 MHz
+
+-1.6
+
+dBm / 20.48 MHz
+
+-4.9
+
+dBm / 20.48 MHz
+
+0.5
+
+dB
+
+360
+
+MHz
+
+545
+
+MHz
+
+750
+
+MHz
+
+-18
+
+dBc
+
+-25
+
+dBc
+
+-14
+
+dBc
+
+-20
+
+dBc
+
+-9.3
+
+dBm / MHz
+
+-13.1
+
+dBm / MHz
+
+-4.6
+
+dBm / MHz
+
+-8.4
+
+dBm / MHz
+
+-3.3
+
+dBm / MHz
+
+-7.1
+
+dBm / MHz
+
+1.88
+
+Vpp
+
+6.4
+
+dBm
+
+1.48
+
+Vpp
+
+4.4
+
+dBm
+
+6.7
+
+9.2 GHz
+
+Table 5.11: Radio TX characteristics PHY_Rate = 20.48 MHz, VDD_PA = 1.0 V
+
+(1)General test conditions: VDD_BAT = 3.3 V, VDD_PA = 1.0 V, phy rate = 20.48 MHz, frequency = 7.5 GHz, symbol pattern = OOK all ones. (2)Symbol energy expressed as dBm / 20.48 MHz, equal to the average power integrated over an entire symbol duration (Tsymbol = 1/phy rate). (3)Measured as differential output at chip edge (RFP pin - RFN pin) into 100 ohm balanced load. (4)Equivalent bandwidth containing 90% of spectral energy. (5)Peak power, resolution bandwidth = 50 MHz.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+20
+
+SR1120 Datasheet
+
+Parameter TX Average Power, Symbol Energy2,3 TX Average Power Step Size TX Bandwidth4
+TX Lower Sidelobe Power TX Upper Sidelobe Power Peak Power Spectral Density3,5 Instantaneous Peak Power3
+TX Center Frequency
+
+Test Conditions1
+
+MIN TYP MAX UNIT
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+0.0
+
+dBm / 40.96 MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+-4.8
+
+dBm / 40.96 MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min to max
+
+0.7
+
+dB
+
+num_pulse = 1, pulse_width = max, tx_power = max
+
+375
+
+MHz
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+565
+
+MHz
+
+num_pulse = 1, pulse_width = min, tx_power = max
+
+770
+
+MHz
+
+num_pulse = 1, pulse_width = max, tx_power = max
+
+-24
+
+dBc
+
+num_pulse = 1, pulse_width = min, tx_power = max
+
+-28
+
+dBc
+
+num_pulse = 1, pulse_width = max, tx_power = max
+
+-15
+
+dBc
+
+num_pulse = 1, pulse_width = min, tx_power = max
+
+-23
+
+dBc
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+-5.2
+
+dBm / MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+-10.6
+
+dBm / MHz
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+2.90
+
+Vpp
+
+10.7
+
+dBm
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+1.90
+
+Vpp
+
+6.6
+
+dBm
+
+6.7
+
+9.2 GHz
+
+Table 5.12: Radio TX characteristics PHY_Rate = 40.96 MHz, VDD_PA = 1.8 V
+
+(1)General test conditions: VDD_BAT = 3.3 V, VDD_PA = 1.8 V, phy rate = 40.96 MHz, frequency = 7.5 GHz, symbol pattern = OOK all ones. (2)Symbol energy expressed as dBm / 40.96 MHz, equal to the average power integrated over an entire symbol duration (Tsymbol = 1/phy rate). (3)Measured as differential output at chip edge (RFP pin - RFN pin) into 100 ohm balanced load. (4)Equivalent bandwidth containing 90% of spectral energy. (5)Peak power, resolution bandwidth = 50 MHz.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+21
+
+SR1120 Datasheet
+
+Parameter TX Average Power, Symbol Energy2,3 TX Average Power Step Size TX Bandwidth4
+TX Lower Sidelobe Power TX Upper Sidelobe Power Peak Power Spectral Density3,5 Instantaneous Peak Power3
+TX Center Frequency
+
+Test Conditions1
+
+MIN TYP MAX UNIT
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+-3.5
+
+dBm / 40.96 MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+-6.8
+
+dBm / 40.96 MHz
+
+num_pulse = 1, pulse_width = med, tx_power =min to max
+
+0.5
+
+dB
+
+num_pulse = 1, pulse_width = max, tx_power = max
+
+375
+
+MHz
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+565
+
+MHz
+
+num_pulse = 1, pulse_width = min, tx_power = max
+
+770
+
+MHz
+
+num_pulse = 1, pulse_width = max, tx_power = max
+
+-24
+
+dBc
+
+num_pulse = 1, pulse_width = min, tx_power = max
+
+-28
+
+dBc
+
+num_pulse = 1, pulse_width = max, tx_power = max
+
+-15
+
+dBc
+
+num_pulse = 1, pulse_width = min, tx_power = max
+
+-23
+
+dBc
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+-8.7
+
+dBm / MHz
+
+num_pulse = 1, pulse_width = med, tx_power = min
+
+-12.5
+
+dBm / MHz
+
+num_pulse = 1, pulse_width = med, tx_power = max
+
+1.88
+
+Vpp
+
+6.4
+
+dBm
+
+num_pulse=1, pulse_width=med, tx_power=min
+
+1.48
+
+Vpp
+
+4.4
+
+dBm
+
+6.7
+
+9.2 GHz
+
+Table 5.13: Radio TX characteristics PHY_Rate = 40.96 MHz, VDD_PA = 1.0 V
+
+(1)General test conditions: VDD_BAT = 3.3 V, VDD_PA = 1.0V, phy rate = 40.96 MHz, frequency = 7.5 GHz, symbol pattern = OOK all ones. (2)Symbol energy expressed as dBm / 40.96 MHz, equal to the average power integrated over an entire symbol duration (Tsymbol = 1/phy rate). (3)Measured as differential output at chip edge (RFP pin - RFN pin) into 100 ohm balanced load. (4)Equivalent bandwidth containing 90% of spectral energy. (5)Peak power, resolution bandwidth = 50 MHz.
+
+5.10.2 Receiver
+
+Parameter
+
+Test Conditions1
+
+MIN TYP MAX UNIT
+
+RX Sensitivity2,3
+
+num_pulse = 1, symbol_rate = 20.48 MHz
+
+-81.0
+
+dBm / 20.48 MHz
+
+num_pulse = 2, symbol_rate = 20.48 MHz
+
+-80.5
+
+dBm / 20.48 MHz
+
+num_pulse = 3, symbol_rate = 20.48 MHz
+
+-79.5
+
+dBm / 20.48 MHz
+
+num_pulse = 1, symbol_rate = 40.96 MHz
+
+-79.0
+
+dBm / 40.96 MHz
+
+RX Center Frequency
+
+6.7
+
+9.2 GHz
+
+Table 5.14: Radio Receiver characteristics.
+
+(1)General test conditions: VDD_BAT = 3.3 V, freq = 7.5 GHz, FEC = 1.5, packet payload length = 32 bytes, modulation = iOOK. (2)Sensitivity expressed as average power during a data symbol, whose duration Tsymbol = 1 / symbol_rate. The symbol rate is equal to the PHY rate. (3)Sensitivity based on a received packet error rate threshold of 10%.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+22
+
+5.11 IO Characteristics
+
+SR1120 Datasheet
+
+PARAMETER
+
+TEST CONDITIONS1
+
+MIN
+
+TYP
+
+MAX
+
+UNIT
+
+Input low-level voltage (VIL) Input high-level voltage (VIH) Output low-level voltage (VOL) Output high-level voltage (VOH) Input low-level leakage current (IIL) Input high-level leakage current (IIH) Output low-level current (IOL)2 Output high-level current (IOH)3
+
+VDD_BAT = 3.3 V, VDD_IO = 3.3 V VDD_BAT = 1.8 V, VDD_IO = 1.8 V VDD_BAT = 3.3 V, VDD_IO = 3.3 V VDD_BAT = 1.8 V, VDD_IO = 1.8 V VDD_BAT = 3.3 V, VDD_IO = 3.3 V, IOL = 5 mA VDD_BAT = 1.8 V, VDD_IO = 1.8 V, IOL = 5 mA VDD_BAT = 3.3V, VDD_IO = 3.3V, IOH = -5 mA VDD_BAT = 1.8 V, VDD_IO = 1.8 V, IOH = -5mA VDD_BAT = 3.3 V, VDD_IO = 3.3 V, Input pin to 0 V VDD_BAT = 1.8 V, VDD_IO = 1.8 V, Input pin to 0 V VDD_BAT = 3.3 V, VDD_IO = 3.3 V, Input pin to 3.3 V VDD_BAT = 1.8 V, VDD_IO = 1.8 V, Input pin to 1.8 V VDD_BAT = 3.3 V, VDD_IO = 3.3 V, Output pin to 3.3 V VDD_BAT = 1.8V, VDD_IO = 1.8V, Output pin to 1.8V VDD_BAT = 3.3 V, VDD_IO = 3.3 V, Output pin to 0 V VDD_BAT = 1.8 V, VDD_IO = 1.8 V, Output pin to 0 V
+
+0.7*VDD_IO 0.7*VDD_IO
+0.9*VDD_IO 0.9*VDD_IO
+-15 -3
+-28 -32
+
+0.3*VDD_IO V
+
+0.3*VDD_IO V
+
+V
+
+V
+
+0.1*VDD_IO V
+
+0.1*VDD_IO V
+
+V
+
+V
+
+nA
+
+nA
+
+30
+
+nA
+
+3
+
+nA
+
+22
+
+mA
+
+30
+
+mA
+
+mA
+
+mA
+
+Table 5.15: IO characteristics.
+
+(1)All measurements at 25 °C. For VDD_IO = 3.3 V, digital drive strength (outimped) = 0. For VDD_IO = 1.8 V, digital drive strength (outimped) = 3. (2)IOL is sink current (indicated with positive polarity) (3)IOH is source current (indicated with negative polarity)
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+23
+
+6 Register Description
+6.1 Register 0x01
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+XTAL_CLK 0
+
+2
+
+rw
+
+0
+
+CHIP_CLK 2
+
+2
+
+rw
+
+0
+
+RESERVED 4
+
+1
+
+rw
+
+0
+
+RESERVED 5
+
+1
+
+rw
+
+0
+
+CHIP_RATE 6
+
+2
+
+rw
+
+0
+
+OUTIMPED 8
+
+2
+
+rw
+
+0
+
+QSPI
+
+10
+
+2
+
+rw
+
+0
+
+FASTMISO 12
+
+1
+
+rw
+
+0
+
+IRQPOLAR 13
+
+1
+
+rw
+
+1
+
+RESERVED 14
+
+1
+
+rw
+
+0
+
+RESERVED 15
+
+1
+
+rw
+
+0
+
+Table 6.1: Address 0x01
+
+XTAL_CLK: Controls which clock source is used for the XTAL clock, and the output on the XTAL_CLK pin.
+
+Value Internal XTAL Osc XTAL Clock Source XTAL_CLK Pin State
+
+0
+
+Enabled
+
+1
+
+Enabled
+
+2
+
+Disabled
+
+3
+
+Enabled
+
+Internal Internal External External
+
+High-Z Output Internal Input External Input External
+
+Table 6.2: XTAL_CLK
+
+CHIP_CLK: Controls which clock source is used for the chip clock, and the output on the PLL_CLK pin.
+
+Value Internal PLL Osc Chip Clock Source PLL_CLK Pin State
+
+0
+
+Enabled
+
+1
+
+Enabled
+
+2
+
+Disabled
+
+3
+
+Enabled
+
+Internal Internal External External
+
+High-Z Output Internal Input External Input External
+
+Table 6.3: CHIP_CLK
+
+CHIP_RATE: Transceiver PHY chip rate.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+24
+
+SR1120 Datasheet
+
+Value Chip Rate (MHz)
+
+0
+
+20.48
+
+1
+
+40.96
+
+2
+
+27.31
+
+3
+
+Reserved
+
+Table 6.4: CHIP_RATE
+
+IRQPOLAR: Interrupt ReQuest output pin polarity. 1: the IRQ pin is active high. 0: the IRQ pin is active low.
+FASTMISO: Enables faster SPI response on MISO. 0: MISO changes on falling edge of SCK. 1: MISO changes as soon as data is ready.
+OUTIMPED: Strength of digital IO driver. 2-bit value from 0 to 3, 0 is weakest driver, 3 is strongest driver.
+QSPI: Operating mode of the SPI/QSPI interface. In mode 3, 6 dummy cycles are discarded before the first read byte following an instruction byte, and 8 dummy cycles are discarded before listening for an instruction byte following a data byte, or a falling edge on the CSN pin.
+
+Value Mode Dummy Cycles SPI_IO0 SPI_IO1 SPI_IO2 SPI_IO3
+
+0
+
+SPI N/A
+
+1
+
+QSPI 0
+
+2
+
+QSPI 1
+
+3
+
+QSPI 6 + 8
+
+Input I/O I/O I/O
+
+Output I/O I/O I/O
+
+High Z I/O I/O I/O
+
+High Z I/O I/O I/O
+
+Table 6.5: QSPI
+
+6.2 Register 0x02
+
+Name
+
+Offset Width Access Reset
+
+DLTUNING 0
+
+5
+
+rw
+
+0x10
+
+DL_LAGS 5
+
+1
+
+ro
+
+0
+
+IREFPINE 5
+
+1
+
+wo
+
+0
+
+IREFTUNE 6
+
+6
+
+rw
+
+0x20
+
+VREFTUNE 12
+
+4
+
+rw
+
+0x08
+
+Table 6.6: Address 0x02
+
+IREFTUNE: Adjustment of transceiver reference current. Read from chip NVM and copy in this field. VREFTUNE: Adjustment of transceiver reference voltage. Read from chip NVM and copy in this field. DLTUNING: 5-bit tuning of transceiver Delay Line. Adjust until DL_LAGS flips from 1 to 0. DL_LAGS: Read-only bit to determine Delay Line locking. 0: Delay Line is early. 1: Delay Line is late.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+25
+
+6.3 Registers 0x04-0x05
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+CCAONTIME 0
+
+4
+
+rw
+
+0x01
+
+MAXRETRY 4
+
+4
+
+rw
+
+0
+
+TXANYWAY 8
+
+1
+
+rw
+
+1
+
+IGNORPKT 9
+
+1
+
+rw
+
+1
+
+CCAINTERV 10
+
+6
+
+rw
+
+0x03
+
+Table 6.7: Address 0x04
+
+Name
+
+Offset Width Access Reset
+
+CCATHRES 0 RESERVED 7 RESERVED 8
+
+7
+
+rw
+
+1
+
+rw
+
+7
+
+rw
+
+0x50 0 0
+
+Table 6.8: Address 0x05
+
+MAXRETRY: Maximum number of Clear Channel Assessment retries, 4-bit value.
+CCAONTIME: Duration of CCA check, 4-bit value, expressed in number of chip cycles = ( CCAONTIME + 1) X 8.
+CCAINTERV: Interval in between CCA checks, 6-bit value, expressed in number of chip cycles = ( CCAINTERV + 1 ) X 32.
+IGNORPKT: Block packet reception during CCA checks. 1: Do not trigger on packet during CCA, 0: Attempt to trigger on packet during CCA. Reserved: default to 1.
+TXANYWAY: Action to be taken after MAXRETRY number of CCA checks have failed. 1: Transmit packet anyway. 0: Do not transmit.
+CCATHRES: Decision threshold for CCA checks. Values range from 0 to 115, with lower values indicating stronger signals, and higher values indicating weaker signals. Each step represents about 0.5 dB in signal power. Recommended value: 70.
+
+6.4 Register 0x07
+
+Name
+
+Offset Width Access Reset
+
+INTEGGAIN 0
+
+4
+
+rw
+
+RESERVED 4
+
+3
+
+rw
+
+RESERVED 7
+
+1
+
+rw
+
+RESERVED 8
+
+4
+
+rw
+
+LNA_FREQ 12
+
+4
+
+rw
+
+0x08 0x04 0 0x0C 0x08
+
+Table 6.9: Address 0x07
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+26
+
+SR1120 Datasheet
+INTEGGAIN: Adjust optimal integrator gain before ADC, 4-bit value. Adjust based on PHY chip rate and number of pulses transmitted per symbol by the transmitter.
+
+Chip Rate (MHz) TX Pulse Count INTEGGAIN Value
+
+20.48
+
+1
+
+10
+
+20.48
+
+2
+
+8
+
+20.48
+
+3
+
+7
+
+40.96
+
+1
+
+13
+
+40.96
+
+2
+
+10
+
+40.96
+
+3
+
+9
+
+27.31
+
+1
+
+11
+
+27.31
+
+2
+
+9
+
+27.31
+
+3
+
+8
+
+Table 6.10: INTEGGAIN
+
+LNA_FREQ: Frequency tuning of the receiver LNA, 4-bit value. Adjust based on channel center frequency, codes 0xB to 0xF are reserved.
+
+Value
+
+0x0 0x1 0x2 0x3 0x4 0x5 0x6 0x7 0x8 0x9 0xA
+
+Freq (GHz) 9.09 8.60 8.36 7.95 7.70 7.45 7.21 7.05 6.68 6.43 6.31
+
+Band
+
+222 210 204 194 188 182 176 172 163 157 154
+
+Table 6.11: LNA Frequency Tuning
+
+6.5 Registers 0x08-0x09
+
+Name
+
+Offset Width Access Reset
+
+RXBANDFRE 0 CFG1FREQ 8
+
+6
+
+rw
+
+6
+
+rw
+
+0x20 0x20
+
+Table 6.12: Address 0x08
+
+Name
+
+Offset Width Access Reset
+
+CFG2FREQ 0 CFG3FREQ 8
+
+6
+
+rw
+
+6
+
+rw
+
+0x20 0x20
+
+Table 6.13: Address 0x09
+
+RXBANDFRE: VCRO code used during reception, tuning the center frequency band, 6-bit value.
+CFG1FREQ, CFG2FREQ, CFG3FREQ: VCRO code used during transmission, tuning the center frequency band, 6-bit value. Separate fields for three pulse configuration.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+27
+
+6.6 Registers 0x0A
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+CFG1WIDTH 0
+
+3
+
+rw
+
+0x04
+
+CFG2WIDTH 4
+
+3
+
+rw
+
+0x04
+
+CFG3WIDTH 8
+
+3
+
+rw
+
+0x04
+
+TX_POWER 12
+
+3
+
+rw
+
+0x04
+
+RANDPULS 15
+
+1
+
+rw
+
+1
+
+Table 6.14: Address 0x0A
+
+CFG1WIDTH, CFG2WIDTH, CFG3WIDTH: Control of transmitted pulse width, 3-bit value. Lower value is shorter pulse (wider TX bandwidth), higher value is longer pulse (narrower TX bandwidth). Separate fields for three pulse configuration.
+TX_POWER: Amplitude control of transmitted pulse, 3-bit value. Lower value is higher amplitude, higher value is lower amplitude.
+RANDPULS: Randomizes the phase of each pulse. Reserved: default to 1.
+
+6.7 Registers 0x0B
+
+Name
+
+Offset Width Access Reset
+
+POS1PULSE 0
+
+2
+
+rw
+
+POS2PULSE 2
+
+2
+
+rw
+
+POS3PULSE 4
+
+2
+
+rw
+
+POS4PULSE 6
+
+2
+
+rw
+
+POS5PULSE 8
+
+2
+
+rw
+
+POS6PULSE 10
+
+2
+
+rw
+
+POS7PULSE 12
+
+2
+
+rw
+
+POS9PULSE 14
+
+2
+
+rw
+
+0 0x01 0 0x01 0 0 0 0
+
+Table 6.15: Address 0x0B
+
+POS1PULSE, POS2PULSE, POS3PULSE, POS4PULSE, POS5PULSE, POS6PULSE, POS7PULSE, POS9PULSE: For pulse positions 1-9 (excluding 8) in each transmitted symbol, POSxPULSE is a 2-bit value determining the content of that pulse position:
+
+Value Pulse Position Content
+
+0
+
+No Pulse
+
+1
+
+Pulse Configuration 1
+
+2
+
+Pulse Configuration 2
+
+3
+
+Pulse Configuration 3
+
+Table 6.16: POSxPULSE
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+28
+
+6.8 Registers 0x0C-0xD
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+SLPPERIOD[15-0] 0
+
+16
+
+rw
+
+0x07FF
+
+Table 6.17: Address 0x0C
+
+Name
+
+Offset Width Access Reset
+
+SLPPERIOD[23-16] 0
+
+8
+
+rw
+
+0
+
+PWRUPDLAY
+
+8
+
+8
+
+rw
+
+0
+
+Table 6.18: Address 0x0D
+
+SLPPERIOD: Length of sleep period, 24 bits, in number of clock cycles of the sleep clock (chip clock in Idle Sleep, XTAL clock in Deep and Shallow sleep.)
+PWRUPDLAY: Delay after wake-up, before starting the transmitter or receiver, 8 bits. The duration of delay in number of chip cycles is PWRUPDLAY X 8.
+
+6.9 Register 0x0E
+
+Name
+
+Offset Width Access Reset
+
+RESERVED 0
+
+2
+
+rw
+
+0
+
+RESERVED 2
+
+1
+
+rw
+
+0
+
+TIMEOUT 3
+
+13
+
+rw
+
+0
+
+Table 6.19: Address 0x0E
+
+TIMEOUT: Duration of receiver listening period before timing out, 13 bits. The duration length in number of chip cycles is TIMEOUT X 8 + 1.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+29
+
+6.10 Register 0x0F
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+SYNTIMEO
+
+0
+
+1
+
+rw
+
+SYNRXEND
+
+1
+
+3
+
+rw
+
+SYNRXSTA
+
+4
+
+1
+
+rw
+
+SYNTXEND
+
+5
+
+1
+
+rw
+
+SYNWAKUP
+
+6
+
+1
+
+rw
+
+AUTOWAKE
+
+7
+
+1
+
+rw
+
+SLPTIMEO
+
+8
+
+1
+
+rw
+
+SLPRXEND
+
+9
+
+3
+
+rw
+
+SLPCCAFA
+
+12
+
+1
+
+rw
+
+SLPTXEND
+
+13
+
+1
+
+rw
+
+SLPDEPTH_WAKEONCE 14
+
+2
+
+rw
+
+0 0 0 0 0 0 0 0 0 0 0x03
+
+Table 6.20: Address 0x0F
+
+AUTOWAKE: Automatically wake-up when sleep period is reached on the active sleep timer. 1: Enabled. 0: Disabled.
+SYNWAKUP: Reset both chip and XTAL sleep timer on wake-up. 1: Enabled. 0: Disabled.
+SYNTXEND: Reset both chip and XTAL sleep timer on end of packet transmission. 1: Enabled. 0: Disabled.
+SYNRXEND: Reset both chip and XTAL sleep timer on end of packet reception, 3 bits. 001: Sync on correct CRC match. 000: Disabled all other reserved.
+SLPDEPTH_WAKEONCE: Determines sleep level used when going to sleep. If SLPDEPTH_WAKEONCE > 0, WakeOnce is activated and only one wake-up event is triggered until SLP_PERIOD is overwritten again.
+
+Value Sleep Level Sleep Timer Wake-Once
+
+0
+
+Idle sleep
+
+Chip clock Off
+
+1
+
+Idle sleep
+
+Chip clock On
+
+2
+
+Shallow sleep XTAL clock On
+
+3
+
+Deep sleep XTAL clock On
+
+Table 6.21: SLPDEPTH_WAKEONCE
+
+SLPTXEND: Go to sleep after packet transmission. 1: Enabled. 0: Disabled.
+SLPRXEND: Go to sleep after packet reception, 3 bits. 001: Sync on correct CRC match. 000: Disabled all other reserved.
+SLPTIMEO: Go to sleep after reception timeout. 1: Enabled. 0: Disabled.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+30
+
+6.11 Register 0x10
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+TIMEOUTE 0
+
+1
+
+wo
+
+1
+
+CRCPASSE 1
+
+1
+
+wo
+
+0
+
+BRDCASTE 2
+
+1
+
+wo
+
+0
+
+ADDRMATE 3
+
+1
+
+wo
+
+0
+
+RXENDE 4
+
+1
+
+wo
+
+1
+
+TXENDE
+
+5
+
+1
+
+wo
+
+1
+
+ARRXENDE 6
+
+1
+
+wo
+
+1
+
+ARTXENDE 7
+
+1
+
+wo
+
+1
+
+WAKEUPE 8
+
+1
+
+wo
+
+0
+
+XOTIMERE 9
+
+1
+
+wo
+
+0
+
+CCAFAILE 10
+
+1
+
+wo
+
+1
+
+BUFTHRES 11
+
+5
+
+wo
+
+0
+
+TIMEOUTI 0
+
+1
+
+ro
+
+1
+
+CRCPASSI 1
+
+1
+
+ro
+
+0
+
+BRDCASTI 2
+
+1
+
+ro
+
+0
+
+ADDRMATI 3
+
+1
+
+ro
+
+0
+
+RXENDI
+
+4
+
+1
+
+ro
+
+1
+
+TXENDI
+
+5
+
+1
+
+ro
+
+1
+
+ARRXENDI 6
+
+1
+
+ro
+
+1
+
+ARTXENDI 7
+
+1
+
+ro
+
+1
+
+WAKEUPI 8
+
+1
+
+ro
+
+0
+
+XOTIMERI 9
+
+1
+
+ro
+
+0
+
+CCAFAILI 10
+
+1
+
+ro
+
+1
+
+BUFLOADI 11
+
+1
+
+ro
+
+1
+
+RXUDRFLI 12
+
+1
+
+ro
+
+1
+
+RXOVRFLI 13
+
+1
+
+ro
+
+1
+
+TXUDRFLI 14
+
+1
+
+ro
+
+1
+
+TXOVRFLI 15
+
+1
+
+ro
+
+1
+
+Table 6.22: Address 0x10
+
+Status flags for interrupts, and enable control for interrupts asserting the IRQ pin.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+31
+
+SR1120 Datasheet
+
+Flag
+
+IRQ Pin Enable Raised by Event
+
+Cleared by
+
+TXENDI RXENDI ARTXENDI ARRXENDI CRCPASS TIMEOUTI WAKEUPI XOTIMERI CCAFAILI ADDRMATI BRDCASTI TXOVRFLI RXOVRFLI TXUDRFLI RXUDRFLI BUFLOADI
+
+TXENDE RXENDE ARTXENDE ARRXENDE CRCPASS TIMEOUTE WAKEUPE XOTIMERE CCAFAILE ADDRMATE BRDCASTE not DISABUFI not DISABUFI not DISABUFI not DISABUFI BUFTHRES > 0
+
+End of packet transmission End of packet reception End of Auto-Reply transmission End of Auto-Reply reception Successful CRC pass Timeout during reception Wake up from sleep Sleep period on XTAL timer reached CCA check fail Address field match Broadcast field match TX FIFO overflow RX FIFO overflow TX FIFO underflow RX FIFO underflow RX FIFO filled above threshold
+
+Register read Register read Register read Register read Register read Register read Register read Register read Register read Register read Register read Reset TX FIFO Reset RX FIFO Reset TX FIFO Reset RX FIFO Pull from RX FIFO until below threshold
+
+Table 6.23: IRQ Control
+
+BUFTHRES: RX FIFO threshold, 5 bits. If the number of bytes in the RX FIFO exceeds BUFTHRES X 8, the BUFLOADI interrupt will be raised.
+
+6.12 Register 0x11
+
+Name
+
+Offset Width Access Reset
+
+RESERVED 0
+
+3
+
+wo
+
+0
+
+RESERVED 3
+
+1
+
+rw
+
+0
+
+RESERVED 4
+
+1
+
+rw
+
+0
+
+RSSIONLY 5
+
+1
+
+rw
+
+0
+
+RPLYTXEN 6
+
+1
+
+rw
+
+0
+
+RADIODIR 7
+
+1
+
+rw
+
+1
+
+RESERVED 8
+
+8
+
+ro
+
+0
+
+Table 6.24: Address 0x11
+
+RADIODIR: Selects transmission or reception mode. 1: Reception. 0: Transmission. RPLYTXEN: Enables Auto-Reply on packets. RSSIONLY: Enables energy detection mode on reception, tracking energy with RSSI, without packet reception.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+32
+
+6.13 Register 0x12
+
+SR1120 Datasheet
+
+Name Offset Width Access Reset
+
+RSSI 0
+
+7
+
+ro
+
+0
+
+RNSI 8
+
+7
+
+ro
+
+0
+
+Table 6.25: Address 0x12
+
+RSSI: Signal strength indicator, latched after syncword detection, 7-bits. Values range from 0 to 115, with lower values indicating stronger signals, and higher values indicating weaker signals. Each step represents about 0.5 dB in signal power.
+RNSI: Noise strength indicator, 7-bits. Values range from 0 to 115, with lower values indicating stronger noise, and higher values indicating weaker noise. Each step represents about 0.5 dB in noise power.
+
+6.14 Register 0x13-0x14-0x15
+
+Name
+
+Offset Width Access Reset
+
+RXSFDTIME 0
+
+16
+
+ro
+
+0
+
+Table 6.26: Address 0x13
+
+Name
+
+Offset Width Access Reset
+
+TXSFDTIME 0
+
+16
+
+ro
+
+0
+
+Table 6.27: Address 0x14
+
+Name
+
+Offset Width Access Reset
+
+IRQTIME 0
+
+16
+
+ro
+
+0
+
+DISABUFI 0
+
+1
+
+wo
+
+0
+
+Table 6.28: Address 0x15
+
+RXSFDTIME: Number of chip cycles between receiver wake-up and syncword detection, 16 bits. TXSFDTIME: Number of chip cycles between transmitter wake-up and syncword transmission, 16 bits. IRQTIME: Number of chip cycles between receiver or transmitter wake-up and assertion of the IRQ pin, 16 bits. DISABUFI: Disables the FIFO underflow and overflow interrupts. 1: Disabled. 0: Enabled.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+33
+
+6.15 Register 0x18
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+FEC_RATE0 0
+
+3
+
+rw
+
+CHIPCODE0 3
+
+3
+
+rw
+
+CHIPREPE0 6
+
+2
+
+rw
+
+ISIMITIG0 8
+
+2
+
+rw
+
+RPLYADD0 10
+
+1
+
+rw
+
+EXPECRP0 11
+
+1
+
+rw
+
+RESERVED 12
+
+3
+
+rw
+
+RESERVED 15
+
+1
+
+rw
+
+0x03 0x02 0 0 0 0 0x03 0
+
+Table 6.29: Address 0x18
+
+CHIPCODE0: Modulation used during reception and transmission, 3 bits.
+
+Value Modulation
+
+0
+
+OOK
+
+1
+
+Reserved
+
+2
+
+1BIT-PPM
+
+3
+
+2BIT-PPM
+
+4
+
+Reserved
+
+5
+
+Reserved
+
+6
+
+Reserved
+
+7
+
+Reserved
+
+Table 6.30: CHIPCODE0
+
+FEC_RATE0: Forward Error Coding rate, 3 bits.
+
+Value FEC Redundancy
+
+0
+
+Disable
+
+1
+
+1.25
+
+2
+
+1.375
+
+3
+
+1.5
+
+4
+
+1.625
+
+5
+
+1.75
+
+6
+
+1.875
+
+7
+
+2.0
+
+Table 6.31: FEC_RATE0
+
+ISIMITIG0: Number of ISI mitigation symbols.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+34
+
+SR1120 Datasheet
+
+Value Preamble Pauses Payload Pauses
+
+0
+
+0
+
+0
+
+1
+
+1
+
+0
+
+2
+
+2
+
+1
+
+3
+
+3
+
+2
+
+Table 6.32: ISIMITIG0
+
+RPLYADD0: Copy address of received packet into address field of auto-reply. 1: Enabled. 0: Disabled. EXPECRP0: Wait for auto-reply after packet transmission. 1: Enabled. 0: Disabled.
+
+6.16 Register 0x2F
+
+Name
+
+Offset Width Access Reset
+
+PREAMBLEN 0 SFDLENGTH 6
+
+6
+
+rw
+
+2
+
+rw
+
+0x04 0x02
+
+Table 6.33: Address 0x2F
+
+SFDLENGTH: Size of Start of Frame Delimiter field. Recommended value: 0.
+
+Value SFD Format
+
+0
+
+32-bit OOK
+
+1
+
+16-bit 1BIT-PPM
+
+2
+
+32-bit 1BIT-PPM
+
+3
+
+Reserved
+
+Table 6.34: SFDLENGTH
+
+PREAMBLEN: Size of preamble synchronization field. The length of the synchronization field in chip clock cycles = PREAMBLEN X 8 + 48. Recommended value: 16.
+
+6.17 Registers 0x30-0x31
+
+Name
+
+Offset Width Access Reset
+
+SFDPATTRN[15-0] 0
+
+16
+
+rw
+
+0xC11D
+
+Table 6.35: Address 0x30
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+35
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+SFDPATTRN[31-16] 0
+
+16
+
+rw
+
+0x5EA6
+
+Table 6.36: Address 0x31
+
+SFDPATTRN: Pattern used in Start of Frame Delimiter field.
+
+6.18 Registers 0x32-0x33
+
+Name
+
+Offset Width Access Reset
+
+RESERVED
+
+0
+
+CRC_POLY[15-1] 1
+
+1
+
+rc
+
+15
+
+rw
+
+1 0x313A
+
+Table 6.37: Address 0x32
+
+Name
+
+Offset Width Access Reset
+
+CRC_POLY[30-16] 0
+
+15
+
+rw
+
+0x0372
+
+Table 6.38: Address 0x33
+
+CRC_POLY: Cyclic Redundancy Code polynomial. Recommended polynomials are given in the table below.
+
+Polynomial CRC field length (bits) 0x0372313b 25 bits 0x8fcc4ac9 31 bits
+Table 6.39: CRC_POLY
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+36
+
+6.19 Register 0x34
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+SAVECRC 0
+
+1
+
+rw
+
+0
+
+SAVESIZE 1
+
+1
+
+rw
+
+0
+
+SAVEADDR 2
+
+1
+
+rw
+
+0
+
+SAVEPHS 3
+
+1
+
+rw
+
+0
+
+SAVETIME 4
+
+1
+
+rw
+
+0
+
+SAVERSSI 5
+
+1
+
+rw
+
+0
+
+PHSFIELD 6
+
+1
+
+rw
+
+0
+
+TIMFIELD 7
+
+1
+
+rw
+
+0
+
+OPTRANGI 8
+
+1
+
+rw
+
+0
+
+SIZESRC 9
+
+1
+
+rw
+
+0
+
+SIZEPARI 10
+
+1
+
+rw
+
+0
+
+SIZEHDR 11
+
+1
+
+rw
+
+0
+
+RETRYHDR 12
+
+1
+
+rw
+
+0
+
+ADDRLEN 13
+
+1
+
+rw
+
+0
+
+ADDRFIELD 14
+
+2
+
+rw
+
+0
+
+Table 6.40: Address 0x34
+
+Several packet fields are additionally enabled:
+ADDRFIELD: Enables an address field that can be used for address filtering. Control whether address matching gates packet reception, and/or auto reply transmission.
+
+Value Packet Address Field Filter Packet Reception Filter Auto-Reply Transmission
+
+0
+
+Disabled
+
+No
+
+No
+
+1
+
+Enabled
+
+No
+
+No
+
+2
+
+Enabled
+
+No
+
+Yes
+
+3
+
+Enabled
+
+Yes
+
+Yes
+
+Table 6.41: ADDRFIELD
+
+ADDRLEN: Size of the address field. 1: 16 bits. 0: 8 bits.
+SIZEHDR: Adds an 8-bit payload size field to the packet during transmission, which is used during reception to determine the payload length. 1: Enabled. 0: Disabled.
+SIZEPARI: Adds a 5-bit parity field to the payload size field. 1: Enable. 0: Disable.
+SIZESRC: Selects what is used as the payload size for packet transmission. 1: Use TXPKTSIZE. 0: Use number of bytes in TX FIFO.
+OPTRANGI: Reserved, set to 0.
+Several of the packet fields can be automatically pushed into the RX FIFO during packet reception, in the following order:
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+37
+
+SR1120 Datasheet
+SAVETIME: The RXSFDTIME is pushed to the RX FIFO. 1: Enabled. 0: Disabled. SAVECHRE: The channel impulse response is pushed to the RX FIFO. 1: Enabled. 0: Disabled. SAVERSSI: The RSSI is pushed to the RX FIFO. 1: Enabled. 0: Disabled. SAVEADDR: The address field is pushed to the RX FIFO. 1: Enabled. 0: Disabled. RETRYHDR: The CCA retry counter field is added as a packet field during transmission, and pushed to the RX FIFO during reception. 1: Enabled. 0: Disabled. SAVESIZE: The payload size field is pushed to the RX FIFO. 1: Enabled. 0: Disabled. If there is a payload field in the packet, it is saved at this position in the RX FIFO. Afterwards, the following packet fields can be pushed to the RX FIFO: TIMFIELD: Include RXSFDTIME field in the packet during transmission. 1: Enabled. 0: Disabled. PHSFIELD: Include phase offset field in the packet during transmission. 1: Enabled. 0: Disabled. SAVECRC: Save the CRC remainder mismatch pattern to the RX FIFO. 1: Enabled. 0: Disabled.
+6.20 Registers 0x35-0x36
+
+Name
+
+Offset Width Access Reset
+
+RXADDRESS 0
+
+16
+
+rw
+
+0xADDB
+
+Table 6.42: Address 0x35
+
+Name
+
+Offset Width Access Reset
+
+TXADDRESS 0
+
+16
+
+rw
+
+0xADDA
+
+Table 6.43: Address 0x36
+
+RXADDRESS: Address used to do address field matching during packet reception. TXADDRESS: Address used in address field during packet transmission.
+
+6.21 Registers 0x37
+
+Name
+
+Offset Width Access Reset
+
+RXPKTSIZE 0 TXPKTSIZE 8
+
+8
+
+rw
+
+8
+
+rw
+
+0x10 0x10
+
+Table 6.44: Address 0x37
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+38
+
+SR1120 Datasheet
+RXPKTSIZE: Size in bytes of payload field read during reception. If SIZESRC is 0, this register determines the maximum size read. TXPKTSIZE: Size in bytes of payload field during transmission.
+6.22 Registers 0x38
+
+Name
+
+Offset Width Access Reset
+
+TXBUFFER 0
+
+8
+
+wo
+
+0
+
+RXBUFFER 0
+
+8
+
+ro
+
+0
+
+Table 6.45: Address 0x38
+
+TXBUFFER: Writing to this register pushes a byte into the TX FIFO. RXBUFFER: Reading from this register pops a byte from the RX FIFO.
+
+6.23 Registers 0x39-0x3A
+
+Name
+
+Offset Width Access Reset
+
+RXBUFLOAD 0
+
+8
+
+ro
+
+0
+
+Table 6.46: Address 0x39
+
+Name
+
+Offset Width Access Reset
+
+TXBUFLOAD 0
+
+8
+
+ro
+
+0
+
+Table 6.47: Address 0x3A
+
+RXBUFLOAD: Number of bytes in the RX FIFO. TXBUFLOAD: Number of bytes in the TX FIFO.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+39
+
+6.24 Registers 0x3B
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+SLEEP
+
+0
+
+1
+
+wo
+
+1
+
+INITIMER 1
+
+1
+
+wo
+
+1
+
+FLUSHRX 2
+
+1
+
+wo
+
+1
+
+FLUSHTX 3
+
+1
+
+wo
+
+1
+
+STARTTX 4
+
+1
+
+wo
+
+0
+
+RESERVED 5
+
+1
+
+wo
+
+0
+
+RESERVED 6
+
+1
+
+wo
+
+0
+
+AUTOTX
+
+7
+
+1
+
+rw
+
+0
+
+TXRETRIES 0
+
+4
+
+ro
+
+0
+
+Table 6.48: Address 0x3B
+
+Writing to this register starts the following actions: AUTOTX: Start transmission every time after waking up from sleep. STARTTX: Start transmission once after waking up from sleep. FLUSHTX: Empty and reset the TX FIFO. FLUSHRX: Empty and reset the RX FIFO. INITIMER: Reset both XTAL and chip sleep timers. SLEEP: Controls sleep.
+
+Value Description
+
+0
+
+Wake-up directly from sleep
+
+1
+
+Go to sleep when modem is not busy transmitting or receiving.
+
+Table 6.49: SLEEP
+
+TXRETRIES: Number of CCA retries received from CCA retry counter field in packet.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+40
+
+6.25 Registers 0x3C
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+REF_EN 0
+
+1
+
+ro
+
+0
+
+PLL_EN 1
+
+1
+
+ro
+
+0
+
+DCDC_EN 2
+
+1
+
+ro
+
+0
+
+PROC_ON 3
+
+1
+
+ro
+
+0
+
+AWAKE
+
+4
+
+1
+
+ro
+
+0
+
+RX_EN
+
+5
+
+1
+
+ro
+
+0
+
+TX_EN
+
+6
+
+1
+
+ro
+
+0
+
+INFRAME 7
+
+1
+
+ro
+
+0
+
+Table 6.50: Address 0x3C
+
+INFRAME: Modem state of reception or transmission of packet. 1: Packet transmission or reception is ongoing, after the SFD. 0: Otherwise. TX_EN: Transmitter power status. 1: Enabled. 0: Disabled. RX_EN: Receiver power status. 1: Enabled. 0: Disabled. AWAKE: Modem is awake. 1: Yes. 0: No. PROC_ON: Modem power status. 1: Enabled. 0: Disabled. DCDC_EN: DC-DC Converter power status. 1: Enabled. 0: Disabled. PLL_EN: PLL power status. 1: Enabled. 0: Disabled. REF_EN: Bias generator power status. 1: Enabled. 0: Disabled.
+
+6.26 Registers 0x3E
+
+Name
+
+Offset Width Access Reset
+
+COUNTCODE 0
+
+6
+
+wo
+
+0
+
+CODEFREQ 0
+
+8
+
+ro
+
+0
+
+Table 6.51: Address 0x3E
+
+COUNTCODE: VCRO code to be calibrated, 6-bit value. Write once to this register to start calibration. CODEFREQ: VCRO frequency after calibration, 8-bit value. Frequency is ( CODEFREQ + 256 ) X 20.48 MHz.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+41
+
+6.27 Registers 0x3F
+
+SR1120 Datasheet
+
+Name
+
+Offset Width Access Reset
+
+ROM_ADDR 0
+
+7
+
+wo
+
+0
+
+ROMPWRSW 7
+
+1
+
+wo
+
+0
+
+ROM_BYTE 0
+
+8
+
+ro
+
+0
+
+Table 6.52: Address 0x3F
+
+ROMPWRSW: Power switch for Non-Volatile Memory (NVM). 1: Enabled. 0: Disabled. ROM_ADDR: Address of NVM byte to be read, 7-bit value. ROM_BYTE: Content of NVM at address location, 8-bit value.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+42
+
+7 Package Outline and Tape/Reel Information
+
+SR1120 Datasheet
+
+Figure 7.1: Package Outline (Dimensions are in mm)
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+43
+
+SR1120 Datasheet
+Figure 7.2: Tape and Reel (Dimensions are in mm)
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+44
+
+8 Recommended Footprint
+
+SR1120 Datasheet
+
+Figure 8.1: Footprint
+9 Part Order Information
+
+Part Number
+
+Package Size (mm) Quantity Carrier Format
+
+SR1120AA-4Q32-CT QFN32 4X4 SR1120AA-4Q32-TY QFN32 4X4 SR1120AA-4Q32-TR QFN32 4X4
+
+1 490 5000
+
+Cut Tape JEDEC Tray 330mm Tape and Reel
+
+Table 9.1: Part order information.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+45
+
+10 Revision
+
+SR1120 Datasheet
+
+Revision
+
+Date
+
+Section
+
+Description
+
+2026-08-14 (1.5)
+1.4 1.3.3 1.3 1.2 1.1
+1.0
+
+2026/08
+2025/03 2025/02 2024/10 2024/10 2024/09
+2024/03
+
+1,2,3,4,5,7,9
+1 1,6 6 4 2,3,4
+-
+
+Updated text and fixed typos. Included PHY layer overview. Added more radio characteristics and cleaned up application guidelines. Updated tape/reel and order information. Minor text change added data in table dc characteristics. Precise Fc. Added register file description. Updated application reference circuit, fix text. Minor text fixes, pinout, Added table in 3.2. Added table 4.1, Fix tablenote 4.2. Change min/max representation for tx_power in tables Initial release
+
+Table 10.1: Revisions
+
+11 Notice
+IMPORTANT NOTICE ­ PLEASE READ CAREFULLY
+Spark Microsystems International Inc. and its subsidiaries ("SPARK") reserve the right to make changes, corrections, enhancements, modifications, and improvements to SPARK products and/or to this document at any time without notice. Purchasers should obtain the latest relevant information on SPARK products before placing orders. SPARK products are sold pursuant to SPARK's terms and conditions of sale in place at the time of order acknowledgement. Purchasers are solely responsible for the choice, selection, and use of SPARK products and for the design of purchasers' products. SPARK assumes no liability for application assistance or for the design of purchasers' products. No express or implied license to any intellectual property right is granted by SPARK herein. Resale of SPARK products with provisions different from the information set forth herein shall void any warranty granted by SPARK for such products. Information in this document supersedes and replaces information previously supplied in any prior version of this document.
+
+DSP-AS-UN-001_Ext_Datasheet_SR1120_2026-08-14
+
+46
+
+

@@ -1,0 +1,10 @@
+build/
+build_*/
+*.uf2
+*.hex
+*.elf
+*.o
+*.a
+!drivers/dw3000/lib/*.a
+.vscode/
+.cache/

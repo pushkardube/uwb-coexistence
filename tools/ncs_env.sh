@@ -1,0 +1,11 @@
+# Activate nRF Connect SDK v3.2.4 toolchain manually (no toolchain-manager plugin)
+TC="$HOME/ncs/toolchains/2ac5840438"
+export PATH="$TC/bin:$TC/usr/bin:$TC/usr/local/bin:$TC/opt/bin:$TC/opt/nanopb/generator-bin:$TC/nrfutil/bin:$TC/opt/zephyr-sdk/arm-zephyr-eabi/bin:$TC/opt/zephyr-sdk/riscv64-zephyr-elf/bin:$PATH"
+export LD_LIBRARY_PATH="$TC/lib:$TC/lib/x86_64-linux-gnu:$TC/usr/local/lib:$LD_LIBRARY_PATH"
+export PYTHONHOME="$TC/usr/local"
+export PYTHONPATH="$TC/usr/local/lib/python3.12:$TC/usr/local/lib/python3.12/site-packages"
+export NRFUTIL_HOME="$TC/nrfutil/home"
+export ZEPHYR_TOOLCHAIN_VARIANT="zephyr"
+export ZEPHYR_SDK_INSTALL_DIR="$TC/opt/zephyr-sdk"
+export ZEPHYR_BASE="$HOME/ncs/v3.2.4/zephyr"
+export GIT_EXEC_PATH="$TC/usr/local/libexec/git-core"

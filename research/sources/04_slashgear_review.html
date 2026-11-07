@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head>
+            
+        <!-- START email detection/removal script -->
+        <script>
+            !function(){"use strict";function e(e){const t=e.match(/((?=([a-z0-9._!#$%+^&*()[\]<>-]+))@[a-z0-9._-]+\.[a-z0-9._-]+)/gi);return t?t[0]:""}function t(t){return e(a(t.toLowerCase()))}function a(e){return e.replace(/\s/g,"")}async function n(e){const t={sha256Hash:"",sha1Hash:""};if(!("msCrypto"in window)&&"https:"===location.protocol&&"crypto"in window&&"TextEncoder"in window){const a=(new TextEncoder).encode(e),[n,c]=await Promise.all([s("SHA-256",a),s("SHA-1",a)]);t.sha256Hash=n,t.sha1Hash=c}return t}async function s(e,t){const a=await crypto.subtle.digest(e,t);return Array.from(new Uint8Array(a)).map(e=>("00"+e.toString(16)).slice(-2)).join("")}function c(e){let t=!0;return Object.keys(e).forEach(a=>{0===e[a].length&&(t=!1)}),t}function i(e,t,a){e.splice(t,1);const n="?"+e.join("&")+a.hash;history.replaceState(null,"",n)}var o={checkEmail:e,validateEmail:t,trimInput:a,hashEmail:n,hasHashes:c,removeEmailAndReplaceHistory:i,detectEmails:async function(){const e=new URL(window.location.href),a=Array.from(e.searchParams.entries()).map(e=>`=`);let s,o;const r=["adt_eih","sh_kit"];if(a.forEach((e,t)=>{const a=decodeURIComponent(e),[n,c]=a.split("=");if("adt_ei"===n&&(s={value:c,index:t,emsrc:"url"}),r.includes(n)){o={value:c,index:t,emsrc:"sh_kit"===n?"urlhck":"urlh"}}}),s)t(s.value)&&n(s.value).then(e=>{if(c(e)){const t={value:e,created:Date.now()};localStorage.setItem("adt_ei",JSON.stringify(t)),localStorage.setItem("adt_emsrc",s.emsrc)}});else if(o){const e={value:{sha256Hash:o.value,sha1Hash:""},created:Date.now()};localStorage.setItem("adt_ei",JSON.stringify(e)),localStorage.setItem("adt_emsrc",o.emsrc)}s&&i(a,s.index,e),o&&i(a,o.index,e)},cb:"adthrive"};const{detectEmails:r,cb:l}=o;r()}();
+        </script>
+        <!-- END email detection/removal script -->
+        <!-- AdThrive Head Tag Manual -->
+        <script data-no-optimize="1" data-cfasync="false">
+            (function(w, d) {
+                w.adthrive = w.adthrive || {};
+                w.adthrive.cmd = w.
+                    adthrive.cmd || [];
+                w.adthrive.plugin = 'adthrive-ads-manual';
+                w.adthrive.host = 'ads.adthrive.com';var s = d.createElement('script');
+                s.async = true;
+                s.referrerpolicy='no-referrer-when-downgrade';
+                s.src = 'https://' + w.adthrive.host + '/sites/68432446d82f494ea735bf57/ads.min.js?referrer=' + w.encodeURIComponent(w.location.href) + '&cb=' + (Math.floor(Math.random() * 100) + 1);
+                var n = d.getElementsByTagName('script')[0];
+                n.parentNode.insertBefore(s, n);
+            })(window, document);
+        </script>
+        <!-- End of AdThrive Head Tag -->
+        <script async preferred-sources-control="manual" src="https://news.google.com/swg/js/v1/publisher.js"></script>            <link rel="preload" href="/wp-content/themes/unified/css/article.slashgear.min.css?design=3&v=1791925653" as="style"><link rel="preload" href="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/intro-1790972249.sm.webp" as="image">
+<link class="preloadFont" rel="preload" href="https://www.slashgear.com/font/eurostile-bold-oblique-webfont.woff2" as="font" crossorigin>
+<link class="preloadFont" rel="preload" href="https://www.slashgear.com/font/eurostile-bold-webfont.woff2" as="font" crossorigin>
+<link class="preloadFont" rel="preload" href="https://www.slashgear.com/font/nimbus-sans-regular.woff2" as="font" crossorigin>
+
+        <link rel="stylesheet" type="text/css" href="/wp-content/themes/unified/css/article.slashgear.min.css?design=3&v=1791925653" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Security-Policy" content="block-all-mixed-content" />
+        <meta http-equiv="X-UA-Compatible" content="IE=10" />
+        
+        
+                <meta name="robots" content="max-image-preview:large">
+        <meta name="thumbnail" content="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/l-intro-1790972249.jpg">
+        <title>SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life</title>
+        <meta name='description' content="SteelSeries decided to make a point of including a hot-swappable power system in their latest mice -- are they really delivering &quot;infinite&quot; battery life?" />
+        <meta property="mrf:tags" content="Content Type:Review;Primary Category:Home Entertainment Reviews;Category:News;Category:Home Entertainment Reviews;Headline Approver:Chris Burns;Trello Board:Features;Pitcher:Sarah Chaney;Ideation Source:Editorial;Intent:Evergreen;Important Topic:False" />
+        
+                <meta property="og:site_name" content="SlashGear" />
+        <meta property="og:title" content="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life - SlashGear">
+        <meta property="og:image" content="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/l-intro-1790972249.jpg" />
+        <meta property="og:description" content="SteelSeries decided to make a point of including a hot-swappable power system in their latest mice -- are they really delivering &quot;infinite&quot; battery life?">
+        <meta property="og:type" content="article">
+        <meta property="og:url" content="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/">
+                <meta name="twitter:title" content="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life - SlashGear">
+        <meta name="twitter:description" content="SteelSeries decided to make a point of including a hot-swappable power system in their latest mice -- are they really delivering &quot;infinite&quot; battery life?">
+        <meta name="twitter:site" content="@slashgear">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/l-intro-1790972249.jpg">
+            <meta property="article:published_time" content="2026-10-02T20:04:25+00:00" />
+    <meta property="article:modified_time" content="2026-10-02T20:04:25+00:00" />
+    <meta property="article:author" content="Sarah Chaney" />
+        
+        <link rel="shortcut icon" href="https://www.slashgear.com/img/slash-gear-favicon-448x448.png">
+        <link rel="icon" href="https://www.slashgear.com/img/slash-gear-favicon-448x448.png">
+        <link rel="canonical" href="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/"/>
+        <link rel="alternate" type="application/rss+xml" title="Home Entertainment Reviews - SlashGear" href="https://www.slashgear.com/category/home-entertainment-reviews/feed/" />
+
+        
+        <script type="application/ld+json">{"@context":"http:\/\/schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/www.slashgear.com\/2276269\/steelseries-senesi-pro-x-rival-pro-review\/","url":"https:\/\/www.slashgear.com\/2276269\/steelseries-senesi-pro-x-rival-pro-review\/","breadcrumb":{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https:\/\/www.slashgear.com\/category\/reviews\/","name":"Reviews"}},{"@type":"ListItem","position":2,"item":{"@id":"https:\/\/www.slashgear.com\/category\/home-entertainment-reviews\/","name":"Home Entertainment Reviews"}}]}},"isAccessibleForFree":true,"headline":"SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life","image":{"@type":"ImageObject","url":"https:\/\/www.slashgear.com\/img\/gallery\/steelseries-senesi-pro-x-rival-pro-review\/l-intro-1790972249.jpg","height":898,"width":1600},"datePublished":"2026-10-02T20:04:25+00:00","dateModified":"2026-10-02T20:04:25+00:00","author":[{"@type":"Person","name":"Sarah Chaney","description":"Since April 2020, Sarah has been freelance writing for various websites, covering smart home technology, ebikes and other motorized devices, video games, and smart fitness equipment. She started writing with Android Authority and a niche gaming blog, and then moved on to write for MakeUseOf, Review Geek, Laptop Mag, and, of course, SlashGear.","url":"https:\/\/www.slashgear.com\/author\/sarahchaney\/","knowsAbout":["Android","Smart Home","Gaming Tech"],"alumniOf":[{"@type":"Organization","name":"Collin College"},{"@type":"Organization","name":"Nicholls State University"}],"sameAs":["https:\/\/www.linkedin.com\/in\/sarahnchaney"]}],"publisher":{"@type":"Organization","address":{"@type":"PostalAddress","streetAddress":"11787 Lantern Road #201","addressLocality":"Fishers","addressRegion":"IN","postalCode":"46038","addressCountry":"US"},"contactPoint":{"@type":"ContactPoint","telephone":"(908) 514-8038","contactType":"customer support","email":"staff@slashgear.com"},"publishingPrinciples":"https:\/\/www.slashgear.com\/policies\/","@id":"https:\/\/www.slashgear.com\/","name":"SlashGear","url":"https:\/\/www.slashgear.com\/","logo":{"@type":"ImageObject","url":"https:\/\/www.slashgear.com\/img\/slashgear-meta-image-1280x720.png","caption":"SlashGear Logo"},"description":"The latest news and reviews in the world of tech, automotive, gaming, science, and entertainment - since 2005.","sameAs":["https:\/\/www.facebook.com\/SlashGear","https:\/\/x.com\/slashgear","https:\/\/profile.google.com\/@slashgear","https:\/\/flipboard.com\/@Slashgear","https:\/\/subscribe.slashgear.com\/newsletter"]},"description":"SteelSeries decided to make a point of including a hot-swappable power system in their latest mice -- are they really delivering &quot;infinite&quot; battery life?"}</script>
+                </head>
+<body>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-PM7487HJ');</script>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PM7487HJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><div id="wrapper">
+    <div class="page-wrap">
+        <header id="header" class="">
+            <div class="nav-drop">
+                <div class="jcf-scrollable">
+                    <div class="aside-holder">
+                                    <nav id="aside-nav">
+                <div class="nav-top">
+                    <div class="logo">
+                        <a href="/" class="logo-holder">
+                            <img src="https://www.slashgear.com/img/SlashGear-Logo-RGB-White-SingleLine.svg" alt="SlashGear" width="187" height="39">
+                        </a>
+                        <a href="#" class="nav-opener close"></a>
+                    </div>
+                </div>
+                
+                <ul class="main-nav"><li class="navlink navlink-latest"><a href="/latest/">Latest</a></li><li class="navlink navlink-news"><a href="/category/news/">News</a></li><li class="navlink navlink-technology"><a href="/category/technology/">Tech</a><input type="checkbox" id="subnav-button-technology"><label for="subnav-button-technology"></label><ul class="main-nav"><li class="subnavlink navlink-smartphones"><a href="/category/smartphones/">Smartphones</a></li><li class="subnavlink navlink-computers-and-tablets"><a href="/category/computers-and-tablets/">Computers & Tablets</a></li><li class="subnavlink navlink-wearables"><a href="/category/wearables/">Wearables</a></li><li class="subnavlink navlink-accessories-and-peripherals"><a href="/category/accessories-and-peripherals/">Accessories & Peripherals</a></li><li class="subnavlink navlink-components"><a href="/category/components/">Components</a></li><li class="subnavlink navlink-drones"><a href="/category/drones/">Drones</a></li><li class="subnavlink navlink-cameras"><a href="/category/cameras/">Cameras</a></li><li class="subnavlink navlink-events"><a href="/category/events/">Events</a></li></ul></li><li class="navlink navlink-automotive"><a href="/category/automotive/">Cars</a><input type="checkbox" id="subnav-button-automotive"><label for="subnav-button-automotive"></label><ul class="main-nav"><li class="subnavlink navlink-electric-vehicles"><a href="/category/electric-vehicles/">Electric Vehicles</a></li><li class="subnavlink navlink-autonomous-driving"><a href="/category/autonomous-driving/">Autonomous Driving</a></li><li class="subnavlink navlink-concept-cars"><a href="/category/concept-cars/">Concept Cars</a></li><li class="subnavlink navlink-car-accessories"><a href="/category/car-accessories/">Car Accessories</a></li><li class="subnavlink navlink-motorcycles"><a href="/category/motorcycles/">Motorcycles</a></li><li class="subnavlink navlink-trucks"><a href="/category/trucks/">Trucks</a></li><li class="subnavlink navlink-suvs-and-crossovers"><a href="/category/suvs-and-crossovers/">SUVs & Crossovers</a></li><li class="subnavlink navlink-classic-cars"><a href="/category/classic-cars/">Classic Cars</a></li></ul></li><li class="navlink navlink-entertainment"><a href="/category/entertainment/">Entertainment</a><input type="checkbox" id="subnav-button-entertainment"><label for="subnav-button-entertainment"></label><ul class="main-nav"><li class="subnavlink navlink-tvs"><a href="/category/tvs/">TVs</a></li><li class="subnavlink navlink-audio"><a href="/category/audio/">Audio</a></li><li class="subnavlink navlink-streaming-devices"><a href="/category/streaming-devices/">Streaming Devices</a></li><li class="subnavlink navlink-internet"><a href="/category/internet/">Internet</a></li><li class="subnavlink navlink-gaming"><a href="/category/gaming/">Gaming</a></li></ul></li><li class="navlink navlink-military"><a href="/category/military/">Military</a><input type="checkbox" id="subnav-button-military"><label for="subnav-button-military"></label><ul class="main-nav"><li class="subnavlink navlink-aviation"><a href="/category/aviation/">Aviation</a></li><li class="subnavlink navlink-naval"><a href="/category/naval/">Naval</a></li><li class="subnavlink navlink-military-vehicles"><a href="/category/military-vehicles/">Vehicles</a></li></ul></li><li class="navlink navlink-science"><a href="/category/science/">Science</a><input type="checkbox" id="subnav-button-science"><label for="subnav-button-science"></label><ul class="main-nav"><li class="subnavlink navlink-space"><a href="/category/space/">Space</a></li><li class="subnavlink navlink-artificial-intelligence"><a href="/category/artificial-intelligence/">Artificial Intelligence</a></li></ul></li><li class="navlink navlink-tools"><a href="/category/tools/">Tools</a><input type="checkbox" id="subnav-button-tools"><label for="subnav-button-tools"></label><ul class="main-nav"><li class="subnavlink navlink-hand-tools"><a href="/category/hand-tools/">Hand Tools</a></li><li class="subnavlink navlink-power-tools"><a href="/category/power-tools/">Power Tools</a></li><li class="subnavlink navlink-tool-brands"><a href="/category/tool-brands/">Tool Brands</a></li></ul></li><li class="navlink navlink-reviews"><a href="/category/reviews/">Reviews</a></li><li class="navlink navlink-features"><a href="/category/features/">Features</a></li></ul>        <ul class="social-buttons">
+            <li><a href="https://www.facebook.com/SlashGear" target="_blank" title="Facebook" aria-label="Facebook"><svg class="icon"><use xlink:href="#facebook"></use></svg></a></li><li><a href="https://x.com/slashgear" target="_blank" title="Twitter" aria-label="Twitter"><svg class="icon"><use xlink:href="#twitter"></use></svg></a></li><li><a href="https://profile.google.com/@slashgear" target="_blank" title="Google" aria-label="Google"><svg class="icon"><use xlink:href="#google"></use></svg></a></li><li><a href="https://flipboard.com/@Slashgear" target="_blank" title="Flipboard" aria-label="Flipboard"><svg class="icon"><use xlink:href="#flipboard"></use></svg></a></li><li><a href="/feed/" target="_blank" title="RSS" aria-label="RSS"><svg class="icon"><use xlink:href="#rss"></use></svg></a></li>
+            
+            <li class="menu-btn newsletter-btn"><a href="https://subscribe.slashgear.com/newsletter?utm_source=slashgear&utm_medium=side-nav" target="_blank" title="Newsletter" aria-label="Newsletter"><svg class="icon"><use xlink:href="#revue"></use></svg>Newsletter</a></li>
+        </ul>            <ul class="info-links">
+                <li class="info-link first-info-link"><a href="/about/">About</a></li>
+                <li class="info-link"><a href="/policies/">Editorial Policies</a></li>
+                <li class="info-link"><a href="/ai-policy/">No-AI Writing Policy</a></li>
+                <li class="info-link"><a href="/reviews-policy-guidelines/">Reviews Policy</a></li>
+                <li class="info-link"><a href="/our-experts/">Our Experts</a></li>
+                
+                <li class="info-link"><a href="/sitemap/">Archive</a></li>
+                <li class="info-link"><a href="https://www.static.com/slashgear-privacy-policy" target="_blank">Privacy Policy</a></a></li>
+                <li class="info-link"><a href="https://www.static.com/terms" target="_blank">Terms of Use</a></li>
+            </ul>
+            </nav>                        <div class="nav-bottom">
+                            <span class="copyright-info">&copy; 2026                                <a href="https://www.static.com/" target="_blank">Static Media</a>. All Rights Reserved
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="bg"></div>
+         
+            <div id="header-container">
+                <div id="hamburger-holder">
+                    <div class="hamburger nav-opener"></div>
+                </div>
+
+                    <div id="logo" class="top-nav-standard">
+        <a href="/"><img src="https://www.slashgear.com/img/SlashGear-Logo-RGB-White-SingleLine.svg" alt="SlashGear" width="187" height="39"></a>
+    </div>
+                <div id="logo-icon" class="top-nav-scrolled">
+                    <a href="/" >
+                        <img src="https://www.slashgear.com/img/slashgear-icon-white.svg" alt="SlashGear" width="33" height="36">                    </a>
+                </div>
+
+                <div id="top-nav-title" class="top-nav-scrolled">SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life</div>
+
+                            <div id="top-nav" class="top-nav-standard">
+                <nav id="top-nav-holder">
+                    
+                    <a href="/latest/" class="navlink-latest">Latest</a><a href="/category/news/" class="navlink-news">News</a>
+<a href="/category/technology/" class="navlink-technology">Tech</a>
+<a href="/category/automotive/" class="navlink-automotive">Cars</a>
+<a href="/category/entertainment/" class="navlink-entertainment">Entertainment</a>
+<a href="/category/military/" class="navlink-military">Military</a>
+<a href="/category/science/" class="navlink-science">Science</a>
+<a href="/category/tools/" class="navlink-tools">Tools</a>
+<a href="/category/reviews/" class="navlink-reviews">Reviews</a>
+<a href="/category/features/" class="navlink-features">Features</a>
+
+                </nav>
+            </div>                <svg width="0" height="0" class="hidden">
+            <symbol version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="rss">
+    <path d="M2.13 11.733c-1.175 0-2.13 0.958-2.13 2.126 0 1.174 0.955 2.122 2.13 2.122 1.179 0 2.133-0.948 2.133-2.122-0-1.168-0.954-2.126-2.133-2.126zM0.002 5.436v3.067c1.997 0 3.874 0.781 5.288 2.196 1.412 1.411 2.192 3.297 2.192 5.302h3.080c-0-5.825-4.739-10.564-10.56-10.564zM0.006 0v3.068c7.122 0 12.918 5.802 12.918 12.932h3.076c0-8.82-7.176-16-15.994-16z"></path>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="twitter">
+    <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="facebook">
+    <path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"></path>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 14" id="flipboard">
+    <path d="m 6.9999999,0.99982 5.9993001,0 0,1.99835 0,1.99357 -1.993367,0 -1.9980673,0 -0.014998,1.99357 -0.01,1.99835 -1.9980669,0.01 -1.9933674,0.0146 -0.014998,1.99835 -0.01,1.99357 -1.9834686,0 -1.9836686,0 0,-6.00006 0,-5.99994 5.9992001,0 z"></path>
+</symbol>
+        <symbol viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="instagram">
+    <path d="M17.3183118,0.0772036939 C18.5358869,0.132773211 19.3775594,0.311686093 20.156489,0.614412318 C20.9357539,0.917263935 21.5259307,1.30117806 22.1124276,1.88767349 C22.6988355,2.47414659 23.0827129,3.06422396 23.3856819,3.84361655 C23.688357,4.62263666 23.8672302,5.46418415 23.9227984,6.68172489 C23.9916356,8.19170553 24,8.72394829 24,11.9999742 C24,15.2760524 23.9916355,15.808302 23.9227954,17.3182896 C23.8672306,18.5358038 23.6883589,19.3773584 23.3855877,20.1566258 C23.0826716,20.9358162 22.6987642,21.5259396 22.1124276,22.1122749 C21.5259871,22.6987804 20.9357958,23.0827198 20.1563742,23.3856323 C19.3772192,23.6883583 18.5357324,23.8672318 17.3183209,23.9227442 C15.8086874,23.9916325 15.2765626,24 12,24 C8.72343739,24 8.19131258,23.9916325 6.68172382,23.9227463 C5.46426077,23.8672314 4.62270711,23.6883498 3.84342369,23.3855738 C3.0641689,23.0827004 2.47399369,22.6987612 1.88762592,22.1123283 C1.30117312,21.525877 0.91721975,20.9357071 0.614318116,20.1563835 C0.311643016,19.3773633 0.132769821,18.5358159 0.0772038909,17.3183251 C0.0083529426,15.8092887 0,15.2774634 0,11.9999742 C0,8.7225328 0.00835296697,8.19071076 0.0772047368,6.68165632 C0.132769821,5.46418415 0.311643016,4.62263666 0.614362729,3.84350174 C0.91719061,3.06430165 1.30113536,2.4741608 1.88757245,1.88772514 C2.47399369,1.30123879 3.0641689,0.917299613 3.84345255,0.614414972 C4.62236201,0.311696581 5.46409415,0.132773979 6.68163888,0.0772035898 C8.19074867,0.00835221992 8.72252573,0 12,0 C15.2774788,0 15.8092594,0.00835235053 17.3183118,0.0772036939 Z M12,2.66666667 C8.75959504,2.66666667 8.26400713,2.67445049 6.80319929,2.74109814 C5.87614637,2.78341009 5.31952221,2.90172878 4.80947575,3.09995521 C4.37397765,3.26922052 4.09725505,3.44924273 3.77324172,3.77329203 C3.44916209,4.09737087 3.26913181,4.37408574 3.09996253,4.80937168 C2.90169965,5.31965737 2.78340891,5.87618164 2.74109927,6.80321713 C2.67445122,8.26397158 2.66666667,8.75960374 2.66666667,11.9999742 C2.66666667,15.2403924 2.67445121,15.7360281 2.74109842,17.1967643 C2.78340891,18.1238184 2.90169965,18.6803426 3.09990404,19.1904778 C3.26914133,19.6259017 3.44919889,19.9026659 3.77329519,20.2267614 C4.09725505,20.5507573 4.37397765,20.7307795 4.80932525,20.8999863 C5.31971515,21.0982887 5.87621193,21.2165784 6.80323907,21.2588497 C8.26460439,21.3255353 8.76051223,21.3333333 12,21.3333333 C15.2394878,21.3333333 15.7353956,21.3255353 17.1968056,21.2588476 C18.123775,21.216579 18.6802056,21.0982995 19.1905083,20.9000309 C19.6260288,20.7307713 19.9027426,20.5507596 20.2267583,20.226708 C20.5507492,19.9027179 20.7308046,19.6259456 20.9000375,19.1906283 C21.0983009,18.6803412 21.2165908,18.1238118 21.2588986,17.196779 C21.3255376,15.7350718 21.3333333,15.2390126 21.3333333,11.9999742 C21.3333333,8.76098665 21.3255376,8.26493375 21.2589016,6.80323567 C21.2165911,5.87618164 21.0983004,5.31965737 20.9001178,4.80957831 C20.7308131,4.37403932 20.550774,4.09729207 20.2267583,3.77324038 C19.9027658,3.44924868 19.6260264,3.26922777 19.1905015,3.09996643 C18.6803988,2.90171817 18.1238378,2.78341062 17.1967608,2.74109868 C15.7359966,2.67445057 15.2404012,2.66666667 12,2.66666667 Z M12,18.2222222 C8.56356156,18.2222222 5.77777778,15.4364384 5.77777778,12 C5.77777778,8.56356156 8.56356156,5.77777778 12,5.77777778 C15.4364384,5.77777778 18.2222222,8.56356156 18.2222222,12 C18.2222222,15.4364384 15.4364384,18.2222222 12,18.2222222 Z M12,15.5555556 C13.9636791,15.5555556 15.5555556,13.9636791 15.5555556,12 C15.5555556,10.0363209 13.9636791,8.44444444 12,8.44444444 C10.0363209,8.44444444 8.44444444,10.0363209 8.44444444,12 C8.44444444,13.9636791 10.0363209,15.5555556 12,15.5555556 Z M18.2222222,7.11111111 C17.4858426,7.11111111 16.8888889,6.51415744 16.8888889,5.77777778 C16.8888889,5.04139811 17.4858426,4.44444444 18.2222222,4.44444444 C18.9586019,4.44444444 19.5555556,5.04139811 19.5555556,5.77777778 C19.5555556,6.51415744 18.9586019,7.11111111 18.2222222,7.11111111 Z"/>
+</symbol>
+         <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" id="linkedin">
+    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"/>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240.1 113.49" id="muckrack">
+    <path class="b" d="M223.2,73.59c11.2-7.6,16.8-20.3,16.9-33.3C240.1,20.39,226.8.09,199.4.09c-8.35-.1-18.27-.1-28.14-.07-9.86.02-19.66.07-27.76.07v113.4h29.6v-35h17l17.1,35h30.6l.8-5-18.7-33.4c2.5-.8,3.3-1.5,3.3-1.5ZM199,54.29h-25.8v-29.7h25.8c8.4,0,12.3,7.4,12.3,14.6s-4.1,15.1-12.3,15.1Z"/><polygon class="b" points="0 .14 10.9 .14 64.5 49.24 117.9 .14 129.3 .14 129.3 113.34 99.7 113.34 99.7 54.24 66.1 83.74 62.7 83.74 29.6 54.24 29.6 113.34 0 113.34 0 .14"/>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="7 2 2 12" id="youtube">
+    <path d="M15.841 4.8c0 0-0.156-1.103-0.637-1.587-0.609-0.637-1.291-0.641-1.603-0.678-2.237-0.163-5.597-0.163-5.597-0.163h-0.006c0 0-3.359 0-5.597 0.163-0.313 0.038-0.994 0.041-1.603 0.678-0.481 0.484-0.634 1.587-0.634 1.587s-0.159 1.294-0.159 2.591v1.213c0 1.294 0.159 2.591 0.159 2.591s0.156 1.103 0.634 1.588c0.609 0.637 1.409 0.616 1.766 0.684 1.281 0.122 5.441 0.159 5.441 0.159s3.363-0.006 5.6-0.166c0.313-0.037 0.994-0.041 1.603-0.678 0.481-0.484 0.637-1.588 0.637-1.588s0.159-1.294 0.159-2.591v-1.213c-0.003-1.294-0.162-2.591-0.162-2.591zM6.347 10.075v-4.497l4.322 2.256-4.322 2.241z"></path>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="pinterest">
+    <g>
+    <path d="M220.646,338.475C207.223,408.825,190.842,476.269,142.3,511.5
+            c-14.996-106.33,21.994-186.188,39.173-270.971c-29.293-49.292,3.518-148.498,65.285-124.059
+            c76.001,30.066-65.809,183.279,29.38,202.417c99.405,19.974,139.989-172.476,78.359-235.054
+            C265.434-6.539,95.253,81.775,116.175,211.161c5.09,31.626,37.765,41.22,13.062,84.884c-57.001-12.65-74.005-57.6-71.822-117.533
+            c3.53-98.108,88.141-166.787,173.024-176.293c107.34-12.014,208.081,39.398,221.991,140.376
+            c15.67,113.978-48.442,237.412-163.23,228.529C258.085,368.704,245.023,353.283,220.646,338.475z">
+    </path>
+    </g>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="tiktok">
+    <path d="M 22.472559,-3.8146973e-6 C 23.000559,4.5408962 25.535059,7.2481962 29.941559,7.5361962 v 5.1073998 c -2.5536,0.2496 -4.7905,-0.5856 -7.3922,-2.1601 v 9.5523 c 0,12.1348 -13.2292004,15.927 -18.5478004,7.2291 -3.4177,-5.597 -1.3248,-15.4181 9.6387004,-15.8117 v 5.3857 c -0.8352,0.1344 -1.728,0.3456 -2.5441,0.6241 -2.4384004,0.8256 -3.8209004,2.3712 -3.4369004,5.0977 0.7392,5.2226 10.3204004,6.7682 9.5235004,-3.4369 V 0.00959619 h 5.2898 z" />
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" id="twitch">
+    <path d="M3 0l-3 5v23h8v4h4l4-4h5l9-9v-19h-27zM26 17l-5 5h-5l-4 4v-4h-6v-18h20v13z"></path><path d="M19 8h3v8h-3v-8z"></path><path d="M13 8h3v8h-3v-8z"></path>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.016 512.016" id="snapchat" >
+    <g>
+        <g>
+            <path d="M500.459,375.368c-64.521-10.633-93.918-75.887-97.058-83.294c-0.06-0.145-0.307-0.666-0.375-0.819
+                c-3.234-6.571-4.036-11.904-2.347-15.838c3.388-8.013,17.741-12.553,26.931-15.462c2.586-0.836,5.009-1.604,6.938-2.372
+                c18.586-7.339,27.913-16.717,27.716-27.895c-0.179-8.866-7.134-17.007-17.434-20.651c-3.55-1.485-7.774-2.295-11.887-2.295
+                c-2.842,0-7.066,0.401-11.102,2.287c-7.868,3.678-14.865,5.658-20.156,5.888c-2.355-0.094-4.139-0.486-5.427-0.922
+                c0.162-2.79,0.35-5.658,0.529-8.585l0.094-1.493c2.193-34.807,4.915-78.123-6.673-104.081
+                c-34.27-76.834-106.999-82.807-128.478-82.807l-10.018,0.094c-21.436,0-94.029,5.965-128.265,82.756
+                c-11.614,26.018-8.866,69.316-6.664,104.115c0.213,3.422,0.427,6.758,0.614,10.01c-1.468,0.503-3.584,0.947-6.46,0.947
+                c-6.161,0-13.542-1.997-21.931-5.922c-12.126-5.683-34.295,1.911-37.291,17.647c-1.63,8.516,1.801,20.796,27.383,30.908
+                c1.988,0.785,4.489,1.587,7.561,2.56c8.576,2.722,22.929,7.27,26.325,15.266c1.681,3.951,0.879,9.284-2.662,16.512
+                c-1.263,2.944-31.65,72.124-98.765,83.174c-6.963,1.143-11.93,7.322-11.537,14.353c0.111,1.954,0.563,3.917,1.399,5.897
+                c5.641,13.193,27.119,22.349,67.55,28.766c0.887,2.295,1.92,7.006,2.509,9.737c0.853,3.9,1.749,7.927,2.97,12.1
+                c1.229,4.224,4.881,11.307,15.445,11.307c3.575,0,7.714-0.811,12.211-1.681c6.468-1.271,15.309-2.995,26.274-2.995
+                c6.084,0,12.416,0.546,18.825,1.604c12.092,2.005,22.699,9.506,35.004,18.202c18.116,12.809,34.586,22.605,67.524,22.605
+                c0.87,0,1.732-0.026,2.577-0.085c1.22,0.06,2.449,0.085,3.695,0.085c28.851,0,54.246-7.62,75.494-22.63
+                c11.742-8.311,22.835-16.162,34.935-18.176c6.426-1.058,12.766-1.604,18.85-1.604c10.513,0,18.901,1.348,26.385,2.816
+                c5.06,0.998,9.02,1.476,12.672,1.476c7.373,0,12.8-4.053,14.874-11.127c1.195-4.113,2.091-8.021,2.961-12.015
+                c0.461-2.125,1.57-7.211,2.509-9.66c39.851-6.34,60.203-15.138,65.835-28.297c0.845-1.894,1.34-3.9,1.476-6.033
+                C512.372,382.707,507.422,376.529,500.459,375.368z"/>
+        </g>
+    </g>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192" id="threads">
+    <path d="M141.537 88.9883C140.71 88.5919 139.87 88.2104 139.019 87.8451C137.537 60.5382 122.616 44.905 97.5619 44.745C97.4484 44.7443 97.3355 44.7443 97.222 44.7443C82.2364 44.7443 69.7731 51.1409 62.102 62.7807L75.881 72.2328C81.6116 63.5383 90.6052 61.6848 97.2286 61.6848C97.3051 61.6848 97.3819 61.6848 97.4576 61.6855C105.707 61.7381 111.932 64.1366 115.961 68.814C118.893 72.2193 120.854 76.925 121.825 82.8638C114.511 81.6207 106.601 81.2385 98.145 81.7233C74.3247 83.0954 59.0111 96.9879 60.0396 116.292C60.5615 126.084 65.4397 134.508 73.775 140.011C80.8224 144.663 89.899 146.938 99.3323 146.423C111.79 145.74 121.563 140.987 128.381 132.296C133.559 125.696 136.834 117.143 138.28 106.366C144.217 109.949 148.617 114.664 151.047 120.332C155.179 129.967 155.42 145.8 142.501 158.708C131.182 170.016 117.576 174.908 97.0135 175.059C74.2042 174.89 56.9538 167.575 45.7381 153.317C35.2355 139.966 29.8077 120.682 29.6052 96C29.8077 71.3178 35.2355 52.0336 45.7381 38.6827C56.9538 24.4249 74.2039 17.11 97.0132 16.9405C119.988 17.1113 137.539 24.4614 149.184 38.788C154.894 45.8136 159.199 54.6488 162.037 64.9503L178.184 60.6422C174.744 47.9622 169.331 37.0357 161.965 27.974C147.036 9.60668 125.202 0.195148 97.0695 0H96.9569C68.8816 0.19447 47.2921 9.6418 32.7883 28.0793C19.8819 44.4864 13.2244 67.3157 13.0007 95.9325L13 96L13.0007 96.0675C13.2244 124.684 19.8819 147.514 32.7883 163.921C47.2921 182.358 68.8816 191.806 96.9569 192H97.0695C122.03 191.827 139.624 185.292 154.118 170.811C173.081 151.866 172.51 128.119 166.26 113.541C161.776 103.087 153.227 94.5962 141.537 88.9883ZM98.4405 129.507C88.0005 130.095 77.1544 125.409 76.6196 115.372C76.2232 107.93 81.9158 99.626 99.0812 98.6368C101.047 98.5234 102.976 98.468 104.871 98.468C111.106 98.468 116.939 99.0737 122.242 100.233C120.264 124.935 108.662 128.946 98.4405 129.507Z" />
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="bluesky">
+    <path d="M111.8 62.2C170.2 105.9 233 194.7 256 242.4c23-47.6 85.8-136.4 144.2-180.2c42.1-31.6 110.3-56 110.3 21.8c0 15.5-8.9 130.5-14.1 149.2C478.2 298 412 314.6 353.1 304.5c102.9 17.5 129.1 75.5 72.5 133.5c-107.4 110.2-154.3-27.6-166.3-62.9l0 0c-1.7-4.9-2.6-7.8-3.3-7.8s-1.6 3-3.3 7.8l0 0c-12 35.3-59 173.1-166.3 62.9c-56.5-58-30.4-116 72.5-133.5C100 314.6 33.8 298 15.7 233.1C10.4 214.4 1.5 99.4 1.5 83.9c0-77.8 68.2-53.4 110.3-21.8z"/>
+</symbol>
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="google">
+    <path d="M500 261.8C500 403.3 403.1 504 260 504 122.8 504 12 393.2 12 256S122.8 8 260 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9c-88.3-85.2-252.5-21.2-252.5 118.2 0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9l-140.8 0 0-85.3 236.1 0c2.3 12.7 3.9 24.9 3.9 41.4z"/>
+</symbol>
+        <symbol id="website" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.91041 1.47245C3.56879 -0.185927 6.25755 -0.185927 7.91592 1.47245L10.9186 4.47521C12.577 6.13361 12.577 8.82231 10.9186 10.4807C10.5041 10.8954 9.83185 10.8954 9.41728 10.4807C9.00271 10.0661 9.00271 9.39389 9.41728 8.97932C10.2465 8.15019 10.2465 6.80573 9.41728 5.97659L6.41454 2.97383C5.58535 2.14465 4.24097 2.14465 3.41178 2.97383C2.58261 3.80302 2.58261 5.1474 3.41178 5.97659L4.16248 6.72728C4.57708 7.14185 4.57707 7.81407 4.16248 8.22864C3.74789 8.64321 3.07569 8.64321 2.6611 8.22864L1.91041 7.47796C0.252031 5.81959 0.252031 3.13083 1.91041 1.47245ZM7.91592 5.9766C8.33049 6.39116 8.33049 7.06339 7.91592 7.47796C7.08678 8.3072 7.08678 9.65155 7.91592 10.4807L10.9186 13.4835C11.7479 14.3127 13.0922 14.3127 13.9215 13.4835C14.7506 12.6543 14.7506 11.3099 13.9215 10.4807L13.1708 9.73C12.7561 9.31544 12.7561 8.64321 13.1708 8.22864C13.5854 7.81407 14.2575 7.81407 14.6722 8.22864L15.4228 8.97932C17.0812 10.6377 17.0812 13.3265 15.4228 14.9849C13.7645 16.6433 11.0757 16.6433 9.41728 14.9849L6.41455 11.9822C4.75618 10.3238 4.75618 7.63498 6.41455 5.9766C6.82912 5.562 7.50135 5.562 7.91592 5.9766Z"/>
+</symbol>
+            <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" id="revue">
+        <path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/>
+    </symbol>
+        
+        
+        
+        <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="advertise">
+            <g clip-path="url(#clip0_1911_5435)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 1.40497L2.26973 4.27073L0 2.34144V12.6558L2.26967 10.7271L3.84476 11.191V14.1933C3.84529 15.229 4.55813 16.067 5.43904 16.0676H9.23405C9.67247 16.0682 10.0745 15.8571 10.3609 15.5183C10.6488 15.1814 10.8284 14.709 10.8278 14.1932V13.2478L12 13.593V1.40497ZM5.09306 14.5997C5.00434 14.4935 4.95039 14.3537 4.94986 14.1932V11.5168L9.72281 12.9219V14.1932C9.72227 14.3537 9.66885 14.4935 9.5796 14.5997C9.48985 14.7047 9.37052 14.7676 9.23409 14.7676H5.4391C5.30214 14.7676 5.18281 14.7047 5.09306 14.5997Z" />
+            <path d="M13 1.11045L17 -0.067627V15.0654L13 13.8875V1.11045Z" />
+            </g>
+            <defs>
+            <clipPath id="clip0_1911_5435">
+            <rect width="16" height="16" fill="white"/>
+            </clipPath>
+            </defs>
+        </symbol>
+                <symbol viewBox="0 0 64 57" xmlns="http://www.w3.org/2000/svg" id="thumbsup">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7933 21.5044C22.54 21.6421 22.2822 21.7823 22.0204 21.9295C22.0137 21.9083 22.0069 21.8874 22 21.8667V54.1681C22.0473 54.1141 22.096 54.0676 22.1472 54.0305C22.3661 54.1925 22.5841 54.3516 22.8007 54.5096C23.3703 54.9252 23.93 55.3334 24.4689 55.7699C25.0542 56.2474 25.7916 56.4965 26.5455 56.4713C35.1617 56.4619 43.7798 56.4571 52.3998 56.4571C53.1277 56.4701 53.8553 56.4218 54.575 56.3129C57.7082 55.784 59.4636 53.6034 59.441 50.563C59.3937 42.2709 59.4151 33.9762 59.4365 25.6838L59.441 23.9093C59.4589 23.2561 59.3313 22.6071 59.0676 22.0097C58.8039 21.4123 58.4107 20.8815 57.9167 20.4559C56.6629 19.3274 55.1273 18.9428 53.4903 18.9428H40.1742H39.4022C39.4022 18.0371 39.4089 17.1432 39.4155 16.2571L39.4155 16.2562L39.4155 16.2553C39.4286 14.5051 39.4415 12.7856 39.4022 11.066C39.3289 7.87573 39.1512 4.18038 36.4998 2.29674C34.5754 0.927851 31.3467 0.520577 29.0193 0.546032C27.171 0.546032 25.6382 1.60381 25.0747 3.37431C24.8545 4.11776 24.7444 5.88964 24.7478 6.66522C24.7324 9.06924 24.7313 11.4733 24.7303 13.8773C24.7294 15.8571 24.7286 17.8369 24.7196 19.8167C24.7236 19.9564 24.6985 20.0955 24.6462 20.225C24.5938 20.3545 24.5152 20.4716 24.4153 20.5691C23.9 20.9029 23.3578 21.1976 22.7934 21.5044L22.7934 21.5044L22.7933 21.5044ZM7.94737 22.0002C6.31958 22.0002 5 23.791 5 26.0002V50.0002C5 52.2093 6.31958 54.0002 7.94737 54.0002H19V22.0002H7.94737Z"></path>
+            </symbol>
+            <symbol viewBox="0 0 64 57" xmlns="http://www.w3.org/2000/svg" id="thumbsdown">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M22.7933 35.3652C22.54 35.2275 22.2822 35.0874 22.0204 34.9402C22.0137 34.9613 22.0069 34.9822 22 35.0029V2.7015C22.0473 2.75558 22.096 2.80203 22.1472 2.83916C22.3661 2.67709 22.5841 2.51802 22.8007 2.36C23.3703 1.94447 23.93 1.53622 24.4689 1.09977C25.0542 0.622272 25.7916 0.373169 26.5455 0.39835C35.1617 0.407776 43.7798 0.412495 52.3998 0.412495C53.1277 0.399574 53.8553 0.447819 54.575 0.556732C57.7082 1.08562 59.4636 3.26622 59.441 6.30663C59.3937 14.5988 59.4151 22.8934 59.4365 31.1858L59.441 32.9604C59.4589 33.6136 59.3313 34.2625 59.0676 34.8599C58.8039 35.4573 58.4107 35.9881 57.9167 36.4137C56.6629 37.5422 55.1273 37.9268 53.4903 37.9268H40.1742H39.4022C39.4022 38.8325 39.4089 39.7264 39.4155 40.6125L39.4155 40.6134L39.4155 40.6143C39.4286 42.3645 39.4415 44.084 39.4022 45.8036C39.3289 48.9939 39.1512 52.6893 36.4998 54.5729C34.5754 55.9418 31.3467 56.3491 29.0193 56.3236C27.171 56.3236 25.6382 54.2658 25.0747 52.4953C24.8545 51.7519 24.7444 50.98 24.7478 50.2044C24.7324 47.8004 24.7313 45.3964 24.7303 42.9923C24.7294 41.0125 24.7286 39.0327 24.7196 37.0529C24.7236 36.9132 24.6985 36.7742 24.6462 36.6447C24.5938 36.5152 24.5152 36.398 24.4153 36.3006C23.9 35.9668 23.3578 35.672 22.7934 35.3652L22.7934 35.3652L22.7933 35.3652ZM7.94737 34.8695C6.31958 34.8695 5 33.0786 5 30.8695V6.86946C5 4.66032 6.31958 2.86946 7.94737 2.86946H19V34.8695H7.94737Z"></path>
+            </symbol>
+</svg>                    <nav id="social-nav-holder" class="top-nav-standard">
+        <ul class="social-buttons">
+            <li><a href="https://www.facebook.com/SlashGear" target="_blank" title="Facebook" aria-label="Facebook"><svg class="icon"><use xlink:href="#facebook"></use></svg></a></li><li><a href="https://x.com/slashgear" target="_blank" title="Twitter" aria-label="Twitter"><svg class="icon"><use xlink:href="#twitter"></use></svg></a></li><li><a href="https://profile.google.com/@slashgear" target="_blank" title="Google" aria-label="Google"><svg class="icon"><use xlink:href="#google"></use></svg></a></li><li><a href="https://flipboard.com/@Slashgear" target="_blank" title="Flipboard" aria-label="Flipboard"><svg class="icon"><use xlink:href="#flipboard"></use></svg></a></li><li><a href="/feed/" target="_blank" title="RSS" aria-label="RSS"><svg class="icon"><use xlink:href="#rss"></use></svg></a></li>
+            
+            <li class="menu-btn newsletter-btn"><a href="https://subscribe.slashgear.com/newsletter?utm_source=slashgear&utm_medium=top-nav" target="_blank" title="Newsletter" aria-label="Newsletter"><svg class="icon"><use xlink:href="#revue"></use></svg>Newsletter</a></li>
+        </ul>
+    </nav>
+                                <div id="top-nav-share" class="top-nav-scrolled"></div>
+	                        </div>
+            <div id="is-tablet"></div>
+            <div id="is-mobile"></div>
+        </header>
+<main id="main" role="main" class="infinite review" data-post-type="articles">
+    <div class="holder">
+        <div id="content" class="article">
+            
+
+            <article class="news-post">
+    
+    
+    <ul class="breadcrumbs">
+<li>
+<a href="/category/reviews/">Reviews</a> </li>
+<li>
+<a href="/category/home-entertainment-reviews/">Home Entertainment Reviews</a> </li>
+</ul>
+                <div class="news-article">
+                <h1 class="title-gallery" data-post-id="2276269" id="title-gallery" data-author="Sarah Chaney" data-category="home-entertainment-reviews" data-content_type="Review" data-mod_date="2026-10-02" data-layout="Infinite" data-post_id="2276269" data-pub_date="2026-10-02" data-day="Friday" data-dayhour="Friday-4PM" data-pubhour="4PM" data-num_slides="10" data-num_words="2300" data-pitcher="Sarah Chaney" data-trello_board="Features" data-intent="evergreen" data-ideation="editorial">SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life</h1>
+					
+            </div>
+
+    
+                <div class="news-article">
+                
+                                <div class="byline-container">
+                    <div class="byline-text-wrap">
+                        <span class="byline-by">By</span> <a href="/author/sarahchaney/" class="byline-author">Sarah Chaney</a>
+                        
+                        <span class="byline-timestamp">
+                            <time datetime="2026-10-02T20:04:25+00:00">Oct. 2, 2026 4:04 pm EST</time></span>
+                        
+                    </div>
+                    
+                </div>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap lead-image-holder" data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="" data-post-id="2276269">
+                         
+                                             <picture id="pdb1d4312b6452bca1c22507d992c2e30">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/intro-1790972249.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/intro-1790972249.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/intro-1790972249.jpg" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: " width="780" height="438" alt="SteelSeries Rival Pro and Sensei Pro mice next to an open laptop">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+                        <div class="columns-holder">
+            <div class="add-on-google-widget">
+                <div class="add-on-google-heading">Add SlashGear on Google:</div>
+                <div class="add-on-google-buttons-row">
+                    <button type="button" class="add-on-google-btn" id="preferred-source">Preferred Source</button>
+                    <a href="https://profile.google.com/@slashgear" target="_blank" class="add-on-google-btn" id="google-discover">Google Discover</a>
+                </div>
+            </div>
+        </div>
+                
+				            <div class="columns-holder ">
+                <p class="disclaimer"><small>We may receive a commission on purchases made from links.</small></p>
+                
+                <p dir="ltr">SteelSeries adds to its lineup of gaming mice with the Rival Pro and Sensei Pro, two wireless mice that both boast 8K ultra-wideband (UWB) connectivity, an incredibly lightweight design, and a swappable battery system that essentially gives you "infinite" battery life. The Sensei Pro features a symmetrical design that's perfect for either left- or right-handed use and the Rival Pro sports an ergonomic shape that's designed with right-handed users in mind, but other than this design difference (and subsequently, a minor size difference), these two gaming mice are identical.</p>
+<p dir="ltr">Both the Rival Pro and Sensei Pro are priced fairly high at $179.99, and that's the same price you'll pay for the full-size models or the Mini variants. Both the Rival Pro and its Mini model, along with the Sensei Pro and its Mini model, are available in two colors: black and white. SteelSeries provided me with a black Rival Pro and a black Sensei Pro for testing and, after spending about a week with both mice, I can confidently dive into my favorite features as well as a few things I disliked.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Speedy setup with PC and console connectivity</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="1" data-post-id="2276269">
+                         
+                                             <picture id="pc9fb1675012cf09827c20a159dff39b0">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/speedy-setup-with-pc-and-console-connectivity-1790972250.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/speedy-setup-with-pc-and-console-connectivity-1790972250.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/speedy-setup-with-pc-and-console-connectivity-1790972250.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="1" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Speedy setup with PC and console connectivity" width="780" height="438" alt="SteelSeries Sensei Pro mouse next to all of its accessories">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">Both the Rival Pro and Sensei Pro mice from Steelseries offer ultra-wideband (UWB) connectivity via a USB-C to USB-A cable and a base receiver station. With a plug-and-play setup, both mice were ready for use within just a few minutes of unboxing. The included cable's USB-C side connects to the base station and the USB-A side can connect to either a PC, an Xbox Series X or S, or a PS5, though Steelseries notes that consoles might not support all features.</p>
+<div class="image-holder embedded gallery-image-holder credit-image-wrap">
+<img class="gallery-image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="SteelSeries Rival Pro mouse next to all of its accessories" data-lazy-src="https://www.slashgear.com/img/uploads/embed/it-5pWNeZ-1790794215.jpg" border="0"><span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+</div>
+<p>With the base station plugged into your device, you can lock in the extra battery puck so it can start charging. Then, as long as the Rival Pro and Sensei Pro are within working distance of the receiver, they start functioning right after you hold the Power/DPI button down for two seconds. If you want to use either mouse with a different computer or console, all you have to do is set up the cable and base station at its new location.</p>
+<p dir="ltr">Or, you can buy a Steelseries travel dongle, sold separately, to unlock the ability to use either of these new mice with a second system without having to worry about moving the base station and the connecting cable every time. The mouse will connect to whichever device is currently active, or if both are active at once, you can manually switch between them by holding the Power/DPI button and pressing the scroll wheel.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">One mouse is symmetrical, the other is ergonomic</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="2" data-post-id="2276269">
+                         
+                                             <picture id="p796125f40d7941fd9f9c961d945f9850">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/one-mouse-is-symmetrical-the-other-is-ergonomic-1790972250.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/one-mouse-is-symmetrical-the-other-is-ergonomic-1790972250.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/one-mouse-is-symmetrical-the-other-is-ergonomic-1790972250.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="2" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: One mouse is symmetrical, the other is ergonomic" width="780" height="438" alt="SteelSeries Rival Pro mouse next to Sensei Pro mouse">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">Feature-wise, the Sensei Pro and Rival Pro are nearly identical. But taking a look at these mice side by side, it's clear they're sporting slightly different designs. The Sensei Pro is symmetrical, with an even dome shape on both sides and a slight indent along each edge where your non-clicking fingers rest when holding the mouse. Alternatively, the Rival Pro features an ergonomic design for right-handed users, with a deeper indent on the left edge of the mouse where your thumb rests and a dome shape that's higher on the left side.</p>
+<p dir="ltr">In addition to having extra height compared to the Sensei Pro, the Rival Pro is a bit wider. The Rival Pro measures 4.95 x 2.69 x 1.66 inches, whereas the Sensei Pro measures 4.94 x 2.62 x 1.52 inches. Both mice weigh in at approximately 1.86 ounces. If you have smaller hands, Steelseries' Rival Pro Mini or Sensei Pro Mini might be better picks, with dimensions of 4.75 x 2.57 x 1.59 inches and 4.65 x 2.46 x 1.43 inches, respectively. Both of these mini versions weigh a tiny bit less too: 1.73 ounces.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Plasticky design is lightweight, but nothing super special</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="3" data-post-id="2276269">
+                         
+                                             <picture id="pa4784e876aaede16141536e44ee8e1e7">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/plasticky-design-is-lightweight-but-nothing-super-special-1790972251.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/plasticky-design-is-lightweight-but-nothing-super-special-1790972251.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/plasticky-design-is-lightweight-but-nothing-super-special-1790972251.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="3" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Plasticky design is lightweight, but nothing super special" width="780" height="438" alt="SteelSeries Sensei Pro mouse next to open laptop">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">If you're after a lightweight gaming mouse, both the Rival Pro and Sensei Pro are fantastic options. It isn't clear exactly which material each mouse is constructed with, but it feels and looks like a high-quality plastic. If you don't want your mouse to feel smooth and slick or you don't want to see or clean the mild finger oils left behind after a long gaming session, Steelseries includes grip stickers you can apply. There are grip stickers for the left- and right-click buttons, the two small buttons on each mouse's left side, the edge below these side buttons, and the right edge. The grips are easy to apply and to adjust if you don't align them perfectly the first time.</p>
+<p dir="ltr">Both models come with pre-installed white mouse feet made with 100% PTFE material, and there's a set of blue feet included in the box if you need to replace them down the line. The battery-charging base station has a similarly lightweight, plasticky feel, and both the base and the mice are equipped with various LED indicators for battery levels, polling rates, and DPI settings. Both the Rival Pro and Sensei Pro offer simplistic designs that feel great, but might not be particularly eye-catching on a desk.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Satisfying clicks and a smooth scroll wheel</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="4" data-post-id="2276269">
+                         
+                                             <picture id="p3d09bd6f5a4862763f648907c08b471f">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/satisfying-clicks-and-a-smooth-scroll-wheel-1790972251.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/satisfying-clicks-and-a-smooth-scroll-wheel-1790972251.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/satisfying-clicks-and-a-smooth-scroll-wheel-1790972251.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="4" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Satisfying clicks and a smooth scroll wheel" width="780" height="438" alt="Closeup of scroll wheel and grip stickers on SteelSeries Rival Pro mouse">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">There's a pleasant amount of travel and resistance from the left- and right-click mouse buttons on both the Rival Pro and Sensei Pro, and these buttons along with the two side buttons give off a satisfying clicky sound and feel. The scroll wheel feels great and performs well, with a ridged, grippy center, decently spaced notches for the wheel to lock into as you scroll, and a near-instant, smooth response, whether you're scrolling or clicking.</p>
+<p dir="ltr">While testing, I noticed the scroll wheel performance drop when the mouse was around 17% battery life, responding slowly or sometimes not at all. I messed with the mouse's performance settings in the software first, but ultimately, the thing that fixed the issue was swapping out the drained battery puck for the fully charged one ready to go in the base station.</p>
+<p dir="ltr">Altogether, the wireless mouse system for both mice delivers a true polling rate of 8000 Hz and a response time of 0.125 milliseconds, and has the capability of going even further with a max over-polling rate of 9000 Hz and response time of 0.111 ms. Pressing the base station button allows you to change the polling and sensor report rates, or you can also customize this and many other settings via the SteelSeries GG app.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Wide DPI range and easy personalization via SteelSeries GG</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="5" data-post-id="2276269">
+                         
+                                             <picture id="pe1c9db63104a1288c8b4176aa730187b">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/wide-dpi-range-and-easy-personalization-via-steelseries-gg-1790972251.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/wide-dpi-range-and-easy-personalization-via-steelseries-gg-1790972251.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/wide-dpi-range-and-easy-personalization-via-steelseries-gg-1790972251.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="5" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Wide DPI range and easy personalization via SteelSeries GG" width="780" height="438" alt="Sensitivity and Binding settings for Sensei Pro in SteelSeries GG app">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">SteelSeries' Rival Pro and Sensei Pro mice have a great DPI range, starting at 1 and going all the way up to 65K DPI. Out of the box, it comes with five preset levels at 400, 800, 1600, 2400, and 3200 DPI, but you can customize all five of these levels via the software if you want. You can even toggle on an Independent X-Y setting and customize the DPI setting for the X and Y axes individually.</p>
+<p dir="ltr">There are also five different levels for polling rate and sensor report rate settings, ranging from level one at 1000 Hz for both the polling and sensor report rate to level five at 8000 Hz for both. These levels are preset for your convenience, but you can customize any level to be exactly what you want as well, with available intervals at 125, 250, 500, 1000, 2000, 4000, and 8000 Hz for either polling rate or sensor report rate.</p>
+<p dir="ltr">Each of the DPI levels corresponds with a color, and when you press the Power/DPI button on the bottom of the mouse, the color in the LED light on the left side of the mouse indicates which DPI level it's currently set to. Similarly, the polling and sensor report rate levels have their own unique colors, and you can tell which of these levels the mouse is using or change the level by pressing the base station's button and checking the built-in LED indicator.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">The Rival Pro and Sensei Pro are highly customizable</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="6" data-post-id="2276269">
+                         
+                                             <picture id="p24abc5557da634f7a7603551631791c3">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/the-rival-pro-and-sensei-pro-are-highly-customizable-1790972252.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/the-rival-pro-and-sensei-pro-are-highly-customizable-1790972252.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/the-rival-pro-and-sensei-pro-are-highly-customizable-1790972252.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="6" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: The Rival Pro and Sensei Pro are highly customizable" width="780" height="438" alt="Tracking Tools settings for Sensei Pro in SteelSeries GG app">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">Past adjusting polling rate and DPI sensitivity, the SteelSeries GG app lets you customize something called Lift-off and Landing Distance. This affects how far you can lift the mouse off your desk surface before it stops tracking and how close it needs to be before tracking can resume. By default, it's set to 1, but you can customize this range between 0.7 and 1.7 for both or toggle on the independent setting to set each distance individually. You can also adjust Click Response between 0 and 20 ms, though SteelSeries gives a warning that this is an advanced setting that, if changed from the recommended default of 8 ms, could result in unintended or double clicks.</p>
+<p dir="ltr">On the Tracking Tools tab in the app, you can change how different inputs are received. Adjusting Acceleration/Deceleration affects how your mouse responds to movement speed, changing Rotation digitally tilts sensor input to better match your hand movement, and enabling Angle Snapping helps sensor input move in straighter lines. Then, the Power &amp; Device tab allows you to customize what the mouse does in Low Power mode, if anything, and when it kicks in, along with personalizing the sleep timer to preserve battery.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Two programmable side buttons, endless possibilities</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="7" data-post-id="2276269">
+                         
+                                             <picture id="pfb79c84eafc9493b1c3bbf5a7bdd59de">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/two-programmable-side-buttons-endless-possibilities-1790972252.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/two-programmable-side-buttons-endless-possibilities-1790972252.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/two-programmable-side-buttons-endless-possibilities-1790972252.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="7" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Two programmable side buttons, endless possibilities" width="780" height="438" alt="closeup of programmable side buttons on SteelSeries Rival Pro mouse">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">All in all, there are six total buttons on the Rival Pro and Sensei Pro. There's the left- and right-click buttons, the scroll wheel, the Power/DPI button on the bottom, and two extra buttons on the left side of the mouse. All of the buttons are technically customizable, but all except the two on the mouse's left side already serve vital purposes, so these two small buttons are likely the only ones that users will change via the SteelSeries GG app.</p>
+<p dir="ltr">Either button can be set up to act as a key on your keyboard, like the Backspace key or a Function key, the Print Screen command, or an arrow key. Or, you can set the buttons to function as media controls, launch an installed application, launch an engine app, or kick off common OS shortcuts, including copy, paste, lock screen, open task manager, snap the window to the right or left edge, and more.</p>
+<p dir="ltr">If none of that sounds like a helpful action to assign to these programmable buttons, you can launch the Macro Editor and get to work on a fully customized command. Using the Macro Editor, you can create a new text macro where you can paste your own scripts or a new keypress macro that tracks button presses from both your mouse and keyboard after you hit record.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Zero notes on this unlimited battery system</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="8" data-post-id="2276269">
+                         
+                                             <picture id="pe75af43341ce24dfa8addf0f2f446da5">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/zero-notes-on-this-unlimited-battery-system-1790972252.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/zero-notes-on-this-unlimited-battery-system-1790972252.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/zero-notes-on-this-unlimited-battery-system-1790972252.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="8" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Zero notes on this unlimited battery system" width="780" height="438" alt="Bottom of SteelSeries Rival Pro mouse next to extra battery and base station">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">One of the best features of Steelseries' Rival Pro and Sensei Pro mice is its unlimited battery life system. There are two circular batteries, one that clicks into the bottom of the mouse and another that clicks into the top of the base station. When you see the mouse LED (or the base station LED) pulsing red, you know it's time to swap the batteries.</p>
+<div class="image-holder embedded gallery-image-holder credit-image-wrap">
+<img class="gallery-image lazyload" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="Hand holding the SteelSeries Sensei Pro mouse upside down to show battery" data-lazy-src="https://www.slashgear.com/img/uploads/embed/it-sTa11a-1790794797.jpg" border="0"><span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+</div>
+<p dir="ltr">To take the depleted battery out of the mouse, you simply hold the mouse in one hand, push up on the battery, and twist it counterclockwise to unlock it. Then, to install a new battery in the mouse (and also set up the depleted battery to charge in the base station), you align it until it falls level in the slot and then twist it clockwise to lock it into place.</p>
+<p dir="ltr">It's an incredibly fast and easy process to swap the batteries, taking less than 10 seconds in total once you know what you're doing. Plus, with how great the battery life is, you likely won't be swapping the batteries very often anyway. After a few hours of work, the mouse had only used up around 20% battery. At the same time, the base station had charged up the other battery roughly 60%. So even if you're demanding more from the mouse when gaming, it's great to know the battery in the base station will charge much faster than you can deplete the battery in the mouse.</p>
+
+            </div>
+            </div>
+
+            <div class="news-article">
+                
+                <h2 class="">Should you buy a SteelSeries Rival Pro or Sensei Pro gaming mouse?</h2>
+                                <div class="slide-key image-holder gallery-image-holder credit-image-wrap " data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life" data-slide-num="9" data-post-id="2276269">
+                         
+                                             <picture id="p3228259250cb82d07caae84d7b913343">
+                                                    <source media="(min-width: 429px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/should-you-buy-a-steelseries-rival-pro-or-sensei-pro-gaming-mouse-1790972253.webp" type="image/webp">
+                            <source media="(max-width: 428px)" srcset="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/should-you-buy-a-steelseries-rival-pro-or-sensei-pro-gaming-mouse-1790972253.sm.webp" type="image/webp">
+                        <img class="gallery-image " src="https://www.slashgear.com/img/gallery/steelseries-senesi-pro-x-rival-pro-review/should-you-buy-a-steelseries-rival-pro-or-sensei-pro-gaming-mouse-1790972253.jpg" loading="lazy" data-slide-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-id="2276269" data-slide-num="9" data-slide-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life: Should you buy a SteelSeries Rival Pro or Sensei Pro gaming mouse?" width="780" height="438" alt="SteelSeries Rival Pro and Sensei Pro mice resting on their product boxes">
+                    </source></source></picture>
+                    <span class="gallery-image-credit">Sarah Chaney/SlashGear</span>
+                    </div>
+				            <div class="columns-holder ">
+                <p dir="ltr">After testing the Rival Pro and Sensei Pro mice daily over the last week, I think it's safe to say SteelSeries absolutely delivers on the advertised promise of a lightweight wireless gaming mouse with smooth performance and minimal input delay, thanks to 8K ultra-wideband connectivity via the base station. To sweeten the deal further, both mice feature an unlimited battery life system, easy plug-and-play setup, satisfying button clicks and scroll wheel performance, and a plethora of ways to quickly customize the mouse.</p>
+<p dir="ltr">That said, I have a few grievances with both the Rival Pro and the Sensei Pro, but they're minor. Other than the small LEDs built into the mouse and base station, which only serve the purpose of telling you which DPI and polling rate settings you're using, there are no customizable RGB LEDs, and each mouse's overall design is a bit boring compared to other gaming mice on the market. Then, the plasticky material used to make these mice as airy as they are will collect finger oils, so be prepared to clean it often, apply the grips to minimize prints, or be okay with a slightly oily mouse decorating your desk.</p>
+<p dir="ltr">All things considered, the Rival Pro and Sensei Pro are fantastic lightweight, responsive gaming mice with a highly desirable infinite battery life system. So despite its small imperfections of lackluster fingerprint resistance and no RGB elements, it's an investment worth considering for your gaming setup. </p>
+<p dir="ltr">You can purchase each mouse in the <a href="https://r.bttn.io?btn_ref=org-225e4e0aac880b8f&amp;btn_url=https%3A%2F%2Fsteelseries.com%2Fgaming-products%2Fsensei-rival-pro-lp&amp;btn_pub_ref=2276269-in_text-10" target="_blank" rel="sponsored nofollow">SteelSeries online store</a> now for approximately $180 apiece on pre-order (or straight away, depending on when you're reading this review!) </p>
+
+            </div>
+            </div>
+
+    
+</article>                        
+            <div class="under-art" data-post-url="https://www.slashgear.com/2276269/steelseries-senesi-pro-x-rival-pro-review/" data-post-title="SteelSeries Sensei Pro X Rival Pro Review: 8K Wireless Mice With 'Infinite' Battery Life"> 
+                <h2 class="section-header">Recommended</h2>
+                <input type="hidden" class="next-article-url" value="https://www.slashgear.com/2215516/air-conditioner-brands-owned-by-daikin/"/>
+                                <div class="zergnet-widget" id="zergnet-widget-89952" data-lazyload="2000" data-no-snippet>
+                    <div class="loading-more">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid" width="60" height="60" style="shape-rendering: auto; display: block; background: transparent;" xmlns:xlink="http://www.w3.org/1999/xlink"><g><g transform="translate(50 50)">
+    <g>
+    <animateTransform repeatCount="indefinite" dur="0.2s" keyTimes="0;1" values="0;60" type="rotate" attributeName="transform"></animateTransform><path fill="#bb52cd" d="M28.284271247461902 -10 L38.2842712474619 -10 L38.2842712474619 10 L28.284271247461902 10 A30 30 0 0 1 22.80238966157534 19.49489742783178 L22.80238966157534 19.49489742783178 L27.80238966157534 28.155151465676166 L10.481881585886565 38.15515146567617 L5.481881585886565 29.49489742783178 A30 30 0 0 1 -5.481881585886561 29.49489742783178 L-5.481881585886561 29.49489742783178 L-10.481881585886558 38.15515146567617 L-27.802389661575326 28.155151465676177 L-22.80238966157533 19.494897427831788 A30 30 0 0 1 -28.284271247461902 10 L-28.284271247461902 10 L-38.2842712474619 10.000000000000002 L-38.2842712474619 -9.999999999999991 L-28.284271247461906 -9.999999999999993 A30 30 0 0 1 -22.802389661575344 -19.494897427831773 L-22.802389661575344 -19.494897427831773 L-27.802389661575347 -28.155151465676155 L-10.481881585886585 -38.15515146567616 L-5.4818815858865815 -29.494897427831777 A30 30 0 0 1 5.481881585886544 -29.494897427831784 L5.481881585886544 -29.494897427831784 L10.481881585886537 -38.15515146567618 L27.80238966157531 -28.15515146567619 L22.80238966157532 -19.494897427831802 A30 30 0 0 1 28.284271247461902 -10.000000000000004 M0 -12A12 12 0 1 0 0 12 A12 12 0 1 0 0 -12"></path></g></g><g></g></g><!-- [ldio] generated by https://loading.io --></svg>
+</div>
+                </div>
+        	</div>
+                            <script language="javascript" type="text/javascript">
+                    setTimeout(function() {
+                        var n = document.getElementById("#zergnet-widget-89952");
+                        var h = false;
+                        if ( n ) {
+                            h = n.innerHTML;
+                        }
+                        if ( h ) {
+                            return false;
+                        }
+                        var zergnet = document.createElement('script');
+                        zergnet.type = 'text/javascript'; zergnet.async = true;
+                        zergnet.src = '//www.zergnet.com/zerg.js?v=1&id=89952';
+                        var znscr = document.getElementsByTagName('script')[0];
+                        znscr.parentNode.insertBefore(zergnet, znscr);
+                    }, 3500);
+                </script>
+                           <div id="div-ad-1x1a" class="google-ad-placeholder clear placeholder placeholder-1-1" data-ad-height="any" data-ad-width="any" data-ad-pos="1x1"></div>
+
+        </div>
+    </div>
+    <div class="sidebar-container">
+                <div id="floatingAd">
+                    </div>
+    </div>
+    </main>
+
+</div>
+</div>
+
+            
+                        <script>
+        window.LooperConfig = window.LooperConfig || {};
+        window.dataLayer = window.dataLayer || [];
+        window.LooperConfig.ga4tag = "G-BNR64XSB1G";
+        window.LooperConfig.ga4data = {"author":"Sarah Chaney","category":"home-entertainment-reviews","content_type":"Review","mod_date":"2026-10-02","layout":"Infinite","post_id":2276269,"pub_date":"2026-10-02","day":"Friday","dayhour":"Friday-4PM","pubhour":"4PM","num_slides":10,"num_words":2300,"pitcher":"Sarah Chaney","trello_board":"Features","intent":"evergreen","ideation":"editorial"};
+        window.LooperConfig.categories = ["News","Home Entertainment Reviews"];
+        window.LooperReady = function(){
+            if ( typeof( window.LooperReadyInside ) !== 'undefined' ) {
+                window.LooperReadyInside();
+            }
+            LooperConfig.params = false;
+            try {
+                LooperConfig.params = (new URL(document.location)).searchParams;
+            } catch( e ) {
+                //do nothing
+            }
+            
+            var widgets = document.querySelectorAll(".zergnet-widget");
+            var hasWidget = false;
+            for ( i = 0; i < widgets.length; i++ ) {
+                if ( !hasWidget && LoopGalObj.isVisible(widgets[i]) ) {
+                    hasWidget = true;
+                }
+            }
+            if (!hasWidget) {
+                LooperConfig['ga4data']["ad_block"] = true;
+            } else {
+                LooperConfig['ga4data']["ad_block"] = false;
+            }
+
+            var validZSource = {"newsletter":"newsletter","flipboard":"flipboard","smartnews":"smartnews","smartnews_sponsored":"smartnews_sponsored","msnsyndicated":"msnsyndicated","newsbreakapp":"newsbreakapp","topbuzz":"topbuzz","zinf_abtest":"zinf_abtest","nexthighlights":"nexthighlights","fb":"fb","fb_ios":"fb_ios","fb_android":"fb_android","gemini":"gemini","facebook_organic":"facebook_organic","gdiscover_sponsored":"gdiscover_sponsored","googlenewsapp":"googlenewsapp","snapchat":"snapchat","dt_app":"dt_app","youtube":"youtube","opera":"opera","aol":"aol"};
+
+            if (window.location.href.indexOf("zsource") !== -1) {
+                var vars = {};
+                var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                    vars[key] = value.toLowerCase();
+                });
+                if (typeof( vars['zsource'] !== "undefined") && typeof( validZSource[vars['zsource']] ) !== "undefined") {
+                    LooperConfig['zsource'] = validZSource[vars['zsource']];
+                }
+            }
+
+            if (typeof( LooperConfig['zsource'] ) !== "undefined") {
+                LooperConfig['ga4data']["zsource"] = LooperConfig['zsource'];
+            }
+
+            LooperConfig['ga4data']['view_type'] = Looper.viewType;
+            LooperConfig['ga4data']['last_id'] = Looper.lastID;
+            LooperConfig['ga4data']['last_url'] = Looper.lastURL;
+            LooperConfig['ga4data']['infinite_position'] = 0;
+            
+            let is_config = Object.assign({},LooperConfig.ga4data);
+            is_config['event'] = "looper_page_view_ready";
+            is_config['ga4tag'] = LooperConfig.ga4tag;
+            
+            window.dataLayer.push(is_config);
+        };
+    </script>
+                <script type="text/javascript" src="/wp-content/themes/unified/js/loopgal.min.js?v=1791993771"></script>
+        <script>
+        (function(){
+                    var config = {};
+        config['v3UI'] = true;
+config['newGTM'] = true;
+config['allowTrailingID'] = true;
+config['allowLiveblog'] = true;
+
+            window.LoopGalObj = new LoopGal( config );
+                    window.Looper = new LoopEs();
+        if ( typeof( LooperReady ) !== "undefined" ){
+            LooperReady();
+        }
+        })();
+        </script>
+        <script type="text/javascript" async src="https://btloader.com/tag?o=5698917485248512&upapi=true&domain=slashgear.com"></script>
+
+<script>!function(){"use strict";var e;e=document,function(){var t,n;function r(){var t=e.createElement("script");t.src="https://cafemedia-com.videoplayerhub.com/galleryplayer.js",e.head.appendChild(t)}function a(){var t=e.cookie.match("(^|[^;]+)\s*__adblocker\s*=\s*([^;]+)");return t&&t.pop()}function c(){clearInterval(n)}return{init:function(){var e;"true"===(t=a())?r():(e=0,n=setInterval((function(){100!==e&&"false" !== t || c(), "true" === t && (r(), c()), t = a(), e++}), 50))}}}().init()}();
+</script>
+        
+        
+        
+        
+            <script>
+    window.LooperConfig = window.LooperConfig || {};
+    window.LooperConfig.clip = {"readmore":{"text":"Read More: "},"followus":{"text":"Follow Us: ","enabled":0},"visitus":{"text":"Visit Us At: ","enabled":0}};
+    
+    (self.PREFERRED_SOURCE = self.PREFERRED_SOURCE || []).push(function(preferredSource) {
+        preferredSource.init({
+        theme: 'light',
+        lang: 'en'
+    });
+const button = document.querySelector('#preferred-source');
+button.addEventListener('click', () => {
+        preferredSource.addPreferredSource();
+    });
+});
+</script>
+</body>
+</html>
