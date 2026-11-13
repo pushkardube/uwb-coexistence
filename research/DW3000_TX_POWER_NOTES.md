@@ -68,8 +68,12 @@ bit:  7  6  5  4  3  2 | 1  0
 - **FINE** = bits `[7:2]`, **64 steps**, providing **~25 dB** of range
   ⇒ roughly **~0.4 dB per fine step**.
 - **COARSE** = bits `[1:0]`, **4 steps (0–3)**, adding **~7 dB**.
-- **Higher register value = more output** (monotonic). The DW1000's coarse
-  field was *reversed* (bigger = less); DW3000 is **not** reversed.
+- At fixed coarse gain, increasing the fine code gives nominally nondecreasing
+  output gain. Increasing coarse at the same fine code also increases nominal
+  gain. **Arbitrary mixed-coarse words cannot be sorted by numeric hex value
+  alone**; coarse/fine contributions must be considered together. These are
+  nominal relationships, not an absolute calibration or a guarantee that
+  measured adjacent RSSI medians will rise without variation.
 - For best current draw, **minimise coarse** and use fine for most of the range.
 
 Decoding a byte:  `coarse = byte & 0x03;  fine = byte >> 2;`
@@ -122,5 +126,10 @@ If you sweep TX power to move the reception cliff ([`../experiments/spatial_reso
 set all four octets equal and step the single byte, e.g. in the TX app add a
 `dwt_configuretxrf()` with `.power = 0xNNNNNNNN` after `dwt_configure()`.
 Channel 9 (our PHY config) → stay within `0x01`…`0xFE`, remembering coarse must
-be ≤ 2. A monotonic byte sweep like `cicada_twr_simple`'s
-`0xFE,0xFD,0xC0,0x9A,0x70,0x51,0x35,0x25,0x18,0x0E,0x08,0x01` is a good ladder.
+be ≤ 2. The current experiment uses the separate 01 probe followed by all
+64 fine codes at coarse 2. The historical mixed-coarse ladder is not a verified
+equal-step or universally monotonic power calibration. See the
+[checked combined sweep guide](../samples/twr_checked_combined_common/README.md)
+for the schedule and receiver-side diagnostics, and the
+[analysis tools](../tools/README.md) for exporting measurements and checking
+whether corrected RSSI follows increasing nominal gain.
