@@ -1,0 +1,1980 @@
+{
+  "variant": "COMBINED",
+  "attempt_records": 2037,
+  "completed": 2031,
+  "sequences": [
+    1,
+    2037
+  ],
+  "consecutive_sequences": true,
+  "error_codes": {
+    "2": 6
+  },
+  "fatal": false,
+  "log_drops": false,
+  "by_peer_level": [
+    {
+      "peer": 0,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -84.57,
+      "rssi_db_mean": -84.5973,
+      "distance_mm_median": 1764.0,
+      "distance_mm_min_max": [
+        1704,
+        1793
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 1,
+      "octet": "0xfe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -62.7995,
+      "rssi_db_mean": -62.4449,
+      "distance_mm_median": 1704.5,
+      "distance_mm_min_max": [
+        1629,
+        1739
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 2,
+      "octet": "0xfa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -62.926,
+      "rssi_db_mean": -62.8057,
+      "distance_mm_median": 1700.5,
+      "distance_mm_min_max": [
+        1677,
+        1735
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 3,
+      "octet": "0xf6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -62.923,
+      "rssi_db_mean": -62.9155,
+      "distance_mm_median": 1706.0,
+      "distance_mm_min_max": [
+        1683,
+        1739
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 4,
+      "octet": "0xf2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.028000000000006,
+      "rssi_db_mean": -63.2299,
+      "distance_mm_median": 1705.0,
+      "distance_mm_min_max": [
+        1665,
+        1757
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 5,
+      "octet": "0xee",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.0015,
+      "rssi_db_mean": -62.8881,
+      "distance_mm_median": 1708.5,
+      "distance_mm_min_max": [
+        1687,
+        1739
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 6,
+      "octet": "0xea",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.084500000000006,
+      "rssi_db_mean": -63.14685,
+      "distance_mm_median": 1701.0,
+      "distance_mm_min_max": [
+        1679,
+        1728
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 7,
+      "octet": "0xe6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.171,
+      "rssi_db_mean": -63.3311,
+      "distance_mm_median": 1712.5,
+      "distance_mm_min_max": [
+        1669,
+        1738
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 8,
+      "octet": "0xe2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.170500000000004,
+      "rssi_db_mean": -63.19815,
+      "distance_mm_median": 1719.0,
+      "distance_mm_min_max": [
+        1698,
+        1741
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 9,
+      "octet": "0xde",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.203,
+      "rssi_db_mean": -63.20505,
+      "distance_mm_median": 1703.0,
+      "distance_mm_min_max": [
+        1678,
+        1737
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 10,
+      "octet": "0xda",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.198499999999996,
+      "rssi_db_mean": -63.400999999999996,
+      "distance_mm_median": 1707.5,
+      "distance_mm_min_max": [
+        1671,
+        1734
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 11,
+      "octet": "0xd6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.158,
+      "rssi_db_mean": -63.3954,
+      "distance_mm_median": 1706.0,
+      "distance_mm_min_max": [
+        1696,
+        1738
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 12,
+      "octet": "0xd2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.482,
+      "rssi_db_mean": -64.03125,
+      "distance_mm_median": 1702.5,
+      "distance_mm_min_max": [
+        1666,
+        1726
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 13,
+      "octet": "0xce",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.3835,
+      "rssi_db_mean": -63.5992,
+      "distance_mm_median": 1705.0,
+      "distance_mm_min_max": [
+        1676,
+        1737
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 14,
+      "octet": "0xca",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.421499999999995,
+      "rssi_db_mean": -63.8158,
+      "distance_mm_median": 1701.0,
+      "distance_mm_min_max": [
+        1658,
+        1747
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 15,
+      "octet": "0xc6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.474999999999994,
+      "rssi_db_mean": -64.05345,
+      "distance_mm_median": 1710.5,
+      "distance_mm_min_max": [
+        1689,
+        1742
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 16,
+      "octet": "0xc2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.6695,
+      "rssi_db_mean": -63.981,
+      "distance_mm_median": 1712.0,
+      "distance_mm_min_max": [
+        1685,
+        1742
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 17,
+      "octet": "0xbe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.589,
+      "rssi_db_mean": -63.7588,
+      "distance_mm_median": 1713.5,
+      "distance_mm_min_max": [
+        1644,
+        1762
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 18,
+      "octet": "0xba",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.5565,
+      "rssi_db_mean": -64.0009,
+      "distance_mm_median": 1708.0,
+      "distance_mm_min_max": [
+        1650,
+        1766
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 19,
+      "octet": "0xb6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.988,
+      "rssi_db_mean": -64.8038,
+      "distance_mm_median": 1708.5,
+      "distance_mm_min_max": [
+        1638,
+        1752
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 20,
+      "octet": "0xb2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.7545,
+      "rssi_db_mean": -63.92895,
+      "distance_mm_median": 1713.0,
+      "distance_mm_min_max": [
+        1653,
+        1735
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 21,
+      "octet": "0xae",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.834,
+      "rssi_db_mean": -64.34235,
+      "distance_mm_median": 1712.5,
+      "distance_mm_min_max": [
+        1680,
+        1737
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 22,
+      "octet": "0xaa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.909000000000006,
+      "rssi_db_mean": -64.61925,
+      "distance_mm_median": 1715.5,
+      "distance_mm_min_max": [
+        1664,
+        1737
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 23,
+      "octet": "0xa6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -63.8715,
+      "rssi_db_mean": -64.27175,
+      "distance_mm_median": 1714.5,
+      "distance_mm_min_max": [
+        1699,
+        1746
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 24,
+      "octet": "0xa2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.074,
+      "rssi_db_mean": -64.2372,
+      "distance_mm_median": 1706.0,
+      "distance_mm_min_max": [
+        1683,
+        1764
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 25,
+      "octet": "0x9e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.108,
+      "rssi_db_mean": -64.47035,
+      "distance_mm_median": 1713.5,
+      "distance_mm_min_max": [
+        1673,
+        1748
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 26,
+      "octet": "0x9a",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.3535,
+      "rssi_db_mean": -64.7284,
+      "distance_mm_median": 1714.5,
+      "distance_mm_min_max": [
+        1685,
+        1735
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 27,
+      "octet": "0x96",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.345,
+      "rssi_db_mean": -65.0235,
+      "distance_mm_median": 1716.0,
+      "distance_mm_min_max": [
+        1690,
+        1753
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 28,
+      "octet": "0x92",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.572,
+      "rssi_db_mean": -65.3011,
+      "distance_mm_median": 1717.5,
+      "distance_mm_min_max": [
+        1684,
+        1754
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 29,
+      "octet": "0x8e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.709,
+      "rssi_db_mean": -65.83955,
+      "distance_mm_median": 1715.5,
+      "distance_mm_min_max": [
+        1665,
+        1785
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 30,
+      "octet": "0x8a",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.9665,
+      "rssi_db_mean": -65.7062,
+      "distance_mm_median": 1714.5,
+      "distance_mm_min_max": [
+        1670,
+        1758
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 31,
+      "octet": "0x86",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -64.94749999999999,
+      "rssi_db_mean": -65.84885,
+      "distance_mm_median": 1706.5,
+      "distance_mm_min_max": [
+        1666,
+        1764
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 32,
+      "octet": "0x82",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -65.2345,
+      "rssi_db_mean": -66.1725,
+      "distance_mm_median": 1719.5,
+      "distance_mm_min_max": [
+        1685,
+        1753
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 33,
+      "octet": "0x7e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 19,
+      "completed": 19,
+      "valid_rssi": 19,
+      "rssi_db_median": -65.593,
+      "rssi_db_mean": -66.6208947368421,
+      "distance_mm_median": 1712,
+      "distance_mm_min_max": [
+        1669,
+        1746
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -91.95849999999999,
+      "rssi_db_mean": -91.9899,
+      "distance_mm_median": 1067.5,
+      "distance_mm_min_max": [
+        1048,
+        1089
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 1,
+      "octet": "0xfe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -67.46950000000001,
+      "rssi_db_mean": -67.90935,
+      "distance_mm_median": 1042.0,
+      "distance_mm_min_max": [
+        1020,
+        1069
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 2,
+      "octet": "0xfa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -67.7955,
+      "rssi_db_mean": -68.1343,
+      "distance_mm_median": 1039.0,
+      "distance_mm_min_max": [
+        1017,
+        1062
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 3,
+      "octet": "0xf6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -67.60650000000001,
+      "rssi_db_mean": -67.66395,
+      "distance_mm_median": 1042.0,
+      "distance_mm_min_max": [
+        1022,
+        1068
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 4,
+      "octet": "0xf2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -67.60149999999999,
+      "rssi_db_mean": -68.10665,
+      "distance_mm_median": 1047.5,
+      "distance_mm_min_max": [
+        1027,
+        1078
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 5,
+      "octet": "0xee",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.0905,
+      "rssi_db_mean": -68.40385,
+      "distance_mm_median": 1045.5,
+      "distance_mm_min_max": [
+        1027,
+        1065
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 6,
+      "octet": "0xea",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.185,
+      "rssi_db_mean": -68.43365,
+      "distance_mm_median": 1046.5,
+      "distance_mm_min_max": [
+        1025,
+        1069
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 7,
+      "octet": "0xe6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.131,
+      "rssi_db_mean": -68.29625,
+      "distance_mm_median": 1045.5,
+      "distance_mm_min_max": [
+        1022,
+        1071
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 8,
+      "octet": "0xe2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.13149999999999,
+      "rssi_db_mean": -68.43215,
+      "distance_mm_median": 1047.0,
+      "distance_mm_min_max": [
+        1021,
+        1078
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 9,
+      "octet": "0xde",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.346,
+      "rssi_db_mean": -69.1233,
+      "distance_mm_median": 1040.0,
+      "distance_mm_min_max": [
+        1017,
+        1074
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 10,
+      "octet": "0xda",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.3415,
+      "rssi_db_mean": -68.60455,
+      "distance_mm_median": 1041.0,
+      "distance_mm_min_max": [
+        1013,
+        1068
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 11,
+      "octet": "0xd6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.482,
+      "rssi_db_mean": -68.54684999999999,
+      "distance_mm_median": 1044.5,
+      "distance_mm_min_max": [
+        1007,
+        1067
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 12,
+      "octet": "0xd2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.36699999999999,
+      "rssi_db_mean": -69.0301,
+      "distance_mm_median": 1044.0,
+      "distance_mm_min_max": [
+        1026,
+        1061
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 13,
+      "octet": "0xce",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.351,
+      "rssi_db_mean": -69.20375,
+      "distance_mm_median": 1039.5,
+      "distance_mm_min_max": [
+        1025,
+        1052
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 14,
+      "octet": "0xca",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.129,
+      "rssi_db_mean": -69.0626,
+      "distance_mm_median": 1048.5,
+      "distance_mm_min_max": [
+        1026,
+        1071
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 15,
+      "octet": "0xc6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.6425,
+      "rssi_db_mean": -69.23575,
+      "distance_mm_median": 1045.5,
+      "distance_mm_min_max": [
+        1027,
+        1061
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 16,
+      "octet": "0xc2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -68.854,
+      "rssi_db_mean": -68.97135,
+      "distance_mm_median": 1043.0,
+      "distance_mm_min_max": [
+        1026,
+        1064
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 17,
+      "octet": "0xbe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.59700000000001,
+      "rssi_db_mean": -69.3453,
+      "distance_mm_median": 1039.5,
+      "distance_mm_min_max": [
+        1019,
+        1054
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 18,
+      "octet": "0xba",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.5695,
+      "rssi_db_mean": -69.51045,
+      "distance_mm_median": 1044.0,
+      "distance_mm_min_max": [
+        1020,
+        1065
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 19,
+      "octet": "0xb6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.911,
+      "rssi_db_mean": -69.90155,
+      "distance_mm_median": 1047.5,
+      "distance_mm_min_max": [
+        1024,
+        1064
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 20,
+      "octet": "0xb2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.91,
+      "rssi_db_mean": -69.78775,
+      "distance_mm_median": 1040.5,
+      "distance_mm_min_max": [
+        1024,
+        1061
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 21,
+      "octet": "0xae",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.988,
+      "rssi_db_mean": -69.793,
+      "distance_mm_median": 1045.5,
+      "distance_mm_min_max": [
+        1025,
+        1071
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 22,
+      "octet": "0xaa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.07050000000001,
+      "rssi_db_mean": -69.98325,
+      "distance_mm_median": 1044.0,
+      "distance_mm_min_max": [
+        1026,
+        1068
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 23,
+      "octet": "0xa6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.353,
+      "rssi_db_mean": -70.17085,
+      "distance_mm_median": 1045.0,
+      "distance_mm_min_max": [
+        1028,
+        1061
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 24,
+      "octet": "0xa2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.434,
+      "rssi_db_mean": -70.52965,
+      "distance_mm_median": 1045.0,
+      "distance_mm_min_max": [
+        1012,
+        1059
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 25,
+      "octet": "0x9e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.5095,
+      "rssi_db_mean": -70.70105,
+      "distance_mm_median": 1046.5,
+      "distance_mm_min_max": [
+        1027,
+        1065
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 26,
+      "octet": "0x9a",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.58000000000001,
+      "rssi_db_mean": -70.5375,
+      "distance_mm_median": 1045.0,
+      "distance_mm_min_max": [
+        1020,
+        1064
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 27,
+      "octet": "0x96",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.655,
+      "rssi_db_mean": -70.7131,
+      "distance_mm_median": 1039.5,
+      "distance_mm_min_max": [
+        1015,
+        1061
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 28,
+      "octet": "0x92",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.75200000000001,
+      "rssi_db_mean": -70.5142,
+      "distance_mm_median": 1044.5,
+      "distance_mm_min_max": [
+        1034,
+        1058
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 29,
+      "octet": "0x8e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 19,
+      "valid_rssi": 19,
+      "rssi_db_median": -71.051,
+      "rssi_db_mean": -71.01121052631579,
+      "distance_mm_median": 1047,
+      "distance_mm_min_max": [
+        1031,
+        1067
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 30,
+      "octet": "0x8a",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -71.06649999999999,
+      "rssi_db_mean": -71.20265,
+      "distance_mm_median": 1044.5,
+      "distance_mm_min_max": [
+        1021,
+        1060
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 31,
+      "octet": "0x86",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -71.2185,
+      "rssi_db_mean": -71.42905,
+      "distance_mm_median": 1039.0,
+      "distance_mm_min_max": [
+        1022,
+        1057
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 32,
+      "octet": "0x82",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -71.4675,
+      "rssi_db_mean": -71.54425,
+      "distance_mm_median": 1050.0,
+      "distance_mm_min_max": [
+        1024,
+        1065
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 33,
+      "octet": "0x7e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 19,
+      "completed": 19,
+      "valid_rssi": 19,
+      "rssi_db_median": -71.63,
+      "rssi_db_mean": -71.74094736842105,
+      "distance_mm_median": 1046,
+      "distance_mm_min_max": [
+        1024,
+        1064
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 15,
+      "valid_rssi": 15,
+      "rssi_db_median": -93.969,
+      "rssi_db_mean": -93.58993333333333,
+      "distance_mm_median": 1877,
+      "distance_mm_min_max": [
+        1857,
+        1891
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 1,
+      "octet": "0xfe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.62450000000001,
+      "rssi_db_mean": -70.2436,
+      "distance_mm_median": 1864.0,
+      "distance_mm_min_max": [
+        1841,
+        1888
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 2,
+      "octet": "0xfa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.66550000000001,
+      "rssi_db_mean": -70.9795,
+      "distance_mm_median": 1857.5,
+      "distance_mm_min_max": [
+        1839,
+        1874
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 3,
+      "octet": "0xf6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.788,
+      "rssi_db_mean": -70.5219,
+      "distance_mm_median": 1860.0,
+      "distance_mm_min_max": [
+        1843,
+        1868
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 4,
+      "octet": "0xf2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.751,
+      "rssi_db_mean": -70.28095,
+      "distance_mm_median": 1855.0,
+      "distance_mm_min_max": [
+        1842,
+        1878
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 5,
+      "octet": "0xee",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.6365,
+      "rssi_db_mean": -69.76315,
+      "distance_mm_median": 1864.5,
+      "distance_mm_min_max": [
+        1839,
+        1889
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 6,
+      "octet": "0xea",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.75,
+      "rssi_db_mean": -69.8916,
+      "distance_mm_median": 1858.5,
+      "distance_mm_min_max": [
+        1840,
+        1881
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 7,
+      "octet": "0xe6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.82849999999999,
+      "rssi_db_mean": -70.21515,
+      "distance_mm_median": 1861.5,
+      "distance_mm_min_max": [
+        1846,
+        1878
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 8,
+      "octet": "0xe2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.9935,
+      "rssi_db_mean": -71.2484,
+      "distance_mm_median": 1858.0,
+      "distance_mm_min_max": [
+        1842,
+        1939
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 9,
+      "octet": "0xde",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.99199999999999,
+      "rssi_db_mean": -70.7632,
+      "distance_mm_median": 1862.0,
+      "distance_mm_min_max": [
+        1847,
+        1873
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 10,
+      "octet": "0xda",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.1605,
+      "rssi_db_mean": -71.40555,
+      "distance_mm_median": 1855.0,
+      "distance_mm_min_max": [
+        1839,
+        1873
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 11,
+      "octet": "0xd6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.3175,
+      "rssi_db_mean": -71.12515,
+      "distance_mm_median": 1864.0,
+      "distance_mm_min_max": [
+        1848,
+        1875
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 12,
+      "octet": "0xd2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.182,
+      "rssi_db_mean": -71.52395,
+      "distance_mm_median": 1859.5,
+      "distance_mm_min_max": [
+        1844,
+        1877
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 13,
+      "octet": "0xce",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.656,
+      "rssi_db_mean": -71.88095,
+      "distance_mm_median": 1857.0,
+      "distance_mm_min_max": [
+        1837,
+        1869
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 14,
+      "octet": "0xca",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.28649999999999,
+      "rssi_db_mean": -71.20925,
+      "distance_mm_median": 1855.0,
+      "distance_mm_min_max": [
+        1830,
+        1876
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 15,
+      "octet": "0xc6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.4545,
+      "rssi_db_mean": -71.71925,
+      "distance_mm_median": 1854.5,
+      "distance_mm_min_max": [
+        1829,
+        1876
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 16,
+      "octet": "0xc2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.4205,
+      "rssi_db_mean": -71.1694,
+      "distance_mm_median": 1861.5,
+      "distance_mm_min_max": [
+        1837,
+        1880
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 17,
+      "octet": "0xbe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.6365,
+      "rssi_db_mean": -71.7769,
+      "distance_mm_median": 1863.0,
+      "distance_mm_min_max": [
+        1840,
+        1881
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 18,
+      "octet": "0xba",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.5255,
+      "rssi_db_mean": -72.0567,
+      "distance_mm_median": 1860.0,
+      "distance_mm_min_max": [
+        1832,
+        1876
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 19,
+      "octet": "0xb6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.58449999999999,
+      "rssi_db_mean": -71.75395,
+      "distance_mm_median": 1856.5,
+      "distance_mm_min_max": [
+        1843,
+        1882
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 20,
+      "octet": "0xb2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.532,
+      "rssi_db_mean": -71.1386,
+      "distance_mm_median": 1870.0,
+      "distance_mm_min_max": [
+        1844,
+        1888
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 21,
+      "octet": "0xae",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.5065,
+      "rssi_db_mean": -70.9709,
+      "distance_mm_median": 1872.0,
+      "distance_mm_min_max": [
+        1854,
+        1893
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 22,
+      "octet": "0xaa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.7325,
+      "rssi_db_mean": -71.55005,
+      "distance_mm_median": 1861.0,
+      "distance_mm_min_max": [
+        1842,
+        1887
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 23,
+      "octet": "0xa6",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -74.167,
+      "rssi_db_mean": -73.25150000000001,
+      "distance_mm_median": 1861.0,
+      "distance_mm_min_max": [
+        1829,
+        1878
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 24,
+      "octet": "0xa2",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -71.0435,
+      "rssi_db_mean": -72.17125,
+      "distance_mm_median": 1864.0,
+      "distance_mm_min_max": [
+        1846,
+        1883
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 25,
+      "octet": "0x9e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.518,
+      "rssi_db_mean": -71.52425,
+      "distance_mm_median": 1870.0,
+      "distance_mm_min_max": [
+        1842,
+        1883
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 26,
+      "octet": "0x9a",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.894,
+      "rssi_db_mean": -72.22845,
+      "distance_mm_median": 1865.0,
+      "distance_mm_min_max": [
+        1843,
+        1890
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 27,
+      "octet": "0x96",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.7685,
+      "rssi_db_mean": -71.0723,
+      "distance_mm_median": 1874.0,
+      "distance_mm_min_max": [
+        1849,
+        1887
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 28,
+      "octet": "0x92",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.77850000000001,
+      "rssi_db_mean": -71.88,
+      "distance_mm_median": 1872.0,
+      "distance_mm_min_max": [
+        1854,
+        1887
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 29,
+      "octet": "0x8e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -70.76,
+      "rssi_db_mean": -71.4758,
+      "distance_mm_median": 1871.0,
+      "distance_mm_min_max": [
+        1854,
+        1900
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 30,
+      "octet": "0x8a",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -72.941,
+      "rssi_db_mean": -72.7359,
+      "distance_mm_median": 1866.0,
+      "distance_mm_min_max": [
+        1836,
+        1893
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 31,
+      "octet": "0x86",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -74.42699999999999,
+      "rssi_db_mean": -73.8445,
+      "distance_mm_median": 1860.5,
+      "distance_mm_min_max": [
+        1840,
+        1873
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 32,
+      "octet": "0x82",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -74.482,
+      "rssi_db_mean": -74.08805,
+      "distance_mm_median": 1858.5,
+      "distance_mm_min_max": [
+        1850,
+        1876
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 33,
+      "octet": "0x7e",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 19,
+      "completed": 19,
+      "valid_rssi": 19,
+      "rssi_db_median": -74.603,
+      "rssi_db_mean": -73.89184210526315,
+      "distance_mm_median": 1862,
+      "distance_mm_min_max": [
+        1822,
+        1903
+      ]
+    }
+  ],
+  "by_peer": [
+    {
+      "peer": 0,
+      "attempt_records": 679,
+      "completed": 679,
+      "valid_rssi": 679,
+      "rssi_db_median": -63.666,
+      "rssi_db_mean": -64.75354786450663,
+      "distance_mm_median": 1711,
+      "distance_mm_min_max": [
+        1629,
+        1793
+      ]
+    },
+    {
+      "peer": 1,
+      "attempt_records": 679,
+      "completed": 678,
+      "valid_rssi": 678,
+      "rssi_db_median": -69.67,
+      "rssi_db_mean": -70.21906932153392,
+      "distance_mm_median": 1045.0,
+      "distance_mm_min_max": [
+        1007,
+        1089
+      ]
+    },
+    {
+      "peer": 2,
+      "attempt_records": 679,
+      "completed": 674,
+      "valid_rssi": 674,
+      "rssi_db_median": -70.578,
+      "rssi_db_mean": -72.04301928783383,
+      "distance_mm_median": 1862.0,
+      "distance_mm_min_max": [
+        1822,
+        1939
+      ]
+    }
+  ],
+  "per_peer_sweep": [
+    {
+      "peer": 0,
+      "all_64_levels_observed": false,
+      "full_to_low_rssi_drop_db": null,
+      "observed_nonincreasing_level_medians": null,
+      "all_65_levels_observed": false
+    },
+    {
+      "peer": 1,
+      "all_64_levels_observed": false,
+      "full_to_low_rssi_drop_db": null,
+      "observed_nonincreasing_level_medians": null,
+      "all_65_levels_observed": false
+    },
+    {
+      "peer": 2,
+      "all_64_levels_observed": false,
+      "full_to_low_rssi_drop_db": null,
+      "observed_nonincreasing_level_medians": null,
+      "all_65_levels_observed": false
+    }
+  ],
+  "probe_01010101": [
+    {
+      "peer": 0,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -84.57,
+      "rssi_db_mean": -84.5973,
+      "distance_mm_median": 1764.0,
+      "distance_mm_min_max": [
+        1704,
+        1793
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -91.95849999999999,
+      "rssi_db_mean": -91.9899,
+      "distance_mm_median": 1067.5,
+      "distance_mm_min_max": [
+        1048,
+        1089
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 15,
+      "valid_rssi": 15,
+      "rssi_db_median": -93.969,
+      "rssi_db_mean": -93.58993333333333,
+      "distance_mm_median": 1877,
+      "distance_mm_min_max": [
+        1857,
+        1891
+      ]
+    }
+  ],
+  "firmware_level_summaries": 99,
+  "configuration": {
+    "targets": 3,
+    "levels": 65,
+    "attempts_per_peer": 20
+  },
+  "schedule_matches_configuration": true
+}

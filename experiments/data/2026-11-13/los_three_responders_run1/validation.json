@@ -1,0 +1,180 @@
+{
+  "data_transport": "BLE only; no serial measurement reads",
+  "attempt_records": 4072,
+  "completed": 4069,
+  "sequences": [
+    1,
+    4072
+  ],
+  "consecutive_sequences": true,
+  "schedule_matches_configuration": true,
+  "individual_csv_matches_raw_log": true,
+  "valid_rssi_matches_gain_formula": true,
+  "full_cycle_0": {
+    "attempts": 3900,
+    "completed": 3898,
+    "settings": 65,
+    "attempts_per_setting_per_peer": 20,
+    "by_peer": [
+      {
+        "peer": 0,
+        "attempts": 1300,
+        "completed": 1300,
+        "valid_rssi": 1300,
+        "errors": {}
+      },
+      {
+        "peer": 1,
+        "attempts": 1300,
+        "completed": 1300,
+        "valid_rssi": 1300,
+        "errors": {}
+      },
+      {
+        "peer": 2,
+        "attempts": 1300,
+        "completed": 1298,
+        "valid_rssi": 1298,
+        "errors": {
+          "2": 2
+        }
+      }
+    ]
+  },
+  "reference_settings_cycle_0": [
+    {
+      "tx_power_hex": "0x01010101",
+      "peer": 0,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 2.8615,
+      "rssi_db_median": -88.52
+    },
+    {
+      "tx_power_hex": "0x01010101",
+      "peer": 1,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 1.7725,
+      "rssi_db_median": -92.041
+    },
+    {
+      "tx_power_hex": "0x01010101",
+      "peer": 2,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 0.768,
+      "rssi_db_median": -85.392
+    },
+    {
+      "tx_power_hex": "0xFEFEFEFE",
+      "peer": 0,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 2.812,
+      "rssi_db_median": -68.152
+    },
+    {
+      "tx_power_hex": "0xFEFEFEFE",
+      "peer": 1,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 1.7515,
+      "rssi_db_median": -69.0165
+    },
+    {
+      "tx_power_hex": "0xFEFEFEFE",
+      "peer": 2,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 0.747,
+      "rssi_db_median": -63.1705
+    },
+    {
+      "tx_power_hex": "0x02020202",
+      "peer": 0,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 2.8465,
+      "rssi_db_median": -87.147
+    },
+    {
+      "tx_power_hex": "0x02020202",
+      "peer": 1,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 1.7625,
+      "rssi_db_median": -90.579
+    },
+    {
+      "tx_power_hex": "0x02020202",
+      "peer": 2,
+      "attempts": 20,
+      "completed": 20,
+      "distance_m_median": 0.769,
+      "rssi_db_median": -84.147
+    }
+  ],
+  "transport_metrics": {
+    "notifications": 4280,
+    "bytes": 863588,
+    "lines": 4280,
+    "measurements": 4072,
+    "sequence_gaps": 0,
+    "duplicates": 0,
+    "out_of_order": 0,
+    "framing_errors": 0,
+    "discarded_partial_bytes": 0,
+    "maximum_reported_queue_drops": 0,
+    "transport_replays": 0
+  },
+  "error_records": [
+    {
+      "variant": "COMBINED",
+      "seq": 2823,
+      "peer": 2,
+      "error": 2,
+      "status": 3820077,
+      "ok": "2822/2823",
+      "peer_ok": "940/941",
+      "cycle": 0,
+      "level": 47,
+      "octet": 70,
+      "level_ok": "0/1"
+    },
+    {
+      "variant": "COMBINED",
+      "seq": 2949,
+      "peer": 2,
+      "error": 2,
+      "status": "03810f77",
+      "ok": "2947/2949",
+      "peer_ok": "981/983",
+      "cycle": 0,
+      "level": 49,
+      "octet": 62,
+      "level_ok": "2/3"
+    },
+    {
+      "variant": "COMBINED",
+      "seq": 3956,
+      "peer": 1,
+      "error": 2,
+      "status": 3820077,
+      "ok": "3953/3956",
+      "peer_ok": "1318/1319",
+      "cycle": 1,
+      "level": 0,
+      "octet": 1,
+      "level_ok": "18/19"
+    }
+  ],
+  "fatal": false,
+  "log_drops": false,
+  "data_sha256": {
+    "init.log": "63406d04aee93f289f78ab0ff5fc66037ad1f49bad156313c9cf3b31b0b543d7",
+    "measurements.csv": "90f60ab567d05a485b4ca218e492a98ec0b39d5830939163204f28078d7d2626",
+    "rssi_by_tx_setting.csv": "029967b2a2e986d50797f4f613af599fa5656d77dbe2f81bdd9fd16a7bb671b3",
+    "cycle0_rssi_by_tx_setting.csv": "696bc0e7c2acae3239201dde073300b011dac50c3706edaef4bea81503babd0c"
+  }
+}

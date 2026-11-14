@@ -1,0 +1,99 @@
+{
+  "variant": "COMBINED",
+  "attempt_records": 172,
+  "completed": 137,
+  "sequences": [
+    1,
+    172
+  ],
+  "consecutive_sequences": true,
+  "error_codes": {
+    "2": 35
+  },
+  "fatal": false,
+  "log_drops": false,
+  "by_peer_level": [
+    {
+      "peer": 0,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "attempt_records": 86,
+      "completed": 51,
+      "valid_rssi": 51,
+      "rssi_db_median": -92.322,
+      "rssi_db_mean": -92.48745098039215,
+      "distance_mm_median": 1758,
+      "distance_mm_min_max": [
+        1733,
+        1801
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "attempt_records": 86,
+      "completed": 86,
+      "valid_rssi": 86,
+      "rssi_db_median": -85.373,
+      "rssi_db_mean": -85.49216279069768,
+      "distance_mm_median": 789.5,
+      "distance_mm_min_max": [
+        767,
+        823
+      ]
+    }
+  ],
+  "by_peer": [
+    {
+      "peer": 0,
+      "attempt_records": 86,
+      "completed": 51,
+      "valid_rssi": 51,
+      "rssi_db_median": -92.322,
+      "rssi_db_mean": -92.48745098039215,
+      "distance_mm_median": 1758,
+      "distance_mm_min_max": [
+        1733,
+        1801
+      ]
+    },
+    {
+      "peer": 1,
+      "attempt_records": 86,
+      "completed": 86,
+      "valid_rssi": 86,
+      "rssi_db_median": -85.373,
+      "rssi_db_mean": -85.49216279069768,
+      "distance_mm_median": 789.5,
+      "distance_mm_min_max": [
+        767,
+        823
+      ]
+    }
+  ],
+  "per_peer_sweep": [],
+  "firmware_level_summaries": 8,
+  "mode": "fixed",
+  "fixed_tx_power": "0x01010101",
+  "configuration": {
+    "targets": 2,
+    "levels": 1,
+    "attempts_per_peer": 20
+  },
+  "schedule_matches_configuration": true
+}

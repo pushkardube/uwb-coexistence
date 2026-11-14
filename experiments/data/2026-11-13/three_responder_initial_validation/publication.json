@@ -1,0 +1,32 @@
+{
+  "files_copied_byte_for_byte": {
+    "init.log": {
+      "original_path": "build/three_responder_rssi_20261113_run1/init.log",
+      "sha256": "230b9d23f9e89bf8d0350673b8d50fdd27ee30ebeba6906eccdd7c5512da6af4"
+    },
+    "measurements.csv": {
+      "original_path": "build/three_responder_rssi_20261113_run1/measurements.csv",
+      "sha256": "ee82cb352b02d3a370690400a86f2eefe0a478cb1b913c0cfbaa4645102428e9"
+    },
+    "capture.json": {
+      "original_path": "build/three_responder_rssi_20261113_run1/capture.json",
+      "sha256": "7ad638454f230c314f866792dda65bad88c9e0b930b4d3cbdeb7b6b413aa6f35"
+    },
+    "summary.json": {
+      "original_path": "build/three_responder_rssi_20261113_run1/summary.json",
+      "sha256": "116c4896480dd9eddf060b9ce1f08dbf3984b1d0f533add99c1c7fe199e53d36"
+    },
+    "rssi_by_tx_setting.csv": {
+      "original_path": "build/three_responder_rssi_20261113_run1/rssi_by_tx_setting.csv",
+      "sha256": "efc4c4c2c3cebb6eb6c74b8e61d66e7b03d5b86bd4c7f8a42838738e021e50d1"
+    },
+    "rssi_by_tx_setting.json": {
+      "original_path": "build/three_responder_rssi_20261113_run1/rssi_by_tx_setting.json",
+      "sha256": "6a980af175c068daa6b98e9d48db231dade409a5e24ce637b9f9acf7bbe96662"
+    },
+    "validation.json": {
+      "original_path": "build/three_responder_rssi_20261113_validation.json",
+      "sha256": "91a39c7accbf9fafc9aa3a2ab662069cace6f8f623d1f02d701f5bcdf652e151"
+    }
+  }
+}

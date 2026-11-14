@@ -64,6 +64,11 @@ The simpler baseline and independent variants remain experimental controls.
 
 ## Power sweep and RSSI
 
+For a continuous low-power range test, use the separate
+[fixed 01010101 experiment](samples/twr_checked_fixed01_common/README.md):
+one BLE initiator and two responders, with fixed 01010101 power for all four
+frames in both directions. Its protocol version 5 keeps it separate from the sweep firmware.
+
 The combined and BLE initiators use **65 TX settings**: an initial
 `0x01010101` probe followed by all 64 fine-gain codes at coarse gain 2,
 from `0xFEFEFEFE` down to `0x02020202`. Each setting gets a fixed attempt

@@ -1,0 +1,61 @@
+CAPTURE_DIR=experiments/data/2026-11-13/los_three_responders_run1
+BLE_DEVICE=UWB-COEX-INIT CB:56:11:3C:AB:ED
+BLE_COMMAND=START connection=1
+CAPTURE_SECONDS=23.3 measurements=133
+CAPTURE_SECONDS=48.4 measurements=275
+CAPTURE_SECONDS=73.6 measurements=418
+CAPTURE_SECONDS=98.7 measurements=560
+CAPTURE_SECONDS=123.8 measurements=702
+CAPTURE_SECONDS=149.0 measurements=844
+CAPTURE_SECONDS=174.1 measurements=987
+CAPTURE_SECONDS=199.2 measurements=1129
+CAPTURE_SECONDS=224.3 measurements=1271
+CAPTURE_SECONDS=249.5 measurements=1413
+CAPTURE_SECONDS=274.6 measurements=1555
+CAPTURE_SECONDS=299.8 measurements=1697
+CAPTURE_SECONDS=324.9 measurements=1839
+CAPTURE_SECONDS=350.0 measurements=1980
+CAPTURE_SECONDS=375.2 measurements=2123
+CAPTURE_SECONDS=400.3 measurements=2266
+CAPTURE_SECONDS=425.4 measurements=2407
+CAPTURE_SECONDS=450.5 measurements=2549
+CAPTURE_SECONDS=475.7 measurements=2692
+CAPTURE_SECONDS=500.8 measurements=2833
+CAPTURE_SECONDS=525.9 measurements=2976
+CAPTURE_SECONDS=551.1 measurements=3117
+CAPTURE_SECONDS=576.2 measurements=3259
+CAPTURE_SECONDS=601.3 measurements=3401
+CAPTURE_SECONDS=626.4 measurements=3543
+CAPTURE_SECONDS=651.6 measurements=3685
+CAPTURE_SECONDS=676.7 measurements=3827
+CAPTURE_SECONDS=701.8 measurements=3968
+{
+  "transport": "BLE NUS",
+  "commands": [
+    "START",
+    "PAUSE",
+    "STATUS"
+  ],
+  "connections": 1,
+  "connection_errors": [],
+  "device_name": "UWB-COEX-INIT",
+  "device_address": "CB:56:11:3C:AB:ED",
+  "seconds": 723.7386605120005,
+  "transport_metrics": {
+    "notifications": 4280,
+    "bytes": 863588,
+    "lines": 4280,
+    "measurements": 4072,
+    "sequence_gaps": 0,
+    "duplicates": 0,
+    "out_of_order": 0,
+    "framing_errors": 0,
+    "discarded_partial_bytes": 0,
+    "maximum_reported_queue_drops": 0,
+    "transport_replays": 0
+  }
+}
+READINGS=experiments/data/2026-11-13/los_three_responders_run1/measurements.csv
+COMPARISON=experiments/data/2026-11-13/los_three_responders_run1/rssi_by_tx_setting.csv
+Full-budget settings: 67
+Settings with valid RSSI from all three peers: 68

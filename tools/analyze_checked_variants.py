@@ -26,6 +26,13 @@ def analyze_combined(rows, text, result):
     config = dict(re.findall(r'(targets|levels|attempts_per_peer)=(\d+)', ready[0])) if ready else {}
     level_count = int(config.get('levels', 64))
     initial_probe = level_count == 65
+    fixed_word = None
+    if ready and re.search(r'\bmode=fixed\b', ready[0]):
+        power = re.search(r'\btx_power=(0x[0-9a-fA-F]+)', ready[0])
+        if power:
+            word = int(power[1], 16)
+            if 0 <= word <= 0xffffffff and word == (word & 255) * 0x01010101:
+                fixed_word = word
     groups = collections.defaultdict(list)
     peers = collections.defaultdict(list)
     for row in rows:
@@ -60,16 +67,21 @@ def analyze_combined(rows, text, result):
     if initial_probe:
         result['probe_01010101'] = [r for r in entries if r['level'] == 0]
     result['firmware_level_summaries'] = len(re.findall(r'COMBINED_LEVEL cycle=', text))
+    if fixed_word is not None:
+        result['mode'] = 'fixed'
+        result['fixed_tx_power'] = f'0x{fixed_word:08X}'
+        result['per_peer_sweep'] = []
     result['configuration'] = {k: int(v) for k, v in config.items()}
     result['schedule_matches_configuration'] = None
     if len(config) == 3:
         n, attempts, levels = (int(config[k]) for k in ('targets', 'attempts_per_peer', 'levels'))
-        if n > 0 and attempts > 0 and levels in (64, 65):
+        if n > 0 and attempts > 0 and (levels in (64, 65) or (levels == 1 and fixed_word is not None)):
             result['schedule_matches_configuration'] = all(
                 r['peer'] == ((r['seq'] - 1) & 0xffffffff) % n and
                 r['level'] == (((r['seq'] - 1) & 0xffffffff) // (n * attempts)) % levels and
                 r['cycle'] == ((r['seq'] - 1) & 0xffffffff) // (n * attempts * levels) and
-                r['octet'] == (1 if levels == 65 and r['level'] == 0 else
+                r['octet'] == (fixed_word & 255 if fixed_word is not None else
+                    1 if levels == 65 and r['level'] == 0 else
                     ((levels - 1 - r['level']) << 2 | 2)) for r in rows)
 
 

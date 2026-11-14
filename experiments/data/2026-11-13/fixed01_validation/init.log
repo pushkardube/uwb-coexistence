@@ -1,0 +1,360 @@
+COMBINED role=INIT id=0 rssi=1 protocol=5
+COMBINED ready: ch9 DS reply_us=2500 configured_id=0 targets=2 levels=1 attempts_per_peer=20 dwell_attempts=40 mode=fixed tx_power=0x01010101 reply_tx_power=0xFEFEFEFE; Final RSSI
+BLE_STATUS connected=1 notify=1 running=0 queue=1 dropped=0 sent=0 retries=0 bad_commands=0
+BLE_STATUS connected=1 notify=1 running=1 queue=0 dropped=0 sent=3 retries=0 bad_commands=0
+COMBINED ready: ch9 DS reply_us=2500 configured_id=0 targets=2 levels=1 attempts_per_peer=20 dwell_attempts=40 mode=fixed tx_power=0x01010101 reply_tx_power=0xFEFEFEFE; Final RSSI
+COMBINED seq=1 peer=0 dist_mm=1750 final_rssi_mdB=-93712 diag=1 C=3 N=100 D=0 ok=1/1 peer_ok=1/1 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93712 level_ok=1/1
+COMBINED seq=2 peer=1 dist_mm=777 final_rssi_mdB=-85615 diag=1 C=23 N=109 D=0 ok=2/2 peer_ok=1/1 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85615 level_ok=1/1
+COMBINED seq=3 peer=0 error=2 status=03820077 ok=2/3 peer_ok=1/2 cycle=0 level=0 octet=0x01 level_ok=1/2
+COMBINED seq=4 peer=1 dist_mm=801 final_rssi_mdB=-85002 diag=1 C=26 N=108 D=0 ok=3/4 peer_ok=2/2 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85002 level_ok=2/2
+COMBINED seq=5 peer=0 dist_mm=1730 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=4/5 peer_ok=2/3 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=2/3
+COMBINED seq=6 peer=1 dist_mm=781 final_rssi_mdB=-84919 diag=1 C=28 N=111 D=0 ok=5/6 peer_ok=3/3 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=3/3
+COMBINED seq=7 peer=0 error=2 status=03820077 ok=5/7 peer_ok=2/4 cycle=0 level=0 octet=0x01 level_ok=2/4
+COMBINED seq=8 peer=1 dist_mm=767 final_rssi_mdB=-85269 diag=1 C=24 N=107 D=0 ok=6/8 peer_ok=4/4 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85269 level_ok=4/4
+COMBINED seq=9 peer=0 dist_mm=1703 final_rssi_mdB=-93884 diag=1 C=3 N=102 D=0 ok=7/9 peer_ok=3/5 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93884 level_ok=3/5
+COMBINED seq=10 peer=1 dist_mm=779 final_rssi_mdB=-84922 diag=1 C=26 N=107 D=0 ok=8/10 peer_ok=5/5 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-84922 level_ok=5/5
+COMBINED seq=11 peer=0 dist_mm=1734 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=9/11 peer_ok=4/6 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=4/6
+COMBINED seq=12 peer=1 dist_mm=760 final_rssi_mdB=-85002 diag=1 C=26 N=108 D=0 ok=10/12 peer_ok=6/6 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85002 level_ok=6/6
+COMBINED seq=13 peer=0 dist_mm=1738 final_rssi_mdB=-94381 diag=1 C=3 N=108 D=0 ok=11/13 peer_ok=5/7 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-94381 level_ok=5/7
+COMBINED seq=14 peer=1 dist_mm=759 final_rssi_mdB=-84919 diag=1 C=27 N=109 D=0 ok=12/14 peer_ok=7/7 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=7/7
+COMBINED seq=15 peer=0 dist_mm=1720 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=13/15 peer_ok=6/8 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=6/8
+COMBINED seq=16 peer=1 dist_mm=759 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=14/16 peer_ok=8/8 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=8/8
+COMBINED seq=17 peer=0 dist_mm=1718 final_rssi_mdB=-93291 diag=1 C=4 N=110 D=0 ok=15/17 peer_ok=7/9 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93291 level_ok=7/9
+COMBINED seq=18 peer=1 dist_mm=800 final_rssi_mdB=-84998 diag=1 C=27 N=110 D=0 ok=16/18 peer_ok=9/9 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-84998 level_ok=9/9
+COMBINED seq=19 peer=0 dist_mm=1755 final_rssi_mdB=-93625 diag=1 C=3 N=99 D=0 ok=17/19 peer_ok=8/10 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93625 level_ok=8/10
+COMBINED seq=20 peer=1 dist_mm=774 final_rssi_mdB=-85082 diag=1 C=26 N=109 D=0 ok=18/20 peer_ok=10/10 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85082 level_ok=10/10
+COMBINED seq=21 peer=0 dist_mm=1712 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=19/21 peer_ok=9/11 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=9/11
+COMBINED seq=22 peer=1 dist_mm=755 final_rssi_mdB=-85454 diag=1 C=23 N=107 D=0 ok=20/22 peer_ok=11/11 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85454 level_ok=11/11
+COMBINED seq=23 peer=0 dist_mm=1712 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=21/23 peer_ok=10/12 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=10/12
+COMBINED seq=24 peer=1 dist_mm=756 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=22/24 peer_ok=12/12 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=12/12
+COMBINED seq=25 peer=0 dist_mm=1708 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=23/25 peer_ok=11/13 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=11/13
+COMBINED seq=26 peer=1 dist_mm=782 final_rssi_mdB=-85002 diag=1 C=26 N=108 D=0 ok=24/26 peer_ok=13/13 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85002 level_ok=13/13
+COMBINED seq=27 peer=0 error=2 status=03820077 ok=24/27 peer_ok=11/14 cycle=0 level=0 octet=0x01 level_ok=11/14
+COMBINED seq=28 peer=1 dist_mm=780 final_rssi_mdB=-84998 diag=1 C=27 N=110 D=0 ok=25/28 peer_ok=14/14 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-84998 level_ok=14/14
+COMBINED seq=29 peer=0 dist_mm=1723 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=26/29 peer_ok=12/15 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=12/15
+COMBINED seq=30 peer=1 dist_mm=786 final_rssi_mdB=-85290 diag=1 C=23 N=105 D=0 ok=27/30 peer_ok=15/15 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85290 level_ok=15/15
+COMBINED seq=31 peer=0 dist_mm=1742 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=28/31 peer_ok=13/16 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=13/16
+COMBINED seq=32 peer=1 dist_mm=800 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=29/32 peer_ok=16/16 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=16/16
+COMBINED seq=33 peer=0 dist_mm=1735 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=30/33 peer_ok=14/17 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=14/17
+COMBINED seq=34 peer=1 dist_mm=779 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=31/34 peer_ok=17/17 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=17/17
+COMBINED seq=35 peer=0 dist_mm=1761 final_rssi_mdB=-94053 diag=1 C=3 N=104 D=0 ok=32/35 peer_ok=15/18 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-94053 level_ok=15/18
+COMBINED seq=36 peer=1 dist_mm=754 final_rssi_mdB=-85077 diag=1 C=27 N=111 D=0 ok=33/36 peer_ok=18/18 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85077 level_ok=18/18
+COMBINED seq=37 peer=0 dist_mm=1748 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=34/37 peer_ok=16/19 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=16/19
+COMBINED seq=38 peer=1 dist_mm=779 final_rssi_mdB=-85188 diag=1 C=24 N=106 D=0 ok=35/38 peer_ok=19/19 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-85188 level_ok=19/19
+COMBINED seq=39 peer=0 dist_mm=1713 final_rssi_mdB=-93291 diag=1 C=4 N=110 D=0 ok=36/39 peer_ok=17/20 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-93291 level_ok=17/20
+COMBINED seq=40 peer=1 dist_mm=747 final_rssi_mdB=-84919 diag=1 C=28 N=111 D=0 ok=37/40 peer_ok=20/20 cycle=0 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=20/20
+COMBINED_LEVEL cycle=0 level=0 octet=0x01 peer=0 attempted=20 completed=17 valid_rssi=17 mean_dgc_mdB=-93318
+COMBINED_LEVEL cycle=0 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85109
+COMBINED seq=41 peer=0 dist_mm=1752 final_rssi_mdB=-94136 diag=1 C=3 N=105 D=0 ok=38/41 peer_ok=18/21 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-94136 level_ok=1/1
+COMBINED seq=42 peer=1 dist_mm=763 final_rssi_mdB=-85092 diag=1 C=25 N=107 D=0 ok=39/42 peer_ok=21/21 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85092 level_ok=1/1
+COMBINED seq=43 peer=0 dist_mm=1696 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=40/43 peer_ok=19/22 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=2/2
+COMBINED seq=44 peer=1 dist_mm=745 final_rssi_mdB=-85728 diag=1 C=22 N=108 D=0 ok=41/44 peer_ok=22/22 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85728 level_ok=2/2
+COMBINED seq=45 peer=0 dist_mm=1746 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=42/45 peer_ok=20/23 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=3/3
+COMBINED seq=46 peer=1 dist_mm=781 final_rssi_mdB=-85188 diag=1 C=24 N=106 D=0 ok=43/46 peer_ok=23/23 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85188 level_ok=3/3
+COMBINED seq=47 peer=0 dist_mm=1726 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=44/47 peer_ok=21/24 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=4/4
+COMBINED seq=48 peer=1 dist_mm=807 final_rssi_mdB=-85173 diag=1 C=25 N=108 D=0 ok=45/48 peer_ok=24/24 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85173 level_ok=4/4
+COMBINED seq=49 peer=0 error=2 status=03820077 ok=45/49 peer_ok=21/25 cycle=1 level=0 octet=0x01 level_ok=4/5
+COMBINED seq=50 peer=1 dist_mm=775 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=46/50 peer_ok=25/25 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=5/5
+COMBINED seq=51 peer=0 dist_mm=1725 final_rssi_mdB=-94136 diag=1 C=3 N=105 D=0 ok=47/51 peer_ok=22/26 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-94136 level_ok=5/6
+COMBINED seq=52 peer=1 dist_mm=766 final_rssi_mdB=-85396 diag=1 C=26 N=113 D=0 ok=48/52 peer_ok=26/26 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85396 level_ok=6/6
+COMBINED seq=53 peer=0 error=2 status=03820077 ok=48/53 peer_ok=22/27 cycle=1 level=0 octet=0x01 level_ok=5/7
+COMBINED seq=54 peer=1 dist_mm=747 final_rssi_mdB=-85010 diag=1 C=25 N=106 D=0 ok=49/54 peer_ok=27/27 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85010 level_ok=7/7
+COMBINED seq=55 peer=0 dist_mm=1726 final_rssi_mdB=-94461 diag=1 C=3 N=109 D=0 ok=50/55 peer_ok=23/28 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-94461 level_ok=6/8
+COMBINED seq=56 peer=1 dist_mm=762 final_rssi_mdB=-85188 diag=1 C=24 N=106 D=0 ok=51/56 peer_ok=28/28 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85188 level_ok=8/8
+COMBINED seq=57 peer=0 dist_mm=1705 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=52/57 peer_ok=24/29 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=7/9
+COMBINED seq=58 peer=1 dist_mm=774 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=53/58 peer_ok=29/29 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=9/9
+COMBINED seq=59 peer=0 error=2 status=03820077 ok=53/59 peer_ok=24/30 cycle=1 level=0 octet=0x01 level_ok=7/10
+COMBINED seq=60 peer=1 dist_mm=757 final_rssi_mdB=-85930 diag=1 C=21 N=108 D=0 ok=54/60 peer_ok=30/30 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85930 level_ok=10/10
+COMBINED seq=61 peer=0 dist_mm=1738 final_rssi_mdB=-92550 diag=1 C=4 N=101 D=0 ok=55/61 peer_ok=25/31 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92550 level_ok=8/11
+COMBINED seq=62 peer=1 dist_mm=762 final_rssi_mdB=-85373 diag=1 C=23 N=106 D=0 ok=56/62 peer_ok=31/31 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85373 level_ok=11/11
+COMBINED seq=63 peer=0 dist_mm=1738 final_rssi_mdB=-93291 diag=1 C=4 N=110 D=0 ok=57/63 peer_ok=26/32 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-93291 level_ok=9/12
+COMBINED seq=64 peer=1 dist_mm=782 final_rssi_mdB=-84919 diag=1 C=27 N=109 D=0 ok=58/64 peer_ok=32/32 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=12/12
+COMBINED seq=65 peer=0 dist_mm=1733 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=59/65 peer_ok=27/33 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=10/13
+COMBINED seq=66 peer=1 dist_mm=755 final_rssi_mdB=-85454 diag=1 C=23 N=107 D=0 ok=60/66 peer_ok=33/33 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85454 level_ok=13/13
+COMBINED seq=67 peer=0 dist_mm=1753 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=61/67 peer_ok=28/34 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=11/14
+COMBINED seq=68 peer=1 dist_mm=770 final_rssi_mdB=-85602 diag=1 C=21 N=104 D=0 ok=62/68 peer_ok=34/34 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85602 level_ok=14/14
+COMBINED seq=69 peer=0 dist_mm=1732 final_rssi_mdB=-92243 diag=1 C=5 N=109 D=0 ok=63/69 peer_ok=29/35 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92243 level_ok=12/15
+COMBINED seq=70 peer=1 dist_mm=747 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=64/70 peer_ok=35/35 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=15/15
+COMBINED seq=71 peer=0 error=2 status=03820077 ok=64/71 peer_ok=29/36 cycle=1 level=0 octet=0x01 level_ok=12/16
+COMBINED seq=72 peer=1 dist_mm=811 final_rssi_mdB=-85350 diag=1 C=24 N=108 D=0 ok=65/72 peer_ok=36/36 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85350 level_ok=16/16
+COMBINED seq=73 peer=0 dist_mm=1708 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=66/73 peer_ok=30/37 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=13/17
+COMBINED seq=74 peer=1 dist_mm=791 final_rssi_mdB=-85768 diag=1 C=21 N=106 D=0 ok=67/74 peer_ok=37/37 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85768 level_ok=17/17
+COMBINED seq=75 peer=0 dist_mm=1806 final_rssi_mdB=-92162 diag=1 C=5 N=108 D=0 ok=68/75 peer_ok=31/38 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92162 level_ok=14/18
+COMBINED seq=76 peer=1 dist_mm=769 final_rssi_mdB=-85350 diag=1 C=24 N=108 D=0 ok=69/76 peer_ok=38/38 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85350 level_ok=18/18
+COMBINED seq=77 peer=0 dist_mm=1757 final_rssi_mdB=-92000 diag=1 C=5 N=106 D=0 ok=70/77 peer_ok=32/39 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-92000 level_ok=15/19
+COMBINED seq=78 peer=1 dist_mm=781 final_rssi_mdB=-85694 diag=1 C=23 N=110 D=0 ok=71/78 peer_ok=39/39 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-85694 level_ok=19/19
+COMBINED seq=79 peer=0 dist_mm=1727 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=72/79 peer_ok=33/40 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=16/20
+COMBINED seq=80 peer=1 dist_mm=735 final_rssi_mdB=-86365 diag=1 C=19 N=108 D=0 ok=73/80 peer_ok=40/40 cycle=1 level=0 octet=0x01 rssi_dgc_mdB=-86365 level_ok=20/20
+COMBINED_LEVEL cycle=1 level=0 octet=0x01 peer=0 attempted=20 completed=16 valid_rssi=16 mean_dgc_mdB=-93055
+COMBINED_LEVEL cycle=1 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85403
+COMBINED seq=81 peer=0 dist_mm=1742 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=74/81 peer_ok=34/41 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=1/1
+COMBINED seq=82 peer=1 dist_mm=756 final_rssi_mdB=-85743 diag=1 C=24 N=113 D=0 ok=75/82 peer_ok=41/41 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85743 level_ok=1/1
+COMBINED seq=83 peer=0 dist_mm=1753 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=76/83 peer_ok=35/42 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=2/2
+COMBINED seq=84 peer=1 dist_mm=787 final_rssi_mdB=-85768 diag=1 C=21 N=106 D=0 ok=77/84 peer_ok=42/42 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85768 level_ok=2/2
+COMBINED seq=85 peer=0 dist_mm=1732 final_rssi_mdB=-94300 diag=1 C=3 N=107 D=0 ok=78/85 peer_ok=36/43 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-94300 level_ok=3/3
+COMBINED seq=86 peer=1 dist_mm=800 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=79/86 peer_ok=43/43 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=3/3
+COMBINED seq=87 peer=0 dist_mm=1724 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=80/87 peer_ok=37/44 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=4/4
+COMBINED seq=88 peer=1 dist_mm=757 final_rssi_mdB=-85930 diag=1 C=21 N=108 D=0 ok=81/88 peer_ok=44/44 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85930 level_ok=4/4
+COMBINED seq=89 peer=0 dist_mm=1747 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=82/89 peer_ok=38/45 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=5/5
+COMBINED seq=90 peer=1 dist_mm=772 final_rssi_mdB=-84840 diag=1 C=28 N=110 D=0 ok=83/90 peer_ok=45/45 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-84840 level_ok=5/5
+COMBINED seq=91 peer=0 dist_mm=1767 final_rssi_mdB=-93884 diag=1 C=3 N=102 D=0 ok=84/91 peer_ok=39/46 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93884 level_ok=6/6
+COMBINED seq=92 peer=1 dist_mm=795 final_rssi_mdB=-85666 diag=1 C=24 N=112 D=0 ok=85/92 peer_ok=46/46 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85666 level_ok=6/6
+COMBINED seq=93 peer=0 dist_mm=1759 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=86/93 peer_ok=40/47 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=7/7
+COMBINED seq=94 peer=1 dist_mm=774 final_rssi_mdB=-85647 diag=1 C=22 N=107 D=0 ok=87/94 peer_ok=47/47 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85647 level_ok=7/7
+COMBINED seq=95 peer=0 error=2 status=03820077 ok=87/95 peer_ok=40/48 cycle=2 level=0 octet=0x01 level_ok=7/8
+COMBINED seq=96 peer=1 dist_mm=786 final_rssi_mdB=-85980 diag=1 C=20 N=106 D=0 ok=88/96 peer_ok=48/48 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85980 level_ok=8/8
+COMBINED seq=97 peer=0 dist_mm=1705 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=89/97 peer_ok=41/49 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=8/9
+COMBINED seq=98 peer=1 dist_mm=752 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=90/98 peer_ok=49/49 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=9/9
+COMBINED seq=99 peer=0 error=2 status=03820077 ok=90/99 peer_ok=41/50 cycle=2 level=0 octet=0x01 level_ok=8/10
+COMBINED seq=100 peer=1 dist_mm=748 final_rssi_mdB=-85489 diag=1 C=25 N=112 D=0 ok=91/100 peer_ok=50/50 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85489 level_ok=10/10
+COMBINED seq=101 peer=0 dist_mm=1724 final_rssi_mdB=-93969 diag=1 C=3 N=103 D=0 ok=92/101 peer_ok=42/51 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93969 level_ok=9/11
+COMBINED seq=102 peer=1 dist_mm=782 final_rssi_mdB=-85188 diag=1 C=24 N=106 D=0 ok=93/102 peer_ok=51/51 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85188 level_ok=11/11
+COMBINED seq=103 peer=0 dist_mm=1703 final_rssi_mdB=-94300 diag=1 C=3 N=107 D=0 ok=94/103 peer_ok=43/52 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-94300 level_ok=10/12
+COMBINED seq=104 peer=1 dist_mm=755 final_rssi_mdB=-85768 diag=1 C=21 N=106 D=0 ok=95/104 peer_ok=52/52 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85768 level_ok=12/12
+COMBINED seq=105 peer=0 dist_mm=1665 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=96/105 peer_ok=44/53 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=11/13
+COMBINED seq=106 peer=1 dist_mm=807 final_rssi_mdB=-84688 diag=1 C=29 N=110 D=0 ok=97/106 peer_ok=53/53 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-84688 level_ok=13/13
+COMBINED seq=107 peer=0 dist_mm=1693 final_rssi_mdB=-94053 diag=1 C=3 N=104 D=0 ok=98/107 peer_ok=45/54 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-94053 level_ok=12/14
+COMBINED seq=108 peer=1 dist_mm=762 final_rssi_mdB=-85092 diag=1 C=25 N=107 D=0 ok=99/108 peer_ok=54/54 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85092 level_ok=14/14
+COMBINED seq=109 peer=0 error=2 status=03820077 ok=99/109 peer_ok=45/55 cycle=2 level=0 octet=0x01 level_ok=12/15
+COMBINED seq=110 peer=1 dist_mm=761 final_rssi_mdB=-85350 diag=1 C=24 N=108 D=0 ok=100/110 peer_ok=55/55 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85350 level_ok=15/15
+COMBINED seq=111 peer=0 dist_mm=1727 final_rssi_mdB=-92635 diag=1 C=4 N=102 D=0 ok=101/111 peer_ok=46/56 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-92635 level_ok=13/16
+COMBINED seq=112 peer=1 dist_mm=793 final_rssi_mdB=-85411 diag=1 C=25 N=111 D=0 ok=102/112 peer_ok=56/56 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85411 level_ok=16/16
+COMBINED seq=113 peer=0 dist_mm=1725 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=103/113 peer_ok=47/57 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=14/17
+COMBINED seq=114 peer=1 dist_mm=746 final_rssi_mdB=-85232 diag=1 C=27 N=113 D=0 ok=104/114 peer_ok=57/57 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85232 level_ok=17/17
+COMBINED seq=115 peer=0 dist_mm=1718 final_rssi_mdB=-94053 diag=1 C=3 N=104 D=0 ok=105/115 peer_ok=48/58 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-94053 level_ok=15/18
+COMBINED seq=116 peer=1 dist_mm=756 final_rssi_mdB=-85269 diag=1 C=24 N=107 D=0 ok=106/116 peer_ok=58/58 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85269 level_ok=18/18
+COMBINED seq=117 peer=0 dist_mm=1694 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=107/117 peer_ok=49/59 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=16/19
+COMBINED seq=118 peer=1 dist_mm=809 final_rssi_mdB=-85290 diag=1 C=23 N=105 D=0 ok=108/118 peer_ok=59/59 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-85290 level_ok=19/19
+COMBINED seq=119 peer=0 error=2 status=03820077 ok=108/119 peer_ok=49/60 cycle=2 level=0 octet=0x01 level_ok=16/20
+COMBINED seq=120 peer=1 dist_mm=748 final_rssi_mdB=-84840 diag=1 C=26 N=106 D=0 ok=109/120 peer_ok=60/60 cycle=2 level=0 octet=0x01 rssi_dgc_mdB=-84840 level_ok=20/20
+COMBINED_LEVEL cycle=2 level=0 octet=0x01 peer=0 attempted=20 completed=16 valid_rssi=16 mean_dgc_mdB=-93415
+COMBINED_LEVEL cycle=2 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85370
+COMBINED seq=121 peer=0 dist_mm=1715 final_rssi_mdB=-94219 diag=1 C=3 N=106 D=0 ok=110/121 peer_ok=50/61 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-94219 level_ok=1/1
+COMBINED seq=122 peer=1 dist_mm=788 final_rssi_mdB=-84840 diag=1 C=28 N=110 D=0 ok=111/122 peer_ok=61/61 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84840 level_ok=1/1
+COMBINED seq=123 peer=0 error=2 status=03820077 ok=111/123 peer_ok=50/62 cycle=3 level=0 octet=0x01 level_ok=1/2
+COMBINED seq=124 peer=1 dist_mm=746 final_rssi_mdB=-85454 diag=1 C=23 N=107 D=0 ok=112/124 peer_ok=62/62 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85454 level_ok=2/2
+COMBINED seq=125 peer=0 dist_mm=1731 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=113/125 peer_ok=51/63 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=2/3
+COMBINED seq=126 peer=1 dist_mm=749 final_rssi_mdB=-85010 diag=1 C=25 N=106 D=0 ok=114/126 peer_ok=63/63 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85010 level_ok=3/3
+COMBINED seq=127 peer=0 dist_mm=1735 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=115/127 peer_ok=52/64 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=3/4
+COMBINED seq=128 peer=1 dist_mm=773 final_rssi_mdB=-85566 diag=1 C=22 N=106 D=0 ok=116/128 peer_ok=64/64 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85566 level_ok=4/4
+COMBINED seq=129 peer=0 dist_mm=1730 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=117/129 peer_ok=53/65 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=4/5
+COMBINED seq=130 peer=1 dist_mm=780 final_rssi_mdB=-85373 diag=1 C=23 N=106 D=0 ok=118/130 peer_ok=65/65 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85373 level_ok=5/5
+COMBINED seq=131 peer=0 dist_mm=1739 final_rssi_mdB=-92162 diag=1 C=5 N=108 D=0 ok=119/131 peer_ok=54/66 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92162 level_ok=5/6
+COMBINED seq=132 peer=1 dist_mm=782 final_rssi_mdB=-85483 diag=1 C=22 N=105 D=0 ok=120/132 peer_ok=66/66 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85483 level_ok=6/6
+COMBINED seq=133 peer=0 dist_mm=1733 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=121/133 peer_ok=55/67 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=6/7
+COMBINED seq=134 peer=1 dist_mm=766 final_rssi_mdB=-85454 diag=1 C=23 N=107 D=0 ok=122/134 peer_ok=67/67 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85454 level_ok=7/7
+COMBINED seq=135 peer=0 dist_mm=1734 final_rssi_mdB=-93447 diag=1 C=4 N=112 D=0 ok=123/135 peer_ok=56/68 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93447 level_ok=7/8
+COMBINED seq=136 peer=1 dist_mm=777 final_rssi_mdB=-85173 diag=1 C=25 N=108 D=0 ok=124/136 peer_ok=68/68 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85173 level_ok=8/8
+COMBINED seq=137 peer=0 dist_mm=1735 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=125/137 peer_ok=57/69 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=8/9
+COMBINED seq=138 peer=1 dist_mm=734 final_rssi_mdB=-85694 diag=1 C=23 N=110 D=0 ok=126/138 peer_ok=69/69 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85694 level_ok=9/9
+COMBINED seq=139 peer=0 dist_mm=1746 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=127/139 peer_ok=58/70 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=9/10
+COMBINED seq=140 peer=1 dist_mm=753 final_rssi_mdB=-84922 diag=1 C=26 N=107 D=0 ok=128/140 peer_ok=70/70 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84922 level_ok=10/10
+COMBINED seq=141 peer=0 dist_mm=1735 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=129/141 peer_ok=59/71 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=10/11
+COMBINED seq=142 peer=1 dist_mm=802 final_rssi_mdB=-84919 diag=1 C=27 N=109 D=0 ok=130/142 peer_ok=71/71 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=11/11
+COMBINED seq=143 peer=0 dist_mm=1718 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=131/143 peer_ok=60/72 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=11/12
+COMBINED seq=144 peer=1 dist_mm=802 final_rssi_mdB=-84998 diag=1 C=27 N=110 D=0 ok=132/144 peer_ok=72/72 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84998 level_ok=12/12
+COMBINED seq=145 peer=0 dist_mm=1742 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=133/145 peer_ok=61/73 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=12/13
+COMBINED seq=146 peer=1 dist_mm=759 final_rssi_mdB=-84919 diag=1 C=28 N=111 D=0 ok=134/146 peer_ok=73/73 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=13/13
+COMBINED seq=147 peer=0 dist_mm=1735 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=135/147 peer_ok=62/74 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=13/14
+COMBINED seq=148 peer=1 dist_mm=767 final_rssi_mdB=-85454 diag=1 C=23 N=107 D=0 ok=136/148 peer_ok=74/74 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85454 level_ok=14/14
+COMBINED seq=149 peer=0 dist_mm=1752 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=137/149 peer_ok=63/75 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=14/15
+COMBINED seq=150 peer=1 dist_mm=754 final_rssi_mdB=-84998 diag=1 C=27 N=110 D=0 ok=138/150 peer_ok=75/75 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84998 level_ok=15/15
+COMBINED seq=151 peer=0 dist_mm=1739 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=139/151 peer_ok=64/76 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=15/16
+COMBINED seq=152 peer=1 dist_mm=791 final_rssi_mdB=-85082 diag=1 C=26 N=109 D=0 ok=140/152 peer_ok=76/76 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85082 level_ok=16/16
+COMBINED seq=153 peer=0 dist_mm=1752 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=141/153 peer_ok=65/77 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=16/17
+COMBINED seq=154 peer=1 dist_mm=767 final_rssi_mdB=-84998 diag=1 C=27 N=110 D=0 ok=142/154 peer_ok=77/77 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-84998 level_ok=17/17
+COMBINED seq=155 peer=0 dist_mm=1732 final_rssi_mdB=-92322 diag=1 C=5 N=110 D=0 ok=143/155 peer_ok=66/78 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92322 level_ok=17/18
+COMBINED seq=156 peer=1 dist_mm=759 final_rssi_mdB=-85002 diag=1 C=26 N=108 D=0 ok=144/156 peer_ok=78/78 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85002 level_ok=18/18
+COMBINED seq=157 peer=0 dist_mm=1751 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=145/157 peer_ok=67/79 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=18/19
+COMBINED seq=158 peer=1 dist_mm=762 final_rssi_mdB=-85002 diag=1 C=26 N=108 D=0 ok=146/158 peer_ok=79/79 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85002 level_ok=19/19
+COMBINED seq=159 peer=0 dist_mm=1751 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=147/159 peer_ok=68/80 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=19/20
+COMBINED seq=160 peer=1 dist_mm=763 final_rssi_mdB=-85290 diag=1 C=23 N=105 D=0 ok=148/160 peer_ok=80/80 cycle=3 level=0 octet=0x01 rssi_dgc_mdB=-85290 level_ok=20/20
+COMBINED_LEVEL cycle=3 level=0 octet=0x01 peer=0 attempted=20 completed=19 valid_rssi=19 mean_dgc_mdB=-92991
+COMBINED_LEVEL cycle=3 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85181
+COMBINED seq=161 peer=0 dist_mm=1744 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=149/161 peer_ok=69/81 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=1/1
+COMBINED seq=162 peer=1 dist_mm=799 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=150/162 peer_ok=81/81 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=1/1
+COMBINED seq=163 peer=0 dist_mm=1730 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=151/163 peer_ok=70/82 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=2/2
+COMBINED seq=164 peer=1 dist_mm=749 final_rssi_mdB=-85318 diag=1 C=26 N=112 D=0 ok=152/164 peer_ok=82/82 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85318 level_ok=2/2
+COMBINED seq=165 peer=0 dist_mm=1726 final_rssi_mdB=-92322 diag=1 C=5 N=110 D=0 ok=153/165 peer_ok=71/83 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92322 level_ok=3/3
+COMBINED seq=166 peer=1 dist_mm=797 final_rssi_mdB=-85173 diag=1 C=25 N=108 D=0 ok=154/166 peer_ok=83/83 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85173 level_ok=3/3
+COMBINED seq=167 peer=0 dist_mm=1740 final_rssi_mdB=-94136 diag=1 C=3 N=105 D=0 ok=155/167 peer_ok=72/84 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-94136 level_ok=4/4
+COMBINED seq=168 peer=1 dist_mm=756 final_rssi_mdB=-85332 diag=1 C=25 N=110 D=0 ok=156/168 peer_ok=84/84 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85332 level_ok=4/4
+COMBINED seq=169 peer=0 dist_mm=1730 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=157/169 peer_ok=73/85 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=5/5
+COMBINED seq=170 peer=1 dist_mm=770 final_rssi_mdB=-85535 diag=1 C=23 N=108 D=0 ok=158/170 peer_ok=85/85 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85535 level_ok=5/5
+COMBINED seq=171 peer=0 dist_mm=1757 final_rssi_mdB=-93969 diag=1 C=3 N=103 D=0 ok=159/171 peer_ok=74/86 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93969 level_ok=6/6
+COMBINED seq=172 peer=1 dist_mm=741 final_rssi_mdB=-85966 diag=1 C=22 N=111 D=0 ok=160/172 peer_ok=86/86 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85966 level_ok=6/6
+COMBINED seq=173 peer=0 dist_mm=1754 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=161/173 peer_ok=75/87 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=7/7
+COMBINED seq=174 peer=1 dist_mm=775 final_rssi_mdB=-85694 diag=1 C=23 N=110 D=0 ok=162/174 peer_ok=87/87 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85694 level_ok=7/7
+COMBINED seq=175 peer=0 dist_mm=1733 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=163/175 peer_ok=76/88 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=8/8
+COMBINED seq=176 peer=1 dist_mm=804 final_rssi_mdB=-86010 diag=1 C=21 N=109 D=0 ok=164/176 peer_ok=88/88 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-86010 level_ok=8/8
+COMBINED seq=177 peer=0 error=2 status=03820077 ok=164/177 peer_ok=76/89 cycle=4 level=0 octet=0x01 level_ok=8/9
+COMBINED seq=178 peer=1 dist_mm=756 final_rssi_mdB=-85240 diag=1 C=26 N=111 D=0 ok=165/178 peer_ok=89/89 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85240 level_ok=9/9
+COMBINED seq=179 peer=0 dist_mm=1733 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=166/179 peer_ok=77/90 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=9/10
+COMBINED seq=180 peer=1 dist_mm=766 final_rssi_mdB=-85430 diag=1 C=24 N=109 D=0 ok=167/180 peer_ok=90/90 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85430 level_ok=10/10
+COMBINED seq=181 peer=0 dist_mm=1726 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=168/181 peer_ok=78/91 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=10/11
+COMBINED seq=182 peer=1 dist_mm=791 final_rssi_mdB=-84922 diag=1 C=26 N=107 D=0 ok=169/182 peer_ok=91/91 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-84922 level_ok=11/11
+COMBINED seq=183 peer=0 dist_mm=1745 final_rssi_mdB=-92635 diag=1 C=4 N=102 D=0 ok=170/183 peer_ok=79/92 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92635 level_ok=11/12
+COMBINED seq=184 peer=1 dist_mm=786 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=171/184 peer_ok=92/92 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=12/12
+COMBINED seq=185 peer=0 dist_mm=1735 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=172/185 peer_ok=80/93 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=12/13
+COMBINED seq=186 peer=1 dist_mm=750 final_rssi_mdB=-84844 diag=1 C=29 N=112 D=0 ok=173/186 peer_ok=93/93 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-84844 level_ok=13/13
+COMBINED seq=187 peer=0 dist_mm=1723 final_rssi_mdB=-92243 diag=1 C=5 N=109 D=0 ok=174/187 peer_ok=81/94 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92243 level_ok=13/14
+COMBINED seq=188 peer=1 dist_mm=756 final_rssi_mdB=-85010 diag=1 C=25 N=106 D=0 ok=175/188 peer_ok=94/94 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85010 level_ok=14/14
+COMBINED seq=189 peer=0 error=2 status=03820077 ok=175/189 peer_ok=81/95 cycle=4 level=0 octet=0x01 level_ok=13/15
+COMBINED seq=190 peer=1 dist_mm=770 final_rssi_mdB=-85002 diag=1 C=26 N=108 D=0 ok=176/190 peer_ok=95/95 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85002 level_ok=15/15
+COMBINED seq=191 peer=0 dist_mm=1747 final_rssi_mdB=-92082 diag=1 C=5 N=107 D=0 ok=177/191 peer_ok=82/96 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92082 level_ok=14/16
+COMBINED seq=192 peer=1 dist_mm=782 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=178/192 peer_ok=96/96 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=16/16
+COMBINED seq=193 peer=0 dist_mm=1734 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=179/193 peer_ok=83/97 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=15/17
+COMBINED seq=194 peer=1 dist_mm=743 final_rssi_mdB=-85980 diag=1 C=20 N=106 D=0 ok=180/194 peer_ok=97/97 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85980 level_ok=17/17
+COMBINED seq=195 peer=0 dist_mm=1757 final_rssi_mdB=-92720 diag=1 C=4 N=103 D=0 ok=181/195 peer_ok=84/98 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-92720 level_ok=16/18
+COMBINED seq=196 peer=1 dist_mm=762 final_rssi_mdB=-85092 diag=1 C=25 N=107 D=0 ok=182/196 peer_ok=98/98 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85092 level_ok=18/18
+COMBINED seq=197 peer=0 dist_mm=1744 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=183/197 peer_ok=85/99 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=17/19
+COMBINED seq=198 peer=1 dist_mm=806 final_rssi_mdB=-85269 diag=1 C=24 N=107 D=0 ok=184/198 peer_ok=99/99 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85269 level_ok=19/19
+COMBINED seq=199 peer=0 dist_mm=1733 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=185/199 peer_ok=86/100 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=18/20
+COMBINED seq=200 peer=1 dist_mm=756 final_rssi_mdB=-85318 diag=1 C=26 N=112 D=0 ok=186/200 peer_ok=100/100 cycle=4 level=0 octet=0x01 rssi_dgc_mdB=-85318 level_ok=20/20
+COMBINED_LEVEL cycle=4 level=0 octet=0x01 peer=0 attempted=20 completed=18 valid_rssi=18 mean_dgc_mdB=-92999
+COMBINED_LEVEL cycle=4 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85325
+COMBINED seq=201 peer=0 dist_mm=1713 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=187/201 peer_ok=87/101 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=1/1
+COMBINED seq=202 peer=1 dist_mm=773 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=188/202 peer_ok=101/101 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=1/1
+COMBINED seq=203 peer=0 dist_mm=1701 final_rssi_mdB=-91918 diag=1 C=5 N=105 D=0 ok=189/203 peer_ok=88/102 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-91918 level_ok=2/2
+COMBINED seq=204 peer=1 dist_mm=762 final_rssi_mdB=-85373 diag=1 C=23 N=106 D=0 ok=190/204 peer_ok=102/102 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85373 level_ok=2/2
+COMBINED seq=205 peer=0 dist_mm=1717 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=191/205 peer_ok=89/103 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=3/3
+COMBINED seq=206 peer=1 dist_mm=762 final_rssi_mdB=-85092 diag=1 C=25 N=107 D=0 ok=192/206 peer_ok=103/103 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85092 level_ok=3/3
+COMBINED seq=207 peer=0 dist_mm=1739 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=193/207 peer_ok=90/104 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=4/4
+COMBINED seq=208 peer=1 dist_mm=787 final_rssi_mdB=-85077 diag=1 C=27 N=111 D=0 ok=194/208 peer_ok=104/104 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85077 level_ok=4/4
+COMBINED seq=209 peer=0 dist_mm=1738 final_rssi_mdB=-93291 diag=1 C=4 N=110 D=0 ok=195/209 peer_ok=91/105 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93291 level_ok=5/5
+COMBINED seq=210 peer=1 dist_mm=774 final_rssi_mdB=-85430 diag=1 C=24 N=109 D=0 ok=196/210 peer_ok=105/105 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85430 level_ok=5/5
+COMBINED seq=211 peer=0 dist_mm=1689 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=197/211 peer_ok=92/106 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=6/6
+COMBINED seq=212 peer=1 dist_mm=766 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=198/212 peer_ok=106/106 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=6/6
+COMBINED seq=213 peer=0 dist_mm=1740 final_rssi_mdB=-93969 diag=1 C=3 N=103 D=0 ok=199/213 peer_ok=93/107 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93969 level_ok=7/7
+COMBINED seq=214 peer=1 dist_mm=769 final_rssi_mdB=-85350 diag=1 C=24 N=108 D=0 ok=200/214 peer_ok=107/107 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85350 level_ok=7/7
+COMBINED seq=215 peer=0 dist_mm=1761 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=201/215 peer_ok=94/108 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=8/8
+COMBINED seq=216 peer=1 dist_mm=787 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=202/216 peer_ok=108/108 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=8/8
+COMBINED seq=217 peer=0 dist_mm=1737 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=203/217 peer_ok=95/109 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=9/9
+COMBINED seq=218 peer=1 dist_mm=755 final_rssi_mdB=-85535 diag=1 C=23 N=108 D=0 ok=204/218 peer_ok=109/109 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85535 level_ok=9/9
+COMBINED seq=219 peer=0 dist_mm=1734 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=205/219 peer_ok=96/110 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=10/10
+COMBINED seq=220 peer=1 dist_mm=760 final_rssi_mdB=-85332 diag=1 C=25 N=110 D=0 ok=206/220 peer_ok=110/110 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85332 level_ok=10/10
+COMBINED seq=221 peer=0 dist_mm=1747 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=207/221 peer_ok=97/111 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=11/11
+COMBINED seq=222 peer=1 dist_mm=743 final_rssi_mdB=-86061 diag=1 C=20 N=107 D=0 ok=208/222 peer_ok=111/111 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-86061 level_ok=11/11
+COMBINED seq=223 peer=0 dist_mm=1755 final_rssi_mdB=-92720 diag=1 C=4 N=103 D=0 ok=209/223 peer_ok=98/112 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-92720 level_ok=12/12
+COMBINED seq=224 peer=1 dist_mm=768 final_rssi_mdB=-85588 diag=1 C=24 N=111 D=0 ok=210/224 peer_ok=112/112 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85588 level_ok=12/12
+COMBINED seq=225 peer=0 dist_mm=1728 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=211/225 peer_ok=99/113 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=13/13
+COMBINED seq=226 peer=1 dist_mm=782 final_rssi_mdB=-85489 diag=1 C=25 N=112 D=0 ok=212/226 peer_ok=113/113 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85489 level_ok=13/13
+COMBINED seq=227 peer=0 dist_mm=1715 final_rssi_mdB=-93370 diag=1 C=4 N=111 D=0 ok=213/227 peer_ok=100/114 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93370 level_ok=14/14
+COMBINED seq=228 peer=1 dist_mm=761 final_rssi_mdB=-85483 diag=1 C=22 N=105 D=0 ok=214/228 peer_ok=114/114 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85483 level_ok=14/14
+COMBINED seq=229 peer=0 dist_mm=1713 final_rssi_mdB=-92969 diag=1 C=4 N=106 D=0 ok=215/229 peer_ok=101/115 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-92969 level_ok=15/15
+COMBINED seq=230 peer=1 dist_mm=740 final_rssi_mdB=-85188 diag=1 C=24 N=106 D=0 ok=216/230 peer_ok=115/115 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85188 level_ok=15/15
+COMBINED seq=231 peer=0 dist_mm=1757 final_rssi_mdB=-93212 diag=1 C=4 N=109 D=0 ok=217/231 peer_ok=102/116 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93212 level_ok=16/16
+COMBINED seq=232 peer=1 dist_mm=777 final_rssi_mdB=-85373 diag=1 C=23 N=106 D=0 ok=218/232 peer_ok=116/116 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85373 level_ok=16/16
+COMBINED seq=233 peer=0 dist_mm=1734 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=219/233 peer_ok=103/117 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=17/17
+COMBINED seq=234 peer=1 dist_mm=794 final_rssi_mdB=-84919 diag=1 C=27 N=109 D=0 ok=220/234 peer_ok=117/117 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-84919 level_ok=17/17
+COMBINED seq=235 peer=0 dist_mm=1748 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=221/235 peer_ok=104/118 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=18/18
+COMBINED seq=236 peer=1 dist_mm=773 final_rssi_mdB=-85240 diag=1 C=26 N=111 D=0 ok=222/236 peer_ok=118/118 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85240 level_ok=18/18
+COMBINED seq=237 peer=0 error=2 status=03820077 ok=222/237 peer_ok=104/119 cycle=5 level=0 octet=0x01 level_ok=18/19
+COMBINED seq=238 peer=1 dist_mm=790 final_rssi_mdB=-84758 diag=1 C=27 N=107 D=0 ok=223/238 peer_ok=119/119 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-84758 level_ok=19/19
+COMBINED seq=239 peer=0 dist_mm=1737 final_rssi_mdB=-93051 diag=1 C=4 N=107 D=0 ok=224/239 peer_ok=105/120 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-93051 level_ok=19/20
+COMBINED seq=240 peer=1 dist_mm=748 final_rssi_mdB=-85773 diag=1 C=23 N=111 D=0 ok=225/240 peer_ok=120/120 cycle=5 level=0 octet=0x01 rssi_dgc_mdB=-85773 level_ok=20/20
+COMBINED_LEVEL cycle=5 level=0 octet=0x01 peer=0 attempted=20 completed=19 valid_rssi=19 mean_dgc_mdB=-93059
+COMBINED_LEVEL cycle=5 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85321
+COMBINED seq=241 peer=0 dist_mm=1773 final_rssi_mdB=-94136 diag=1 C=3 N=105 D=0 ok=226/241 peer_ok=106/121 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-94136 level_ok=1/1
+COMBINED seq=242 peer=1 dist_mm=797 final_rssi_mdB=-85849 diag=1 C=21 N=107 D=0 ok=227/242 peer_ok=121/121 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85849 level_ok=1/1
+COMBINED seq=243 peer=0 dist_mm=1841 final_rssi_mdB=-91530 diag=1 C=6 N=110 D=0 ok=228/243 peer_ok=107/122 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91530 level_ok=2/2
+COMBINED seq=244 peer=1 dist_mm=753 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=229/244 peer_ok=122/122 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=2/2
+COMBINED seq=245 peer=0 dist_mm=1752 final_rssi_mdB=-93884 diag=1 C=3 N=102 D=0 ok=230/245 peer_ok=108/123 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-93884 level_ok=3/3
+COMBINED seq=246 peer=1 dist_mm=784 final_rssi_mdB=-83949 diag=1 C=35 N=111 D=0 ok=231/246 peer_ok=123/123 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-83949 level_ok=3/3
+COMBINED seq=247 peer=0 dist_mm=1800 final_rssi_mdB=-92082 diag=1 C=5 N=107 D=0 ok=232/247 peer_ok=109/124 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-92082 level_ok=4/4
+COMBINED seq=248 peer=1 dist_mm=783 final_rssi_mdB=-84181 diag=1 C=32 N=109 D=0 ok=233/248 peer_ok=124/124 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84181 level_ok=4/4
+COMBINED seq=249 peer=0 dist_mm=1796 final_rssi_mdB=-91609 diag=1 C=6 N=111 D=0 ok=234/249 peer_ok=110/125 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91609 level_ok=5/5
+COMBINED seq=250 peer=1 dist_mm=813 final_rssi_mdB=-83669 diag=1 C=36 N=109 D=0 ok=235/250 peer_ok=125/125 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-83669 level_ok=5/5
+COMBINED seq=251 peer=0 dist_mm=1792 final_rssi_mdB=-91666 diag=1 C=5 N=102 D=0 ok=236/251 peer_ok=111/126 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91666 level_ok=6/6
+COMBINED seq=252 peer=1 dist_mm=795 final_rssi_mdB=-83427 diag=1 C=36 N=106 D=0 ok=237/252 peer_ok=126/126 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-83427 level_ok=6/6
+COMBINED seq=253 peer=0 dist_mm=1778 final_rssi_mdB=-90861 diag=1 C=7 N=110 D=0 ok=238/253 peer_ok=112/127 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-90861 level_ok=7/7
+COMBINED seq=254 peer=1 dist_mm=849 final_rssi_mdB=-82700 diag=1 C=45 N=109 D=0 ok=239/254 peer_ok=127/127 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-82700 level_ok=7/7
+COMBINED seq=255 peer=0 dist_mm=1785 final_rssi_mdB=-90781 diag=1 C=7 N=109 D=0 ok=240/255 peer_ok=113/128 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-90781 level_ok=8/8
+COMBINED seq=256 peer=1 dist_mm=828 final_rssi_mdB=-84921 diag=1 C=29 N=113 D=0 ok=241/256 peer_ok=128/128 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84921 level_ok=8/8
+COMBINED seq=257 peer=0 dist_mm=1774 final_rssi_mdB=-91918 diag=1 C=5 N=105 D=0 ok=242/257 peer_ok=114/129 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91918 level_ok=9/9
+COMBINED seq=258 peer=1 dist_mm=752 final_rssi_mdB=-84528 diag=1 C=29 N=108 D=0 ok=243/258 peer_ok=129/129 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84528 level_ok=9/9
+COMBINED seq=259 peer=0 dist_mm=1862 final_rssi_mdB=-89959 diag=1 C=8 N=106 D=0 ok=244/259 peer_ok=115/130 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-89959 level_ok=10/10
+COMBINED seq=260 peer=1 dist_mm=745 final_rssi_mdB=-85290 diag=1 C=23 N=105 D=0 ok=245/260 peer_ok=130/130 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85290 level_ok=10/10
+COMBINED seq=261 peer=0 dist_mm=1830 final_rssi_mdB=-88440 diag=1 C=12 N=109 D=0 ok=246/261 peer_ok=116/131 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-88440 level_ok=11/11
+COMBINED seq=262 peer=1 dist_mm=775 final_rssi_mdB=-84840 diag=1 C=28 N=110 D=0 ok=247/262 peer_ok=131/131 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84840 level_ok=11/11
+COMBINED seq=263 peer=0 dist_mm=1854 final_rssi_mdB=-90781 diag=1 C=7 N=109 D=0 ok=248/263 peer_ok=117/132 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-90781 level_ok=12/12
+COMBINED seq=264 peer=1 dist_mm=800 final_rssi_mdB=-84681 diag=1 C=28 N=108 D=0 ok=249/264 peer_ok=132/132 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84681 level_ok=12/12
+COMBINED seq=265 peer=0 dist_mm=1813 final_rssi_mdB=-91451 diag=1 C=6 N=109 D=0 ok=250/265 peer_ok=118/133 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91451 level_ok=13/13
+COMBINED seq=266 peer=1 dist_mm=760 final_rssi_mdB=-84766 diag=1 C=29 N=111 D=0 ok=251/266 peer_ok=133/133 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84766 level_ok=13/13
+COMBINED seq=267 peer=0 dist_mm=1807 final_rssi_mdB=-91751 diag=1 C=5 N=103 D=0 ok=252/267 peer_ok=119/134 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91751 level_ok=14/14
+COMBINED seq=268 peer=1 dist_mm=757 final_rssi_mdB=-85077 diag=1 C=27 N=111 D=0 ok=253/268 peer_ok=134/134 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85077 level_ok=14/14
+COMBINED seq=269 peer=0 dist_mm=1782 final_rssi_mdB=-91918 diag=1 C=5 N=105 D=0 ok=254/269 peer_ok=120/135 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91918 level_ok=15/15
+COMBINED seq=270 peer=1 dist_mm=797 final_rssi_mdB=-84528 diag=1 C=29 N=108 D=0 ok=255/270 peer_ok=135/135 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84528 level_ok=15/15
+COMBINED seq=271 peer=0 dist_mm=1791 final_rssi_mdB=-92162 diag=1 C=5 N=108 D=0 ok=256/271 peer_ok=121/136 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-92162 level_ok=16/16
+COMBINED seq=272 peer=1 dist_mm=789 final_rssi_mdB=-85077 diag=1 C=27 N=111 D=0 ok=257/272 peer_ok=136/136 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85077 level_ok=16/16
+COMBINED seq=273 peer=0 dist_mm=1795 final_rssi_mdB=-91043 diag=1 C=6 N=104 D=0 ok=258/273 peer_ok=122/137 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91043 level_ok=17/17
+COMBINED seq=274 peer=1 dist_mm=794 final_rssi_mdB=-85092 diag=1 C=25 N=107 D=0 ok=259/274 peer_ok=137/137 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85092 level_ok=17/17
+COMBINED seq=275 peer=0 dist_mm=1810 final_rssi_mdB=-91835 diag=1 C=5 N=104 D=0 ok=260/275 peer_ok=123/138 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-91835 level_ok=18/18
+COMBINED seq=276 peer=1 dist_mm=790 final_rssi_mdB=-85077 diag=1 C=27 N=111 D=0 ok=261/276 peer_ok=138/138 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-85077 level_ok=18/18
+COMBINED seq=277 peer=0 dist_mm=1786 final_rssi_mdB=-90861 diag=1 C=7 N=110 D=0 ok=262/277 peer_ok=124/139 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-90861 level_ok=19/19
+COMBINED seq=278 peer=1 dist_mm=763 final_rssi_mdB=-84761 diag=1 C=28 N=109 D=0 ok=263/278 peer_ok=139/139 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84761 level_ok=19/19
+COMBINED seq=279 peer=0 dist_mm=1781 final_rssi_mdB=-92322 diag=1 C=5 N=110 D=0 ok=264/279 peer_ok=125/140 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-92322 level_ok=20/20
+COMBINED seq=280 peer=1 dist_mm=801 final_rssi_mdB=-84844 diag=1 C=29 N=112 D=0 ok=265/280 peer_ok=140/140 cycle=6 level=0 octet=0x01 rssi_dgc_mdB=-84844 level_ok=20/20
+COMBINED_LEVEL cycle=6 level=0 octet=0x01 peer=0 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-91549
+COMBINED_LEVEL cycle=6 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-84618
+COMBINED seq=281 peer=0 dist_mm=1784 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=266/281 peer_ok=126/141 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=1/1
+COMBINED seq=282 peer=1 dist_mm=779 final_rssi_mdB=-84688 diag=1 C=29 N=110 D=0 ok=267/282 peer_ok=141/141 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84688 level_ok=1/1
+COMBINED seq=283 peer=0 dist_mm=1796 final_rssi_mdB=-91530 diag=1 C=6 N=110 D=0 ok=268/283 peer_ok=127/142 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91530 level_ok=2/2
+COMBINED seq=284 peer=1 dist_mm=774 final_rssi_mdB=-84447 diag=1 C=29 N=107 D=0 ok=269/284 peer_ok=142/142 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84447 level_ok=2/2
+COMBINED seq=285 peer=0 dist_mm=1802 final_rssi_mdB=-91208 diag=1 C=6 N=106 D=0 ok=270/285 peer_ok=128/143 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91208 level_ok=3/3
+COMBINED seq=286 peer=1 dist_mm=795 final_rssi_mdB=-85162 diag=1 C=26 N=110 D=0 ok=271/286 peer_ok=143/143 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-85162 level_ok=3/3
+COMBINED seq=287 peer=0 dist_mm=1796 final_rssi_mdB=-91126 diag=1 C=6 N=105 D=0 ok=272/287 peer_ok=129/144 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91126 level_ok=4/4
+COMBINED seq=288 peer=1 dist_mm=795 final_rssi_mdB=-84676 diag=1 C=27 N=106 D=0 ok=273/288 peer_ok=144/144 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84676 level_ok=4/4
+COMBINED seq=289 peer=0 dist_mm=1806 final_rssi_mdB=-91290 diag=1 C=6 N=107 D=0 ok=274/289 peer_ok=130/145 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91290 level_ok=5/5
+COMBINED seq=290 peer=1 dist_mm=759 final_rssi_mdB=-84608 diag=1 C=29 N=109 D=0 ok=275/290 peer_ok=145/145 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84608 level_ok=5/5
+COMBINED seq=291 peer=0 dist_mm=1787 final_rssi_mdB=-91451 diag=1 C=6 N=109 D=0 ok=276/291 peer_ok=131/146 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91451 level_ok=6/6
+COMBINED seq=292 peer=1 dist_mm=767 final_rssi_mdB=-85253 diag=1 C=25 N=109 D=0 ok=277/292 peer_ok=146/146 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-85253 level_ok=6/6
+COMBINED seq=293 peer=0 dist_mm=1798 final_rssi_mdB=-92162 diag=1 C=5 N=108 D=0 ok=278/293 peer_ok=132/147 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-92162 level_ok=7/7
+COMBINED seq=294 peer=1 dist_mm=790 final_rssi_mdB=-84839 diag=1 C=27 N=108 D=0 ok=279/294 peer_ok=147/147 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84839 level_ok=7/7
+COMBINED seq=295 peer=0 dist_mm=1779 final_rssi_mdB=-91918 diag=1 C=5 N=105 D=0 ok=280/295 peer_ok=133/148 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91918 level_ok=8/8
+COMBINED seq=296 peer=1 dist_mm=795 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=281/296 peer_ok=148/148 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=8/8
+COMBINED seq=297 peer=0 dist_mm=1760 final_rssi_mdB=-92000 diag=1 C=5 N=106 D=0 ok=282/297 peer_ok=134/149 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-92000 level_ok=9/9
+COMBINED seq=298 peer=1 dist_mm=781 final_rssi_mdB=-84681 diag=1 C=28 N=108 D=0 ok=283/298 peer_ok=149/149 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84681 level_ok=9/9
+COMBINED seq=299 peer=0 dist_mm=1792 final_rssi_mdB=-92000 diag=1 C=5 N=106 D=0 ok=284/299 peer_ok=135/150 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-92000 level_ok=10/10
+COMBINED seq=300 peer=1 dist_mm=766 final_rssi_mdB=-84153 diag=1 C=34 N=112 D=0 ok=285/300 peer_ok=150/150 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84153 level_ok=10/10
+COMBINED seq=301 peer=0 dist_mm=1761 final_rssi_mdB=-91290 diag=1 C=6 N=107 D=0 ok=286/301 peer_ok=136/151 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91290 level_ok=11/11
+COMBINED seq=302 peer=1 dist_mm=793 final_rssi_mdB=-83291 diag=1 C=40 N=110 D=0 ok=287/302 peer_ok=151/151 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-83291 level_ok=11/11
+COMBINED seq=303 peer=0 dist_mm=1775 final_rssi_mdB=-91290 diag=1 C=6 N=107 D=0 ok=288/303 peer_ok=137/152 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91290 level_ok=12/12
+COMBINED seq=304 peer=1 dist_mm=788 final_rssi_mdB=-84283 diag=1 C=33 N=112 D=0 ok=289/304 peer_ok=152/152 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84283 level_ok=12/12
+COMBINED seq=305 peer=0 dist_mm=1823 final_rssi_mdB=-91451 diag=1 C=6 N=109 D=0 ok=290/305 peer_ok=138/153 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91451 level_ok=13/13
+COMBINED seq=306 peer=1 dist_mm=761 final_rssi_mdB=-84840 diag=1 C=26 N=106 D=0 ok=291/306 peer_ok=153/153 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84840 level_ok=13/13
+COMBINED seq=307 peer=0 error=2 status=03820077 ok=291/307 peer_ok=138/154 cycle=7 level=0 octet=0x01 level_ok=13/14
+COMBINED seq=308 peer=1 dist_mm=746 final_rssi_mdB=-85615 diag=1 C=23 N=109 D=0 ok=292/308 peer_ok=154/154 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-85615 level_ok=14/14
+COMBINED seq=309 peer=0 dist_mm=1767 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=293/309 peer_ok=139/155 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=14/15
+COMBINED seq=310 peer=1 dist_mm=780 final_rssi_mdB=-85666 diag=1 C=24 N=112 D=0 ok=294/310 peer_ok=155/155 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-85666 level_ok=15/15
+COMBINED seq=311 peer=0 dist_mm=1793 final_rssi_mdB=-91290 diag=1 C=6 N=107 D=0 ok=295/311 peer_ok=140/156 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91290 level_ok=15/16
+COMBINED seq=312 peer=1 dist_mm=759 final_rssi_mdB=-84219 diag=1 C=30 N=106 D=0 ok=296/312 peer_ok=156/156 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84219 level_ok=16/16
+COMBINED seq=313 peer=0 dist_mm=1738 final_rssi_mdB=-90701 diag=1 C=7 N=108 D=0 ok=297/313 peer_ok=141/157 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-90701 level_ok=16/17
+COMBINED seq=314 peer=1 dist_mm=829 final_rssi_mdB=-88007 diag=1 C=14 N=112 D=0 ok=298/314 peer_ok=157/157 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-88007 level_ok=17/17
+COMBINED seq=315 peer=0 error=2 status=03810f77 ok=298/315 peer_ok=141/158 cycle=7 level=0 octet=0x01 level_ok=16/18
+COMBINED seq=316 peer=1 dist_mm=1258 final_rssi_mdB=-89468 diag=1 C=10 N=112 D=0 ok=299/316 peer_ok=158/158 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-89468 level_ok=18/18
+COMBINED seq=317 peer=0 error=2 status=03820077 ok=299/317 peer_ok=141/159 cycle=7 level=0 octet=0x01 level_ok=16/19
+COMBINED seq=318 peer=1 dist_mm=748 final_rssi_mdB=-88013 diag=1 C=13 N=108 D=0 ok=300/318 peer_ok=159/159 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-88013 level_ok=19/19
+COMBINED seq=319 peer=0 dist_mm=1769 final_rssi_mdB=-91687 diag=1 C=6 N=112 D=0 ok=301/319 peer_ok=142/160 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-91687 level_ok=17/20
+COMBINED seq=320 peer=1 dist_mm=804 final_rssi_mdB=-84758 diag=1 C=26 N=105 D=0 ok=302/320 peer_ok=160/160 cycle=7 level=0 octet=0x01 rssi_dgc_mdB=-84758 level_ok=20/20
+COMBINED_LEVEL cycle=7 level=0 octet=0x01 peer=0 attempted=20 completed=17 valid_rssi=17 mean_dgc_mdB=-91647
+COMBINED_LEVEL cycle=7 level=0 octet=0x01 peer=1 attempted=20 completed=20 valid_rssi=20 mean_dgc_mdB=-85288
+COMBINED seq=321 peer=0 dist_mm=1810 final_rssi_mdB=-92000 diag=1 C=5 N=106 D=0 ok=303/321 peer_ok=143/161 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-92000 level_ok=1/1
+COMBINED seq=322 peer=1 dist_mm=754 final_rssi_mdB=-85566 diag=1 C=22 N=106 D=0 ok=304/322 peer_ok=161/161 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85566 level_ok=1/1
+COMBINED seq=323 peer=0 dist_mm=1755 final_rssi_mdB=-92887 diag=1 C=4 N=105 D=0 ok=305/323 peer_ok=144/162 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-92887 level_ok=2/2
+COMBINED seq=324 peer=1 dist_mm=763 final_rssi_mdB=-85728 diag=1 C=22 N=108 D=0 ok=306/324 peer_ok=162/162 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85728 level_ok=2/2
+COMBINED seq=325 peer=0 dist_mm=1771 final_rssi_mdB=-91835 diag=1 C=5 N=104 D=0 ok=307/325 peer_ok=145/163 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-91835 level_ok=3/3
+COMBINED seq=326 peer=1 dist_mm=756 final_rssi_mdB=-85010 diag=1 C=25 N=106 D=0 ok=308/326 peer_ok=163/163 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85010 level_ok=3/3
+COMBINED seq=327 peer=0 dist_mm=1746 final_rssi_mdB=-93132 diag=1 C=4 N=108 D=0 ok=309/327 peer_ok=146/164 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-93132 level_ok=4/4
+COMBINED seq=328 peer=1 dist_mm=799 final_rssi_mdB=-85666 diag=1 C=24 N=112 D=0 ok=310/328 peer_ok=164/164 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85666 level_ok=4/4
+COMBINED seq=329 peer=0 dist_mm=1767 final_rssi_mdB=-92082 diag=1 C=5 N=107 D=0 ok=311/329 peer_ok=147/165 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-92082 level_ok=5/5
+COMBINED seq=330 peer=1 dist_mm=779 final_rssi_mdB=-85694 diag=1 C=23 N=110 D=0 ok=312/330 peer_ok=165/165 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85694 level_ok=5/5
+COMBINED seq=331 peer=0 dist_mm=1748 final_rssi_mdB=-92082 diag=1 C=5 N=107 D=0 ok=313/331 peer_ok=148/166 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-92082 level_ok=6/6
+COMBINED seq=332 peer=1 dist_mm=801 final_rssi_mdB=-84998 diag=1 C=27 N=110 D=0 ok=314/332 peer_ok=166/166 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-84998 level_ok=6/6
+COMBINED seq=333 peer=0 error=2 status=03820077 ok=314/333 peer_ok=148/167 cycle=8 level=0 octet=0x01 level_ok=6/7
+COMBINED seq=334 peer=1 dist_mm=766 final_rssi_mdB=-85966 diag=1 C=22 N=111 D=0 ok=315/334 peer_ok=167/167 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85966 level_ok=7/7
+COMBINED seq=335 peer=0 dist_mm=1758 final_rssi_mdB=-92804 diag=1 C=4 N=104 D=0 ok=316/335 peer_ok=149/168 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-92804 level_ok=7/8
+COMBINED seq=336 peer=1 dist_mm=765 final_rssi_mdB=-85105 diag=1 C=24 N=105 D=0 ok=317/336 peer_ok=168/168 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-85105 level_ok=8/8
+COMBINED seq=337 peer=0 dist_mm=1760 final_rssi_mdB=-92243 diag=1 C=5 N=109 D=0 ok=318/337 peer_ok=150/169 cycle=8 level=0 octet=0x01 rssi_dgc_mdB=-92243 level_ok=8/9
+BLE_STATUS connected=1 notify=1 running=0 queue=0 dropped=0 sent=358 retries=0 bad_commands=0
+BLE_STATUS connected=1 notify=1 running=0 queue=0 dropped=0 sent=359 retries=0 bad_commands=0

@@ -53,6 +53,29 @@ tails, bounded framing, gaps/duplicates, and transport replay deduplication.
 
 ## Current combined firmware
 
+For the separate **continuous 01010101** range experiment, build with
+`bash tools/build_checked_fixed01.sh` and flash with
+`bash tools/flash_checked_variant.sh fixed01 INIT_SERIAL RESP0_SERIAL RESP1_SERIAL`.
+The initiator and both version-5 responders always transmit at 01010101.
+Use `collect_checked_ble.py` for file capture; the analyzer validates
+the fixed-power banner and single-level schedule. See
+[the fixed01 guide](../samples/twr_checked_fixed01_common/README.md).
+
+For one BLE initiator and three responders, use
+[collect_three_responder_rssi.py](collect_three_responder_rssi.py). It retains
+the individual reading CSV and exports a side-by-side distance/RSSI table for
+all three peers at each TX setting and cycle. See
+[the three-responder capture guide](THREE_RESPONDER_RSSI.md) for the board
+mapping, commands, output fields and missing-data semantics.
+
+```bash
+PYTHONDONTWRITEBYTECODE=1 python3 tools/collect_three_responder_rssi.py --seconds 720
+```
+
+The initiator must already be built for three targets. This collector does not
+flash hardware or change the configured peer count. Run
+`python3 tools/test_collect_three_responder_rssi.py` for its host checks.
+
 ```bash
 # Two responders, 10 attempts per peer per setting:
 bash tools/build_checked_combined.sh
@@ -197,11 +220,16 @@ RSSI differences, reversal listings and Spearman rank correlations. It supports
 coarse-2 fine codes with the optional coarse-1/fine-0 probe, and rejects arbitrary
 mixed-coarse maps whose physical order is not established by that rule.
 
+First export one peer from the published full LOS capture:
+
 ```bash
+python3 tools/export_power_rssi_map.py \
+  experiments/data/2026-11-13/los_three_responders_run1/init.log \
+  --peer 0 --cycle 0 --out-prefix build/los_peer0_map
 PYTHONDONTWRITEBYTECODE=1 MPLCONFIGDIR="$PWD/build/.matplotlib" \
   python3 tools/check_power_rssi_trend.py \
-  experiments/tx_power_rssi_mapping_20261112.json \
-  --out-prefix experiments/tx_power_rssi_mapping_UNIQUE_RUN_increasing_power --plot
+  build/los_peer0_map.json \
+  --out-prefix build/los_peer0_increasing_power --plot
 ```
 
 The --plot option requires Matplotlib and creates a standalone PNG showing
@@ -212,27 +240,15 @@ Python standard library. Existing result prefixes are not overwritten.
 It orders settings using coarse/fine fields, never by measured RSSI. It does
 not smooth values, calibrate emitted dBm, reflash boards or run a new ascending
 sweep. Small reversals are retained; descriptive correlation does not establish
-their cause or prove perfect monotonicity. See the actual
-[sorted result](../experiments/tx_power_rssi_mapping_20261112_increasing_power.md).
+their cause or prove perfect monotonicity. The published
+[LOS run report](../experiments/los_three_responder_rssi_20261113.md) links the
+raw three-peer evidence; the commands above derive a separate single-peer map.
 
-## Legacy split helpers
+## Historical local helpers
 
-`build_split_twr.sh` always builds the old alternating initiator and responders
-0/1 into coex_split_* directories, checks compiler responder flags and writes
-coex_split_manifest.json. `flash_split_twr.sh` validates that manifest, makes
-a writable nrfutil runtime under build/.nrfutil when needed, and programs the
-legacy images. It does not flash the checked combined firmware.
-
-```bash
-bash tools/build_split_twr.sh
-bash tools/flash_split_twr.sh --list
-bash tools/flash_split_twr.sh INIT_SERIAL RESP0_SERIAL RESP1_SERIAL
-```
-
-Without arguments, the legacy flash helper requires exactly three probes and
-assigns roles by numeric serial ordering. That ordering is unrelated to physical
-position; explicit IDs are preferable. It checks artifact hashes, but later
-source edits are not rebuilt because flashing intentionally skips rebuild.
+Older alternating-session build/flash helpers are outside this published
+snapshot. Use the checked combined, BLE or fixed01 commands above for the
+applications in [the published sample index](../samples/README.md).
 
 ## BLE collector: collect_spatial.py
 

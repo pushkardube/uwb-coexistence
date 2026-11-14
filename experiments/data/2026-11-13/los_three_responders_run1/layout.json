@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-11-13T17:59:43.449464+00:00",
+  "user_reported_layout": "All boards in a line, approximately 1 m apart, LOS.",
+  "exact_tape_distances_m": null,
+  "physical_order_by_peer": null,
+  "data_transport": "All readings obtained over BLE NUS from initiator; responders return diagnostics over UWB.",
+  "serial_ports_opened_for_this_capture": false,
+  "roles": {
+    "initiator": 760201778,
+    "responder0": 760201915,
+    "responder1": 760204734,
+    "responder2": 760204645
+  },
+  "usb_probes_present_at_capture_start": [
+    760201778,
+    760204734,
+    760204645
+  ],
+  "external_power_note": "User reports the last responder on a separate supply; responder0 is absent from the USB inventory.",
+  "requested_seconds": 720,
+  "full_cycle_attempts": 3900,
+  "rssi_units": "DGC-corrected dB estimate, not calibrated absolute dBm",
+  "status": "complete; all 65 settings in cycle 0 verified",
+  "observed_range_order_near_to_far_from_uwb": [
+    2,
+    1,
+    0
+  ],
+  "range_order_note": "Inferred from reported UWB ranges, not tape measurements or a supplied physical label order."
+}

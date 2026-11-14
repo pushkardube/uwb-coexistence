@@ -8,10 +8,11 @@ if [[ $# -lt 3 ]]; then
   echo '   or: bash tools/flash_checked_variant.sh multi INIT_SERIAL RESP0_SERIAL [RESP1_SERIAL]' >&2
   echo '   or: bash tools/flash_checked_variant.sh combined INIT_SERIAL RESP0_SERIAL [RESP1_SERIAL ...]' >&2
   echo '   or: bash tools/flash_checked_variant.sh ble INIT_SERIAL RESP0_SERIAL [RESP1_SERIAL ...]' >&2
+  echo '   or: bash tools/flash_checked_variant.sh fixed01 INIT_SERIAL RESP0_SERIAL RESP1_SERIAL' >&2
   exit 1
 fi
 variant="$1"; shift
-if [[ "$variant" == power && $# != 2 ]] || [[ "$variant" == multi && $# != 2 && $# != 3 ]] || [[ ( "$variant" == combined || "$variant" == ble ) && ( $# -lt 2 || $# -gt 17 ) ]] || [[ "$variant" != power && "$variant" != multi && "$variant" != combined && "$variant" != ble ]]; then
+if [[ "$variant" == power && $# != 2 ]] || [[ "$variant" == multi && $# != 2 && $# != 3 ]] || [[ "$variant" == fixed01 && $# != 3 ]] || [[ ( "$variant" == combined || "$variant" == ble ) && ( $# -lt 2 || $# -gt 17 ) ]] || [[ "$variant" != power && "$variant" != multi && "$variant" != combined && "$variant" != ble && "$variant" != fixed01 ]]; then
   echo 'Invalid variant/target count.' >&2
   exit 1
 fi
@@ -34,14 +35,14 @@ for p in Path('/sys/bus/usb/devices').iterdir():
     except (OSError,ValueError):pass
 if not set(ids)<=present:raise SystemExit('Some selected probes are not currently enumerated.')
 paths=[Path('build/checked_variants_'+variant+'_manifest.json')]
-if variant not in ('combined','ble'):paths.append(Path('build/checked_variants_all_manifest.json'))
+if variant not in ('combined','ble','fixed01'):paths.append(Path('build/checked_variants_all_manifest.json'))
 manifests=[p for p in paths if p.exists()]
 if not manifests:
-    builder='build_checked_ble.sh' if variant=='ble' else 'build_checked_combined.sh' if variant=='combined' else 'build_checked_variants.sh'
+    builder='build_checked_fixed01.sh' if variant=='fixed01' else 'build_checked_ble.sh' if variant=='ble' else 'build_checked_combined.sh' if variant=='combined' else 'build_checked_variants.sh'
     raise SystemExit('Run tools/'+builder+' first.')
 manifest=json.loads(max(manifests,key=lambda p:p.stat().st_mtime).read_text())
 needed={variant+'_init',variant+('_resp' if variant=='power' else '_resp0')}
-if variant in ('multi','combined','ble'):
+if variant in ('multi','combined','ble','fixed01'):
     needed.update(f'{variant}_resp{i}' for i in range(len(ids)-1))
 records={r['name']:r for r in manifest['images']}
 if not needed<=records.keys():raise SystemExit('Build the selected responder IDs before flashing.')

@@ -1,0 +1,107 @@
+{
+  "variant": "COMBINED",
+  "attempt_records": 337,
+  "completed": 318,
+  "sequences": [
+    1,
+    337
+  ],
+  "consecutive_sequences": true,
+  "error_codes": {
+    "2": 19
+  },
+  "fatal": false,
+  "log_drops": false,
+  "by_peer_level": [
+    {
+      "peer": 0,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "attempt_records": 169,
+      "completed": 150,
+      "valid_rssi": 150,
+      "rssi_db_median": -92.969,
+      "rssi_db_mean": -92.71303333333333,
+      "distance_mm_median": 1742.0,
+      "distance_mm_min_max": [
+        1665,
+        1862
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "attempt_records": 168,
+      "completed": 168,
+      "valid_rssi": 168,
+      "rssi_db_median": -85.162,
+      "rssi_db_mean": -85.2148511904762,
+      "distance_mm_median": 772.5,
+      "distance_mm_min_max": [
+        734,
+        1258
+      ]
+    }
+  ],
+  "by_peer": [
+    {
+      "peer": 0,
+      "attempt_records": 169,
+      "completed": 150,
+      "valid_rssi": 150,
+      "rssi_db_median": -92.969,
+      "rssi_db_mean": -92.71303333333333,
+      "distance_mm_median": 1742.0,
+      "distance_mm_min_max": [
+        1665,
+        1862
+      ]
+    },
+    {
+      "peer": 1,
+      "attempt_records": 168,
+      "completed": 168,
+      "valid_rssi": 168,
+      "rssi_db_median": -85.162,
+      "rssi_db_mean": -85.2148511904762,
+      "distance_mm_median": 772.5,
+      "distance_mm_min_max": [
+        734,
+        1258
+      ]
+    }
+  ],
+  "per_peer_sweep": [],
+  "firmware_level_summaries": 16,
+  "mode": "fixed",
+  "fixed_tx_power": "0x01010101",
+  "configuration": {
+    "targets": 2,
+    "levels": 1,
+    "attempts_per_peer": 20
+  },
+  "schedule_matches_configuration": true
+}

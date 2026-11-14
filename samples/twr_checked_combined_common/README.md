@@ -14,10 +14,11 @@ responders. All three selected boards run the updated firmware.
 Read [the hardware validation record](../../experiments/checked_combined_bench.md)
 for the measured results and which boards were actually tested.
 
-The latest [two-board register/RSSI mapping](../../experiments/tx_power_rssi_mapping_20261112.md)
-uses a one-responder override with 20 attempts per setting. It covers the entire
-65-setting cycle with 1300/1300 completions at a median reported range of 1.544 m.
-That report retains the CSV, raw logs and configuration/image-hash provenance.
+The published [three-responder LOS capture](../../experiments/los_three_responder_rssi_20261113.md)
+uses three responders and 20 attempts per peer per setting. Its full first cycle
+completed 3898/3900 exchanges across all 65 settings. Raw BLE readings, CSV tables
+and source/image-hash provenance are included with that report. The earlier
+two-board mapping is retained locally as a separate historical result.
 
 ## Sweep and peer schedule
 

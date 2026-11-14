@@ -1,0 +1,65 @@
+--- a/samples/twr_checked_fixed01_common/combined_plan.h
++++ b/samples/twr_checked_fixed01_common/combined_plan.h
+@@ -20,7 +20,7 @@
+ /* One power forever. A cycle is only a reporting window, never a power change. */
+ #define FIXED_TX_OCTET 0x01u
+ #define SWEEP_LEVELS 1u
+-#define RESPONDER_TX_OCTET FIXED_TX_OCTET
++#define RESPONDER_TX_OCTET 0xFEu
+ #define SWEEP_LEVEL_ATTEMPTS (CHECKED_N_RESPONDERS * SWEEP_ATTEMPTS)
+ static inline uint8_t combined_octet(unsigned level)
+ {
+--- a/samples/twr_checked_fixed01_common/checked.c
++++ b/samples/twr_checked_fixed01_common/checked.c
+@@ -293,9 +293,8 @@
+ 
+ static void announce_ready(void)
+ {
+-    REPORT("COMBINED ready: ch9 DS reply_us=2500 configured_id=%u targets=%u levels=%u attempts_per_peer=%u dwell_attempts=%u mode=fixed tx_power=0x%08x reply_tx_power=0x%08x; Final RSSI\n",
+-           CHECKED_RESP_ID,CHECKED_N_RESPONDERS,SWEEP_LEVELS,SWEEP_ATTEMPTS,SWEEP_LEVEL_ATTEMPTS,
+-           (unsigned)repeated_octet(FIXED_TX_OCTET),(unsigned)repeated_octet(RESPONDER_TX_OCTET));
++    REPORT("COMBINED ready: ch9 DS reply_us=2500 configured_id=%u targets=%u levels=%u attempts_per_peer=%u dwell_attempts=%u mode=fixed tx_power=0x01010101 reply_tx_power=0xFEFEFEFE; Final RSSI\n",
++           CHECKED_RESP_ID,CHECKED_N_RESPONDERS,SWEEP_LEVELS,SWEEP_ATTEMPTS,SWEEP_LEVEL_ATTEMPTS);
+ }
+ 
+ int checked_run(void)
+@@ -313,7 +312,7 @@
+     port_set_dw_ic_spi_fastrate();
+     if (dwt_initialise(DWT_DW_INIT)!=DWT_SUCCESS || dwt_configure(&config)!=DWT_SUCCESS) return -2;
+     dwt_setrxantennadelay(ANT_DELAY); dwt_settxantennadelay(ANT_DELAY);
+-    /* Both directions use the same fixed 01 setting. */
++    /* Keep replies at FE even when the initiator's first probe is 01. */
+     apply_power(CHECKED_INITIATOR ? combined_octet(0) : RESPONDER_TX_OCTET);
+ #if !CHECKED_INITIATOR && CHECKED_RSSI
+     dwt_configciadiag(DW_CIA_DIAG_LOG_ALL);
+--- a/tools/build_checked_fixed01.sh
++++ b/tools/build_checked_fixed01.sh
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env bash
+-# Separate BLE initiator and two responders; fixed 01010101 in both directions.
++# Separate BLE initiator and two responders; fixed 01010101 forward power.
+ set -eo pipefail
+ repo_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+ cd "$repo_dir"
+@@ -31,7 +31,7 @@
+                    'sha256':hashlib.sha256(image.read_bytes()).hexdigest(),'compile_command':command})
+ record={'variant':'fixed01','created_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+         'responders':2,'attempts_per_peer':20,'levels':1,'protocol':5,
+-        'initiator_tx_power':'0x01010101','responder_tx_power':'0x01010101',
++        'initiator_tx_power':'0x01010101','responder_tx_power':'0xFEFEFEFE',
+         'ble_name':'UWB-COEX-INIT','images':images}
+ Path('build/checked_variants_fixed01_manifest.json').write_text(json.dumps(record,indent=2)+'\n')
+ print('Verified fixed01 BLE initiator and responders 0/1; independent protocol 5.')
+--- a/tools/test_checked_fixed01.c
++++ b/tools/test_checked_fixed01.c
+@@ -16,8 +16,8 @@
+     assert(visits[0] == 5000 && visits[1] == 5000);
+     assert(combined_level(UINT32_MAX) == 0);
+     assert(combined_octet(UINT32_MAX) == 1);
+-    assert(repeated_octet(RESPONDER_TX_OCTET) == UINT32_C(0x01010101));
++    assert(RESPONDER_TX_OCTET == 0xFE);
+     assert(rssi_dgc_corrected(-90000,2,true) == -78000);
+     assert(rssi_dgc_corrected(-90000,8,true) == INT32_MIN);
+-    puts("PASS: fixed 01010101 over 10000 attempts; two peers; reporting windows; 01010101 replies");
++    puts("PASS: fixed 01010101 over 10000 attempts; two peers; reporting windows; FE replies");
+ }
