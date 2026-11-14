@@ -61,6 +61,16 @@ class ThreeResponderSummary(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.export(READY.replace('targets=3', 'targets=2') + measurement(1, 0, 1000, -70000))
 
+    def test_ascending_order_preserved_in_comparison(self):
+        text=READY.replace('attempts_per_peer=2','attempts_per_peer=1 order=ascending')
+        for i in range(6):
+            line=measurement(i+1,i%3,1000*(i%3+1),-90000+i*100)
+            if i>=3: line=line.replace('level=0 octet=0x01','level=1 octet=0x02')
+            text+=line
+        result,_=self.export(text)
+        self.assertEqual(result['sweep_order'],'ascending')
+        self.assertEqual([r['tx_power_hex'] for r in result['rows']],['0x01010101','0x02020202'])
+
 
 if __name__ == '__main__':
     unittest.main()

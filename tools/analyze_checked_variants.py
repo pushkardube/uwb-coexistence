@@ -26,6 +26,7 @@ def analyze_combined(rows, text, result):
     config = dict(re.findall(r'(targets|levels|attempts_per_peer)=(\d+)', ready[0])) if ready else {}
     level_count = int(config.get('levels', 64))
     initial_probe = level_count == 65
+    ascending = bool(ready and re.search(r'\border=ascending\b', ready[0]))
     fixed_word = None
     if ready and re.search(r'\bmode=fixed\b', ready[0]):
         power = re.search(r'\btx_power=(0x[0-9a-fA-F]+)', ready[0])
@@ -63,10 +64,17 @@ def analyze_combined(rows, text, result):
                 if complete else None}
         if initial_probe:
             sweep['all_65_levels_observed'] = [r['level'] for r in levels] == list(range(65))
+        if ascending:
+            sweep['full_to_low_rssi_drop_db'] = medians[-1] - medians[0] if complete and medians[0] is not None and medians[-1] is not None else None
+            sweep.pop('observed_nonincreasing_level_medians')
+            sweep['observed_nondecreasing_level_medians'] = all(
+                a is not None and b is not None and a <= b for a,b in zip(medians,medians[1:])) if complete else None
         result['per_peer_sweep'].append(sweep)
     if initial_probe:
         result['probe_01010101'] = [r for r in entries if r['level'] == 0]
     result['firmware_level_summaries'] = len(re.findall(r'COMBINED_LEVEL cycle=', text))
+    if ascending:
+        result['sweep_order'] = 'ascending'
     if fixed_word is not None:
         result['mode'] = 'fixed'
         result['fixed_tx_power'] = f'0x{fixed_word:08X}'
@@ -82,6 +90,7 @@ def analyze_combined(rows, text, result):
                 r['cycle'] == ((r['seq'] - 1) & 0xffffffff) // (n * attempts * levels) and
                 r['octet'] == (fixed_word & 255 if fixed_word is not None else
                     1 if levels == 65 and r['level'] == 0 else
+                    ((r['level'] - 1) << 2 | 2) if ascending else
                     ((levels - 1 - r['level']) << 2 | 2)) for r in rows)
 
 

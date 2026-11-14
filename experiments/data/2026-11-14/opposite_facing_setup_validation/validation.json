@@ -1,0 +1,112 @@
+{
+  "roles": {
+    "initiator": 760201915,
+    "responder0": 760201778,
+    "responder1": 760204734,
+    "responder2": 760204645
+  },
+  "initiator_ble_address": "F1:FB:C0:BC:DB:75",
+  "setup_check_only": true,
+  "physical_angle_reference": "User reports opposite-facing anchors; exact angles and positions not independently established.",
+  "attempts": 168,
+  "completed": 148,
+  "configuration": {
+    "targets": 3,
+    "levels": 65,
+    "attempts_per_peer": 20
+  },
+  "by_peer": [
+    {
+      "peer": 0,
+      "attempt_records": 56,
+      "completed": 56,
+      "valid_rssi": 56,
+      "rssi_db_median": -68.01750000000001,
+      "rssi_db_mean": -73.78976785714286,
+      "distance_mm_median": 833.0,
+      "distance_mm_min_max": [
+        781,
+        876
+      ]
+    },
+    {
+      "peer": 1,
+      "attempt_records": 56,
+      "completed": 36,
+      "valid_rssi": 36,
+      "rssi_db_median": -74.92,
+      "rssi_db_mean": -76.32352777777778,
+      "distance_mm_median": 2226.0,
+      "distance_mm_min_max": [
+        2181,
+        2254
+      ]
+    },
+    {
+      "peer": 2,
+      "attempt_records": 56,
+      "completed": 56,
+      "valid_rssi": 56,
+      "rssi_db_median": -69.223,
+      "rssi_db_mean": -77.10996428571428,
+      "distance_mm_median": 1590.5,
+      "distance_mm_min_max": [
+        1556,
+        1638
+      ]
+    }
+  ],
+  "errors": {
+    "2": 20
+  },
+  "fatal": false,
+  "schedule_valid": true,
+  "csv_matches_raw_ble_log": true,
+  "transport_metrics": {
+    "notifications": 181,
+    "bytes": 33536,
+    "lines": 181,
+    "measurements": 168,
+    "sequence_gaps": 0,
+    "duplicates": 0,
+    "out_of_order": 0,
+    "framing_errors": 0,
+    "discarded_partial_bytes": 0,
+    "maximum_reported_queue_drops": 0,
+    "transport_replays": 0
+  },
+  "build_manifest": {
+    "variant": "ble",
+    "created_utc": "2026-11-13T06:41:22.064083+00:00",
+    "responders": 3,
+    "attempts_per_peer": 20,
+    "levels": 65,
+    "ble_name": "UWB-COEX-INIT",
+    "images": [
+      {
+        "name": "ble_init",
+        "image": "build/checked_ble_init/merged.hex",
+        "sha256": "5f2851b57d76b95f51cec5a90a3e44fe9a5497b1a94b371aa9785bfbd8250122",
+        "compile_command": "/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCHECKED_BLE=1 -DCHECKED_INITIATOR=1 -DCHECKED_N_RESPONDERS=3 -DCHECKED_RESP_ID=0 -DCHECKED_RSSI=1 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=8192 -DNRF52833_XXAA -DNRF54L_CONFIGURATION_56_ENABLE=0 -DSWEEP_ATTEMPTS=20 -DUSE_PARTITION_MANAGER=1 -D_ANSI_SOURCE -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_ble_init/../../drivers/dw3000/inc -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_ble_init/../../drivers/platform -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_ble_init/../twr_checked_combined_common -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_ble_init/../twr_checked_ble_common -I/home/pushkardube/ncs/v3.2.4/nrf/drivers/mpsl/clock_control -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_init/twr_checked_ble_init/zephyr/include/generated/zephyr -I/home/pushkardube/ncs/v3.2.4/zephyr/include -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_init/twr_checked_ble_init/zephyr/include/generated -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic -I/home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/newlib/include -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/nrf52/. -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/common/. -I/home/pushkardube/ncs/v3.2.4/zephyr/subsys/bluetooth -I/home/pushkardube/ncs/v3.2.4/nrf/include -I/home/pushkardube/ncs/v3.2.4/nrf/lib/multithreading_lock/. -I/home/pushkardube/ncs/v3.2.4/nrf/subsys/bluetooth/controller/. -I/home/pushkardube/ncs/v3.2.4/nrf/tests/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/cmsis_6/. -I/home/pushkardube/ncs/v3.2.4/nrf/modules/hal_nordic/. -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/drivers/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable/templates -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/hal_nordic/nrfx/. -I/home/pushkardube/ncs/v3.2.4/nrfxlib/softdevice_controller/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/common/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/nrf21540_gpio/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/nrf21540_gpio_spi/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/nrf2220/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/nrf2240/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/nrf22xx/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/simple_gpio/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/fem/include/protocol -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/include -I/home/pushkardube/ncs/v3.2.4/nrfxlib/mpsl/include/protocol -I/home/pushkardube/Georgia_Tech/uwb-coexistence/drivers/dw3000/inc -isystem /home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_init/twr_checked_ble_init/zephyr/include/generated/zephyr/autoconf.h -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/pushkardube/ncs/v3.2.4/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_ble_init=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=nano.specs -std=c99 -o CMakeFiles/app.dir/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c.obj -c /home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c"
+      },
+      {
+        "name": "ble_resp0",
+        "image": "build/checked_ble_resp0/merged.hex",
+        "sha256": "9a555561d34950aa52d28aa6f2af78951484497753848aa18acbd3288482b1f2",
+        "compile_command": "/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCHECKED_INITIATOR=0 -DCHECKED_N_RESPONDERS=3 -DCHECKED_RESP_ID=0 -DCHECKED_RSSI=1 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=8192 -DNRF52833_XXAA -DNRF54L_CONFIGURATION_56_ENABLE=0 -DSWEEP_ATTEMPTS=20 -DUSE_PARTITION_MANAGER=1 -D_ANSI_SOURCE -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../../drivers/dw3000/inc -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../../drivers/platform -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../twr_checked_combined_common -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp0/twr_checked_combined_resp/zephyr/include/generated/zephyr -I/home/pushkardube/ncs/v3.2.4/zephyr/include -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp0/twr_checked_combined_resp/zephyr/include/generated -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic -I/home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/newlib/include -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/nrf52/. -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/common/. -I/home/pushkardube/ncs/v3.2.4/nrf/include -I/home/pushkardube/ncs/v3.2.4/nrf/tests/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/cmsis_6/. -I/home/pushkardube/ncs/v3.2.4/nrf/modules/hal_nordic/. -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/drivers/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable/templates -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/hal_nordic/nrfx/. -I/home/pushkardube/Georgia_Tech/uwb-coexistence/drivers/dw3000/inc -isystem /home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp0/twr_checked_combined_resp/zephyr/include/generated/zephyr/autoconf.h -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/pushkardube/ncs/v3.2.4/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=nano.specs -std=c99 -o CMakeFiles/app.dir/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c.obj -c /home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c"
+      },
+      {
+        "name": "ble_resp1",
+        "image": "build/checked_ble_resp1/merged.hex",
+        "sha256": "3f8d0c5250c22d53a8d4aaf6d88fc66931fe8e3851bed3f45a3a728870a76e61",
+        "compile_command": "/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCHECKED_INITIATOR=0 -DCHECKED_N_RESPONDERS=3 -DCHECKED_RESP_ID=1 -DCHECKED_RSSI=1 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=8192 -DNRF52833_XXAA -DNRF54L_CONFIGURATION_56_ENABLE=0 -DSWEEP_ATTEMPTS=20 -DUSE_PARTITION_MANAGER=1 -D_ANSI_SOURCE -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../../drivers/dw3000/inc -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../../drivers/platform -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../twr_checked_combined_common -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp1/twr_checked_combined_resp/zephyr/include/generated/zephyr -I/home/pushkardube/ncs/v3.2.4/zephyr/include -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp1/twr_checked_combined_resp/zephyr/include/generated -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic -I/home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/newlib/include -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/nrf52/. -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/common/. -I/home/pushkardube/ncs/v3.2.4/nrf/include -I/home/pushkardube/ncs/v3.2.4/nrf/tests/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/cmsis_6/. -I/home/pushkardube/ncs/v3.2.4/nrf/modules/hal_nordic/. -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/drivers/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable/templates -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/hal_nordic/nrfx/. -I/home/pushkardube/Georgia_Tech/uwb-coexistence/drivers/dw3000/inc -isystem /home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp1/twr_checked_combined_resp/zephyr/include/generated/zephyr/autoconf.h -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/pushkardube/ncs/v3.2.4/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=nano.specs -std=c99 -o CMakeFiles/app.dir/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c.obj -c /home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c"
+      },
+      {
+        "name": "ble_resp2",
+        "image": "build/checked_ble_resp2/merged.hex",
+        "sha256": "0ffcc9d533a8fea94958b08205d5ed5f17983cc3f1e06abeb896396f46437204",
+        "compile_command": "/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/bin/arm-zephyr-eabi-gcc -DCHECKED_INITIATOR=0 -DCHECKED_N_RESPONDERS=3 -DCHECKED_RESP_ID=2 -DCHECKED_RSSI=1 -DKERNEL -DK_HEAP_MEM_POOL_SIZE=8192 -DNRF52833_XXAA -DNRF54L_CONFIGURATION_56_ENABLE=0 -DSWEEP_ATTEMPTS=20 -DUSE_PARTITION_MANAGER=1 -D_ANSI_SOURCE -D__LINUX_ERRNO_EXTENSIONS__ -D__PROGRAM_START -D__ZEPHYR__=1 -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../../drivers/dw3000/inc -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../../drivers/platform -I/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp/../twr_checked_combined_common -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp2/twr_checked_combined_resp/zephyr/include/generated/zephyr -I/home/pushkardube/ncs/v3.2.4/zephyr/include -I/home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp2/twr_checked_combined_resp/zephyr/include/generated -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic -I/home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/newlib/include -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/nrf52/. -I/home/pushkardube/ncs/v3.2.4/zephyr/soc/nordic/common/. -I/home/pushkardube/ncs/v3.2.4/nrf/include -I/home/pushkardube/ncs/v3.2.4/nrf/tests/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/cmsis_6/CMSIS/Core/Include -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/cmsis_6/. -I/home/pushkardube/ncs/v3.2.4/nrf/modules/hal_nordic/. -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/drivers/include -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable -I/home/pushkardube/ncs/v3.2.4/modules/hal/nordic/nrfx/bsp/stable/templates -I/home/pushkardube/ncs/v3.2.4/zephyr/modules/hal_nordic/nrfx/. -I/home/pushkardube/Georgia_Tech/uwb-coexistence/drivers/dw3000/inc -isystem /home/pushkardube/ncs/v3.2.4/zephyr/lib/libc/common/include -fno-strict-aliasing -Os -imacros /home/pushkardube/Georgia_Tech/uwb-coexistence/build/checked_ble_resp2/twr_checked_combined_resp/zephyr/include/generated/zephyr/autoconf.h -fno-common -g -gdwarf-4 -fdiagnostics-color=always -mcpu=cortex-m4 -mthumb -mabi=aapcs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mfp16-format=ieee --sysroot=/home/pushkardube/ncs/toolchains/2ac5840438/opt/zephyr-sdk/arm-zephyr-eabi/arm-zephyr-eabi -imacros /home/pushkardube/ncs/v3.2.4/zephyr/include/zephyr/toolchain/zephyr_stdint.h -Wall -Wformat -Wformat-security -Wno-format-zero-length -Wdouble-promotion -Wno-pointer-sign -Wpointer-arith -Wexpansion-to-defined -Wno-unused-but-set-variable -Werror=implicit-int -fno-pic -fno-pie -fno-asynchronous-unwind-tables -fno-reorder-functions --param=min-pagesize=0 -fno-defer-pop -fmacro-prefix-map=/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_resp=CMAKE_SOURCE_DIR -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4/zephyr=ZEPHYR_BASE -fmacro-prefix-map=/home/pushkardube/ncs/v3.2.4=WEST_TOPDIR -ffunction-sections -fdata-sections -specs=nano.specs -std=c99 -o CMakeFiles/app.dir/home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c.obj -c /home/pushkardube/Georgia_Tech/uwb-coexistence/samples/twr_checked_combined_common/checked.c"
+      }
+    ]
+  }
+}

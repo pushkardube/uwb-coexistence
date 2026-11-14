@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-11-14T07:16:29.004723+00:00",
+  "roles": {
+    "initiator": 760201915,
+    "responder0": 760201778,
+    "responder1": 760204734,
+    "responder2": 760204645
+  },
+  "ble_address": "F1:FB:C0:BC:DB:75",
+  "orientation_user_report": "All anchors facing exactly in opposite directions.",
+  "exact_tape_distances_m": null,
+  "sweep_order": "ascending; 01,02,06,...,FE",
+  "data_transport": "BLE only; no serial measurement capture",
+  "reply_power": "0xFEFEFEFE",
+  "requested_seconds": 720,
+  "full_cycle_attempts": 3900,
+  "status": "complete; cycle 0 verified from 01010101 through FEFEFEFE",
+  "comparison_limit": "Initiator board differs from the earlier LOS run; this is not an orientation-only controlled comparison."
+}

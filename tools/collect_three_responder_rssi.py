@@ -75,6 +75,8 @@ def summarize(directory):
         'log_drops': summary['log_drops'],
         'rows': output,
     }
+    if 'sweep_order' in summary:
+        result['sweep_order'] = summary['sweep_order']
     (directory / 'rssi_by_tx_setting.json').write_text(json.dumps(result, indent=2) + '\n')
     (directory / 'summary.json').write_text(json.dumps(summary, indent=2) + '\n')
     return result

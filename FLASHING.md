@@ -5,9 +5,48 @@ The working route here is **west → nrfutil**, using nRF Connect SDK 3.2.4.
 This guide distinguishes the current checked firmware from preserved legacy apps.
 See [the sample index](samples/README.md) and [tool details](tools/README.md).
 
-## Current fixed-01010101 range test
+## Current opposite-facing sweep setup
 
-The currently selected experiment uses independent protocol-5 firmware:
+For the requested **ascending acquisition**, use the independent build:
+
+```bash
+bash tools/build_checked_ascending.sh
+source tools/ncs_env.sh
+export NRFUTIL_HOME="$PWD/build/.nrfutil"
+west flash --skip-rebuild -d build/checked_ascending_init -r nrfutil --dev-id 760201915
+```
+
+The existing three responders remain compatible and their image hashes match
+the builder's outputs. The BLE address and board mapping below are unchanged.
+This variant visits 01,02,06,...,FE; the original restored build commands below
+instead select 01,FE,FA,...,02. See
+[the ascending run record](experiments/opposite_facing_ascending_sweep_20261114.md).
+
+The restored protocol-4 sweep now uses this mapping:
+
+| Role | Serial |
+|---|---|
+| BLE initiator | 760201915 |
+| Responder 0 | 760201778 |
+| Responder 1 | 760204734 |
+| Responder 2 | 760204645 |
+
+```bash
+bash tools/build_checked_ble.sh 3 20
+bash tools/flash_checked_variant.sh ble 760201915 760201778 760204734 760204645
+python3 tools/collect_three_responder_rssi.py --seconds 720 \
+  --address F1:FB:C0:BC:DB:75 --out experiments/data/opposite_facing_NEW_RUN
+```
+
+The initiator starts at 01010101, then sweeps FE..02 across all 64 fine-gain
+codes at coarse 2. Replies stay at FEFEFEFE. One cycle is 3900 attempts.
+The Bluetooth address is for the new physical initiator; do not use the old
+760201778 initiator's address. See
+[the orientation-repeat record](experiments/opposite_facing_sweep_20261114.md).
+
+## Previous fixed-01010101 range test
+
+The earlier fixed01 experiment uses independent protocol-5 firmware:
 
 ```bash
 bash tools/build_checked_fixed01.sh
@@ -20,7 +59,8 @@ python3 tools/collect_checked_ble.py --seconds 3600
 the responders also reply at 01010101. They can use external power after flashing.
 See [the fixed01 guide](samples/twr_checked_fixed01_common/README.md) for
 logging commands and [the bench record](experiments/fixed01_both_directions_20261114.md).
-The separately powered 760201915 remains on older, incompatible protocol 4.
+At that time 760201915 retained its earlier protocol-4 responder. It has since
+been programmed as the new sweep initiator in the setup above.
 
 ## Bluetooth host interface for the earlier sweep
 

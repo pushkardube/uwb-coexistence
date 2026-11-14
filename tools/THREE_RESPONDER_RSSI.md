@@ -9,6 +9,12 @@ The script reuses [collect_checked_ble.py](collect_checked_ble.py) for Bluetooth
 notifications, record acknowledgements, reconnect/replay handling, and safe
 START/PAUSE control. It does not open serial ports or program any board.
 
+It also accepts the separate [ascending sweep](../samples/twr_checked_ascending_common/README.md).
+Its `order=ascending` banner is validated and retained in comparison metadata.
+See [the opposite-facing ascending run](../experiments/opposite_facing_ascending_sweep_20261114.md)
+for that run's newer initiator/peer mapping; the table below records the earlier
+2026-11-13 setup.
+
 ## Current board assignments
 
 The four-board setup programmed on 2026-11-13 uses:

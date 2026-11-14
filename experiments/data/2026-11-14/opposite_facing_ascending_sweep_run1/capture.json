@@ -1,0 +1,26 @@
+{
+  "transport": "BLE NUS",
+  "commands": [
+    "START",
+    "PAUSE",
+    "STATUS"
+  ],
+  "connections": 1,
+  "connection_errors": [],
+  "device_name": "UWB-COEX-INIT",
+  "device_address": "F1:FB:C0:BC:DB:75",
+  "seconds": 724.0546833959997,
+  "transport_metrics": {
+    "notifications": 4239,
+    "bytes": 843173,
+    "lines": 4239,
+    "measurements": 4031,
+    "sequence_gaps": 0,
+    "duplicates": 0,
+    "out_of_order": 0,
+    "framing_errors": 0,
+    "discarded_partial_bytes": 0,
+    "maximum_reported_queue_drops": 0,
+    "transport_replays": 0
+  }
+}

@@ -53,6 +53,14 @@ tails, bounded framing, gaps/duplicates, and transport replay deduplication.
 
 ## Current combined firmware
 
+For an actual **ascending** sweep (01,02,06,...,FE), use
+`bash tools/build_checked_ascending.sh` and the separate
+[ascending initiator guide](../samples/twr_checked_ascending_common/README.md).
+The original sweep acquisition order remains 01,FE,FA,...,02. The analyzer
+uses the explicit `order=ascending` banner to validate the new mapping and
+interpret endpoint/trend direction. The three-responder collector preserves
+that order in its JSON and per-setting tables.
+
 For the separate **continuous 01010101** range experiment, build with
 `bash tools/build_checked_fixed01.sh` and flash with
 `bash tools/flash_checked_variant.sh fixed01 INIT_SERIAL RESP0_SERIAL RESP1_SERIAL`.

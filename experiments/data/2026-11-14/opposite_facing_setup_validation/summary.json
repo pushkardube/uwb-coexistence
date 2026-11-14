@@ -1,0 +1,300 @@
+{
+  "variant": "COMBINED",
+  "attempt_records": 168,
+  "completed": 148,
+  "sequences": [
+    1,
+    168
+  ],
+  "consecutive_sequences": true,
+  "error_codes": {
+    "2": 20
+  },
+  "fatal": false,
+  "log_drops": false,
+  "by_peer_level": [
+    {
+      "peer": 0,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -87.688,
+      "rssi_db_mean": -87.7876,
+      "distance_mm_median": 837.5,
+      "distance_mm_min_max": [
+        816,
+        876
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 1,
+      "octet": "0xfe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -65.26650000000001,
+      "rssi_db_mean": -66.2777,
+      "distance_mm_median": 829.0,
+      "distance_mm_min_max": [
+        793,
+        844
+      ]
+    },
+    {
+      "peer": 0,
+      "level": 2,
+      "octet": "0xfa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 16,
+      "completed": 16,
+      "valid_rssi": 16,
+      "rssi_db_median": -65.362,
+      "rssi_db_mean": -65.6825625,
+      "distance_mm_median": 828.0,
+      "distance_mm_min_max": [
+        781,
+        863
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 0,
+      "valid_rssi": 0,
+      "rssi_db_median": null,
+      "rssi_db_mean": null,
+      "distance_mm_median": null,
+      "distance_mm_min_max": null
+    },
+    {
+      "peer": 1,
+      "level": 1,
+      "octet": "0xfe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -74.9015,
+      "rssi_db_mean": -75.83895,
+      "distance_mm_median": 2226.0,
+      "distance_mm_min_max": [
+        2201,
+        2254
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 2,
+      "octet": "0xfa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 16,
+      "completed": 16,
+      "valid_rssi": 16,
+      "rssi_db_median": -77.12299999999999,
+      "rssi_db_mean": -76.92925,
+      "distance_mm_median": 2230.0,
+      "distance_mm_min_max": [
+        2181,
+        2249
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -92.082,
+      "rssi_db_mean": -92.07925,
+      "distance_mm_median": 1591.5,
+      "distance_mm_min_max": [
+        1574,
+        1638
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 1,
+      "octet": "0xfe",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -69.072,
+      "rssi_db_mean": -68.8532,
+      "distance_mm_median": 1588.5,
+      "distance_mm_min_max": [
+        1556,
+        1602
+      ]
+    },
+    {
+      "peer": 2,
+      "level": 2,
+      "octet": "0xfa",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 16,
+      "completed": 16,
+      "valid_rssi": 16,
+      "rssi_db_median": -69.02600000000001,
+      "rssi_db_mean": -68.7193125,
+      "distance_mm_median": 1593.0,
+      "distance_mm_min_max": [
+        1565,
+        1615
+      ]
+    }
+  ],
+  "by_peer": [
+    {
+      "peer": 0,
+      "attempt_records": 56,
+      "completed": 56,
+      "valid_rssi": 56,
+      "rssi_db_median": -68.01750000000001,
+      "rssi_db_mean": -73.78976785714286,
+      "distance_mm_median": 833.0,
+      "distance_mm_min_max": [
+        781,
+        876
+      ]
+    },
+    {
+      "peer": 1,
+      "attempt_records": 56,
+      "completed": 36,
+      "valid_rssi": 36,
+      "rssi_db_median": -74.92,
+      "rssi_db_mean": -76.32352777777778,
+      "distance_mm_median": 2226.0,
+      "distance_mm_min_max": [
+        2181,
+        2254
+      ]
+    },
+    {
+      "peer": 2,
+      "attempt_records": 56,
+      "completed": 56,
+      "valid_rssi": 56,
+      "rssi_db_median": -69.223,
+      "rssi_db_mean": -77.10996428571428,
+      "distance_mm_median": 1590.5,
+      "distance_mm_min_max": [
+        1556,
+        1638
+      ]
+    }
+  ],
+  "per_peer_sweep": [
+    {
+      "peer": 0,
+      "all_64_levels_observed": false,
+      "full_to_low_rssi_drop_db": null,
+      "observed_nonincreasing_level_medians": null,
+      "all_65_levels_observed": false
+    },
+    {
+      "peer": 1,
+      "all_64_levels_observed": false,
+      "full_to_low_rssi_drop_db": null,
+      "observed_nonincreasing_level_medians": null,
+      "all_65_levels_observed": false
+    },
+    {
+      "peer": 2,
+      "all_64_levels_observed": false,
+      "full_to_low_rssi_drop_db": null,
+      "observed_nonincreasing_level_medians": null,
+      "all_65_levels_observed": false
+    }
+  ],
+  "probe_01010101": [
+    {
+      "peer": 0,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -87.688,
+      "rssi_db_mean": -87.7876,
+      "distance_mm_median": 837.5,
+      "distance_mm_min_max": [
+        816,
+        876
+      ]
+    },
+    {
+      "peer": 1,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 0,
+      "valid_rssi": 0,
+      "rssi_db_median": null,
+      "rssi_db_mean": null,
+      "distance_mm_median": null,
+      "distance_mm_min_max": null
+    },
+    {
+      "peer": 2,
+      "level": 0,
+      "octet": "0x1",
+      "cycles_seen": [
+        0
+      ],
+      "attempt_records": 20,
+      "completed": 20,
+      "valid_rssi": 20,
+      "rssi_db_median": -92.082,
+      "rssi_db_mean": -92.07925,
+      "distance_mm_median": 1591.5,
+      "distance_mm_min_max": [
+        1574,
+        1638
+      ]
+    }
+  ],
+  "firmware_level_summaries": 6,
+  "configuration": {
+    "targets": 3,
+    "levels": 65,
+    "attempts_per_peer": 20
+  },
+  "schedule_matches_configuration": true
+}

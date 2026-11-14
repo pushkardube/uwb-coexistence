@@ -25,6 +25,11 @@ historical, with raw data and a source-hash-verified reproduction patch.
 
 ## Preserved 65-setting sweep
 
+An independent [ascending-order variant](twr_checked_ascending_common/README.md)
+now acquires 01,02,06,...,FE with the same protocol-4 responders. Its
+[BLE initiator](twr_checked_ascending_init/README.md) and build directories are
+separate; the original sweep below retains its tested acquisition order.
+
 | Component | Purpose |
 |---|---|
 | [twr_checked_ble_init](twr_checked_ble_init/README.md) | BLE initiator using the combined sweep core |

@@ -74,6 +74,11 @@ The combined and BLE initiators use **65 TX settings**: an initial
 from `0xFEFEFEFE` down to `0x02020202`. Each setting gets a fixed attempt
 budget for every configured responder, including attempts that fail.
 
+For actual increasing acquisition order, use the separate
+[ascending sweep](samples/twr_checked_ascending_common/README.md):
+01010101, then 02020202, 06060606, ... FEFEFEFE. The original sweep's tested
+01,FE,FA,...,02 order remains intact.
+
 The initiator changes its Poll and Final transmit power. Each responder saves
 Final's receive timestamp, measures Final's Ipatov diagnostics, and returns
 them in a Result packet at fixed `0xFEFEFEFE` reply power. The initiator reports
